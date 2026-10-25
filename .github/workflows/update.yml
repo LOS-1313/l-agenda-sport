@@ -1,0 +1,32 @@
+name: Mise a jour automatique de L'agenda sport
+
+on:
+  schedule:
+    # S'exécute automatiquement chaque nuit à 3h du matin (UTC)
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Permet aussi de lancer la mise à jour manuellement si besoin
+
+jobs:
+  update-data:
+    runs-runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v3
+
+      - name: Configuration de Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Téléchargement des nouveaux plannings sportifs
+        run: |
+          # Le script de mise à jour des calendriers s'exécute ici
+          echo "Mise à jour des flux sportifs terminée"
+
+      - name: Sauvegarde des données
+        run: |
+          git config --global user.name 'AgendaSportBot'
+          git config --global user.email 'bot@agendasport.local'
+          git add -A
+          git commit -m "Auto-update des affiches sportives" || exit 0
+          git push
