@@ -38,19 +38,20 @@ circuit_data = {
     "Suzuka Circuit": {"flag": "jp", "city": "Suzuka"}
 }
 
-def check_f1_live(date_str, time_str, duration_hours=2):
+def check_f1_status(date_str, time_str, duration_hours=2):
     try:
         now = datetime.now()
         start_dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
         end_dt = start_dt + timedelta(hours=duration_hours)
-        return start_dt <= now <= end_dt
+        is_live = start_dt <= now <= end_dt
+        is_finished = now > end_dt
+        return is_live, is_finished
     except:
-        return False
+        return False, False
 
 def fetch_f1_calendar():
     url = "https://api.jolpi.ca/ergast/f1/2026.json"
     events = []
-    today_str = datetime.now().strftime('%Y-%m-%d')
     f1_logo = "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg"
     
     try:
@@ -78,70 +79,70 @@ def fetch_f1_calendar():
                 if 'Qualifying' in race:
                     q_date = race['Qualifying']['date']
                     q_time = adjust_hour(race['Qualifying'].get('time', '14:00:00')[:5], 1)
-                    if q_date >= today_str:
-                        is_live = check_f1_live(q_date, q_time, 1)
-                        events.append({
-                            "id": f"f1_qual_{i}",
-                            "date": q_date,
-                            "category": "f1",
-                            "sportIcon": f1_logo,
-                            "isImgIcon": True,
-                            "team1": race_name,
-                            "team1Extra": "(Qualifications)",
-                            "team1Logo": flag_url,
-                            "team2": circuit_display,
-                            "team2Logo": "",
-                            "time": q_time,
-                            "nature": gp_label,
-                            "isLive": is_live,
-                            "showHomeTeam1": False,
-                            "channels": ["canal+"]
-                        })
-
-                if 'Sprint' in race:
-                    s_date = race['Sprint']['date']
-                    s_time = adjust_hour(race['Sprint'].get('time', '12:00:00')[:5], 1)
-                    if s_date >= today_str:
-                        is_live = check_f1_live(s_date, s_time, 1)
-                        events.append({
-                            "id": f"f1_sprint_{i}",
-                            "date": s_date,
-                            "category": "f1",
-                            "sportIcon": f1_logo,
-                            "isImgIcon": True,
-                            "team1": race_name,
-                            "team1Extra": "(Course Sprint)",
-                            "team1Logo": flag_url,
-                            "team2": circuit_display,
-                            "team2Logo": "",
-                            "time": s_time,
-                            "nature": gp_label,
-                            "isLive": is_live,
-                            "showHomeTeam1": False,
-                            "channels": ["canal+"]
-                        })
-
-                r_date = race['date']
-                r_time = adjust_hour(race.get('time', '14:00:00')[:5], 1)
-                if r_date >= today_str:
-                    is_live = check_f1_live(r_date, r_time, 2)
+                    is_live, is_finished = check_f1_status(q_date, q_time, 1)
                     events.append({
-                        "id": f"f1_race_{i}",
-                        "date": r_date,
+                        "id": f"f1_qual_{i}",
+                        "date": q_date,
                         "category": "f1",
                         "sportIcon": f1_logo,
                         "isImgIcon": True,
                         "team1": race_name,
-                        "team1Extra": "(Course)",
+                        "team1Extra": "(Qualifications)",
                         "team1Logo": flag_url,
                         "team2": circuit_display,
                         "team2Logo": "",
-                        "time": r_time,
+                        "time": q_time,
                         "nature": gp_label,
                         "isLive": is_live,
+                        "isFinished": is_finished,
                         "showHomeTeam1": False,
                         "channels": ["canal+"]
                     })
+
+                if 'Sprint' in race:
+                    s_date = race['Sprint']['date']
+                    s_time = adjust_hour(race['Sprint'].get('time', '12:00:00')[:5], 1)
+                    is_live, is_finished = check_f1_status(s_date, s_time, 1)
+                    events.append({
+                        "id": f"f1_sprint_{i}",
+                        "date": s_date,
+                        "category": "f1",
+                        "sportIcon": f1_logo,
+                        "isImgIcon": True,
+                        "team1": race_name,
+                        "team1Extra": "(Course Sprint)",
+                        "team1Logo": flag_url,
+                        "team2": circuit_display,
+                        "team2Logo": "",
+                        "time": s_time,
+                        "nature": gp_label,
+                        "isLive": is_live,
+                        "isFinished": is_finished,
+                        "showHomeTeam1": False,
+                        "channels": ["canal+"]
+                    })
+
+                r_date = race['date']
+                r_time = adjust_hour(race.get('time', '14:00:00')[:5], 1)
+                is_live, is_finished = check_f1_status(r_date, r_time, 2)
+                events.append({
+                    "id": f"f1_race_{i}",
+                    "date": r_date,
+                    "category": "f1",
+                    "sportIcon": f1_logo,
+                    "isImgIcon": True,
+                    "team1": race_name,
+                    "team1Extra": "(Course)",
+                    "team1Logo": flag_url,
+                    "team2": circuit_display,
+                    "team2Logo": "",
+                    "time": r_time,
+                    "nature": gp_label,
+                    "isLive": is_live,
+                    "isFinished": is_finished,
+                    "showHomeTeam1": False,
+                    "channels": ["canal+"]
+                })
     except Exception as e:
         print(f"Erreur F1 : {e}")
     return events
@@ -149,7 +150,6 @@ def fetch_f1_calendar():
 def fetch_nfl_calendar():
     events = []
     seen_ids = set()
-    today_str = datetime.now().strftime('%Y-%m-%d')
     nfl_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png"
     
     phases = [
@@ -175,54 +175,55 @@ def fetch_nfl_calendar():
                         date_iso = competition['date']
                         date_str = date_iso[:10]
                         
-                        if date_str >= today_str:
-                            event_id = event.get('id', f"nfl_st{seasontype}_w{week}_{i}")
-                            if event_id not in seen_ids:
-                                seen_ids.add(event_id)
-                                raw_time = date_iso[11:16]
-                                time_str = adjust_hour(raw_time, 1)
-                                
-                                # Vérification du statut Live depuis l'API ESPN
-                                status_state = event.get('status', {}).get('type', {}).get('state', 'pre')
-                                is_live = (status_state == 'in')
+                        event_id = event.get('id', f"nfl_st{seasontype}_w{week}_{i}")
+                        if event_id not in seen_ids:
+                            seen_ids.add(event_id)
+                            raw_time = date_iso[11:16]
+                            time_str = adjust_hour(raw_time, 1)
+                            
+                            status_type = event.get('status', {}).get('type', {})
+                            status_state = status_type.get('state', 'pre')
+                            is_live = (status_state == 'in')
+                            is_finished = (status_state == 'post')
 
-                                venue = competition.get('venue')
-                                if venue and venue.get('fullName'):
-                                    venue_name = venue.get('fullName')
-                                    addr = venue.get('address', {})
-                                    venue_city = addr.get('city', '')
-                                    venue_country = addr.get('country', 'États-Unis')
-                                    venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
-                                else:
-                                    venue_info = "TBD"
+                            venue = competition.get('venue')
+                            if venue and venue.get('fullName'):
+                                venue_name = venue.get('fullName')
+                                addr = venue.get('address', {})
+                                venue_city = addr.get('city', '')
+                                venue_country = addr.get('country', 'États-Unis')
+                                venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
+                            else:
+                                venue_info = "TBD"
 
-                                competitors = competition['competitors']
-                                team1 = competitors[0]
-                                team2 = competitors[1]
-                                
-                                t1_name = team1['team'].get('displayName', 'TBD')
-                                t2_name = team2['team'].get('displayName', 'TBD')
-                                is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
+                            competitors = competition['competitors']
+                            team1 = competitors[0]
+                            team2 = competitors[1]
+                            
+                            t1_name = team1['team'].get('displayName', 'TBD')
+                            t2_name = team2['team'].get('displayName', 'TBD')
+                            is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
 
-                                events.append({
-                                    "id": f"nfl_{event_id}",
-                                    "date": date_str,
-                                    "category": "nfl",
-                                    "sportIcon": nfl_logo,
-                                    "isImgIcon": True,
-                                    "team1": t1_name,
-                                    "team1Extra": "",
-                                    "team1Logo": team1['team'].get('logo', ''),
-                                    "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
-                                    "team2": t2_name,
-                                    "team2Logo": team2['team'].get('logo', ''),
-                                    "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
-                                    "venue": venue_info,
-                                    "time": time_str,
-                                    "nature": nature_str,
-                                    "isLive": is_live,
-                                    "channels": ["beinsports", "dazn"]
-                                })
+                            events.append({
+                                "id": f"nfl_{event_id}",
+                                "date": date_str,
+                                "category": "nfl",
+                                "sportIcon": nfl_logo,
+                                "isImgIcon": True,
+                                "team1": t1_name,
+                                "team1Extra": "",
+                                "team1Logo": team1['team'].get('logo', ''),
+                                "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
+                                "team2": t2_name,
+                                "team2Logo": team2['team'].get('logo', ''),
+                                "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
+                                "venue": venue_info,
+                                "time": time_str,
+                                "nature": nature_str,
+                                "isLive": is_live,
+                                "isFinished": is_finished,
+                                "channels": ["beinsports", "dazn"]
+                            })
             except Exception as e:
                 pass
     return events
@@ -231,7 +232,6 @@ def fetch_nba_calendar():
     events = []
     seen_ids = set()
     today_dt = datetime.now()
-    today_str = today_dt.strftime('%Y-%m-%d')
     nba_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
     
     year = today_dt.year
@@ -253,57 +253,58 @@ def fetch_nba_calendar():
                     date_iso = competition['date']
                     date_str = date_iso[:10]
                     
-                    if date_str >= today_str:
-                        event_id = event.get('id', f"nba_{date_str}_{i}")
-                        if event_id not in seen_ids:
-                            seen_ids.add(event_id)
-                            raw_time = date_iso[11:16]
-                            time_str = adjust_hour(raw_time, 1)
-                            
-                            # Vérification du statut Live depuis l'API ESPN
-                            status_state = event.get('status', {}).get('type', {}).get('state', 'pre')
-                            is_live = (status_state == 'in')
+                    event_id = event.get('id', f"nba_{date_str}_{i}")
+                    if event_id not in seen_ids:
+                        seen_ids.add(event_id)
+                        raw_time = date_iso[11:16]
+                        time_str = adjust_hour(raw_time, 1)
+                        
+                        status_type = event.get('status', {}).get('type', {})
+                        status_state = status_type.get('state', 'pre')
+                        is_live = (status_state == 'in')
+                        is_finished = (status_state == 'post')
 
-                            venue = competition.get('venue')
-                            if venue and venue.get('fullName'):
-                                venue_name = venue.get('fullName')
-                                addr = venue.get('address', {})
-                                venue_city = addr.get('city', '')
-                                venue_country = addr.get('country', 'États-Unis')
-                                venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
-                            else:
-                                venue_info = "TBD"
+                        venue = competition.get('venue')
+                        if venue and venue.get('fullName'):
+                            venue_name = venue.get('fullName')
+                            addr = venue.get('address', {})
+                            venue_city = addr.get('city', '')
+                            venue_country = addr.get('country', 'États-Unis')
+                            venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
+                        else:
+                            venue_info = "TBD"
 
-                            competitors = competition['competitors']
-                            team1 = competitors[0]
-                            team2 = competitors[1]
-                            
-                            t1_name = team1['team'].get('displayName', 'TBD')
-                            t2_name = team2['team'].get('displayName', 'TBD')
-                            is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
+                        competitors = competition['competitors']
+                        team1 = competitors[0]
+                        team2 = competitors[1]
+                        
+                        t1_name = team1['team'].get('displayName', 'TBD')
+                        t2_name = team2['team'].get('displayName', 'TBD')
+                        is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
 
-                            season_type = event.get('season', {}).get('type', 2)
-                            nature_str = "Play-offs NBA" if season_type == 3 else "Saison Régulière"
+                        season_type = event.get('season', {}).get('type', 2)
+                        nature_str = "Play-offs NBA" if season_type == 3 else "Saison Régulière"
 
-                            events.append({
-                                "id": f"nba_{event_id}",
-                                "date": date_str,
-                                "category": "nba",
-                                "sportIcon": nba_logo,
-                                "isImgIcon": True,
-                                "team1": t1_name,
-                                "team1Extra": "",
-                                "team1Logo": team1['team'].get('logo', ''),
-                                "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
-                                "team2": t2_name,
-                                "team2Logo": team2['team'].get('logo', ''),
-                                "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
-                                "venue": venue_info,
-                                "time": time_str,
-                                "nature": nature_str,
-                                "isLive": is_live,
-                                "channels": ["beinsports", "dazn"]
-                            })
+                        events.append({
+                            "id": f"nba_{event_id}",
+                            "date": date_str,
+                            "category": "nba",
+                            "sportIcon": nba_logo,
+                            "isImgIcon": True,
+                            "team1": t1_name,
+                            "team1Extra": "",
+                            "team1Logo": team1['team'].get('logo', ''),
+                            "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
+                            "team2": t2_name,
+                            "team2Logo": team2['team'].get('logo', ''),
+                            "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
+                            "venue": venue_info,
+                            "time": time_str,
+                            "nature": nature_str,
+                            "isLive": is_live,
+                            "isFinished": is_finished,
+                            "channels": ["beinsports", "dazn"]
+                        })
         except Exception as e:
             print(f"Erreur NBA mois {month_str} : {e}")
             
