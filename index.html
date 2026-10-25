@@ -175,10 +175,11 @@
                                 </div>
                             </div>
 
-                            <!-- Milieu : Heure -->
-                            <div class="flex items-center gap-3 shrink-0 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800/50">
-                                <span class="text-base font-extrabold text-white tracking-tight">${match.time}</span>
-                            </div>
+                            <!-- Milieu : Nature du match et Heure -->
+<div class="flex flex-col items-center justify-center shrink-0 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800/50">
+    ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5">${match.nature}</span>` : ''}
+    <span class="text-base font-extrabold text-white tracking-tight">${match.time}</span>
+</div>
 
                             <!-- Droite : Chaînes -->
                             <div class="flex flex-wrap items-center justify-end gap-1.5 w-full sm:w-auto">
