@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'agenda sport</title>
+    <title>L'Agenda Sport</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour les icônes de repli -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
@@ -12,120 +14,99 @@
             theme: {
                 extend: {
                     colors: {
-                        darkbg: '#0b0f19',
-                        cardbg: '#131826',
-                        cardhover: '#1a2236',
-                        canal: '#000000',
-                        bein: '#purple-600',
-                        dazn: '#00f2fe',
-                        lequipe: '#d91414',
-                        francetv: '#0055a5',
+                        dark: {
+                            900: '#0b0f19',
+                            800: '#111827',
+                            700: '#1f2937',
+                        }
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-darkbg text-white min-h-screen font-sans antialiased selection:bg-blue-500 selection:text-white pb-12">
+<body class="bg-dark-900 text-gray-100 min-h-screen font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-    <!-- Header -->
-    <header class="border-b border-gray-800 bg-cardbg/80 backdrop-blur sticky top-0 z-30">
+    <!-- En-tête -->
+    <header class="border-b border-gray-800 bg-dark-800/50 backdrop-blur-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div class="flex items-center gap-3">
-                <div class="bg-blue-600 p-2.5 rounded-xl shadow-lg shadow-blue-600/30">
-                    <i class="fa-solid fa-trophy text-white text-xl"></i>
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30 text-white">
+                    <i class="fa-solid fa-trophy text-lg"></i>
                 </div>
                 <div>
-                    <h1 class="text-xl font-black tracking-wider uppercase bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">L'agenda sport</h1>
+                    <h1 class="text-xl font-black tracking-wider text-white">L'AGENDA SPORT</h1>
                     <p class="text-xs text-gray-400">Plannings officiels et diffusions en direct</p>
                 </div>
             </div>
 
             <!-- Filtres par catégorie -->
-            <div class="flex flex-wrap items-center justify-center gap-2" id="categoryFilters">
-                <button onclick="filterCategory('all')" data-cat="all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-all shadow-md">Tous</button>
-                <button onclick="filterCategory('football')" data-cat="football" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Football</button>
-                <button onclick="filterCategory('combat')" data-cat="combat" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Combat</button>
-                <button onclick="filterCategory('f1')" data-cat="f1" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">F1</button>
-                <button onclick="filterCategory('nfl')" data-cat="nfl" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">NFL</button>
-                <button onclick="filterCategory('spartiates')" data-cat="spartiates" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Spartiates</button>
-                <button onclick="filterCategory('nba')" data-cat="nba" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">NBA</button>
-                <button onclick="filterCategory('tennis')" data-cat="tennis" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Tennis</button>
+            <div id="category-filters" class="flex flex-wrap justify-center gap-2">
+                <button onclick="filterCategory('tous')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-blue-600 text-white shadow-md shadow-blue-600/20" data-category="tous">Tous</button>
+                <button onclick="filterCategory('football')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="football">Football</button>
+                <button onclick="filterCategory('f1')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="f1">F1</button>
+                <button onclick="filterCategory('nfl')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="nfl">NFL</button>
+                <button onclick="filterCategory('spartiates')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="spartiates">Spartiates</button>
+                <button onclick="filterCategory('nba')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="nba">NBA</button>
             </div>
         </div>
     </header>
 
-    <!-- Main Container -->
-    <main class="max-w-5xl mx-auto px-4 mt-8">
-        <div id="scheduleContainer" class="space-y-8">
-            <!-- Les affiches seront injectées ici dynamiquement -->
-            <div class="text-center py-12 text-gray-500">Chargement des plannings officiels...</div>
+    <!-- Contenu Principal -->
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <div id="agenda-container" class="space-y-8">
+            <!-- Les événements seront injectés ici dynamiquement -->
         </div>
     </main>
 
     <!-- Script de chargement et rendu -->
     <script>
-        let sportsData = [];
+        let allEvents = [];
+        let currentCategory = 'tous';
 
-        // Dictionnaire des styles des chaînes TV
-        const channelStyles = {
-            'canal+': { name: 'CANAL+', bg: 'bg-black border border-gray-700 text-white font-black tracking-tighter' },
-            'beinsports': { name: 'beIN SPORTS', bg: 'bg-purple-900 border border-purple-600 text-purple-200 font-bold' },
-            'dazn': { name: 'DAZN', bg: 'bg-cyan-950 border border-cyan-500 text-cyan-300 font-extrabold tracking-widest' },
-            'lequipe': { name: "L'ÉQUIPE", bg: 'bg-red-700 text-white font-black tracking-wide' },
-            'francetv': { name: 'FRANCE TV', bg: 'bg-blue-800 text-white font-bold' },
-            'eurosport': { name: 'EUROSPORT', bg: 'bg-blue-600 text-white font-bold' }
-        };
-
-        // Chargement automatique du fichier data.json généré par le robot
         async function loadData() {
             try {
-                const response = await fetch('data.json?' + new Date().getTime());
-                if (!response.ok) throw new Error('Erreur de chargement');
-                sportsData = await response.json();
-                renderSchedule('all');
+                const response = await fetch('data.json');
+                allEvents = await response.json();
+                renderAgenda();
             } catch (error) {
-                console.error('Impossible de charger data.json :', error);
-                document.getElementById('scheduleContainer').innerHTML = `
-                    <div class="text-center py-12 bg-cardbg rounded-2xl border border-gray-800 p-6">
-                        <i class="fa-solid fa-triangle-exclamation text-amber-500 text-3xl mb-3"></i>
-                        <p class="text-gray-300 font-medium">Aucune donnée disponible pour le moment.</p>
-                        <p class="text-xs text-gray-500 mt-1">Vérifiez que le script s'est bien exécuté dans l'onglet Actions de GitHub.</p>
+                console.error("Erreur lors du chargement des données :", error);
+                document.getElementById('agenda-container').innerHTML = `
+                    <div class="text-center py-12 text-gray-500">
+                        <p>Impossible de charger le planning pour le moment.</p>
                     </div>
                 `;
             }
         }
 
         function filterCategory(category) {
+            currentCategory = category;
             document.querySelectorAll('.filter-btn').forEach(btn => {
-                if(btn.dataset.cat === category) {
-                    btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-all shadow-md";
+                if (btn.dataset.category === category) {
+                    btn.className = "filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-blue-600 text-white shadow-md shadow-blue-600/20";
                 } else {
-                    btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all";
+                    btn.className = "filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white";
                 }
             });
-            renderSchedule(category);
+            renderAgenda();
         }
 
-        function formatDateFr(dateStr) {
-            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+        function formatDateTitle(dateStr) {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             const date = new Date(dateStr);
             return date.toLocaleDateString('fr-FR', options).toUpperCase();
         }
 
-        function renderSchedule(filterCat) {
-            const container = document.getElementById('scheduleContainer');
-            container.innerHTML = '';
-
-            let filtered = sportsData;
-            if (filterCat !== 'all') {
-                filtered = sportsData.filter(item => item.category === filterCat);
-            }
+        function renderAgenda() {
+            const container = document.getElementById('agenda-container');
+            const filtered = currentCategory === 'tous' 
+                ? allEvents 
+                : allEvents.filter(e => e.category === currentCategory);
 
             if (filtered.length === 0) {
                 container.innerHTML = `
-                    <div class="text-center py-12 bg-cardbg rounded-2xl border border-gray-800 p-6">
-                        <p class="text-gray-400">Aucun événement trouvé pour cette catégorie.</p>
+                    <div class="text-center py-16 bg-dark-800/40 rounded-2xl border border-gray-800/60">
+                        <p class="text-gray-400 font-medium">Aucun événement trouvé pour cette catégorie.</p>
                     </div>
                 `;
                 return;
@@ -133,71 +114,88 @@
 
             // Grouper par date
             const grouped = {};
-            filtered.forEach(item => {
-                if (!grouped[item.date]) grouped[item.date] = [];
-                grouped[item.date].push(item);
+            filtered.forEach(event => {
+                if (!grouped[event.date]) {
+                    grouped[event.date] = [];
+                }
+                grouped[event.date].push(event);
             });
 
-            // Affichage par jour
-            for (const [date, matches] of Object.entries(grouped)) {
-                const daySection = document.createElement('div');
-                daySection.className = 'space-y-3';
-                
-                let htmlHeader = `<h2 class="text-sm font-bold tracking-widest text-blue-400 uppercase pb-1 border-b border-gray-800/80 flex items-center gap-2">
-                    <i class="fa-regular fa-calendar-days"></i> ${formatDateFr(date)}
-                </h2>`;
-                
-                let matchesHtml = '<div class="space-y-2">';
-                matches.forEach(match => {
-                    let channelsHtml = match.channels.map(ch => {
-                        const style = channelStyles[ch] || { name: ch.toUpperCase(), bg: 'bg-gray-800 text-white font-bold' };
-                        return `<span class="px-2.5 py-1 rounded text-[10px] ${style.bg} shadow-sm">${style.name}</span>`;
-                    }).join('');
+            let html = '';
+            for (const [date, events] of Object.entries(grouped)) {
+                html += `
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2 text-blue-400 font-bold text-sm tracking-wide pt-2">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <h2>${formatDateTitle(date)}</h2>
+                        </div>
+                        <div class="space-y-2">
+                `;
 
-                    matchesHtml += `
-                        <div class="bg-cardbg hover:bg-cardhover transition-all border border-gray-800/80 rounded-xl p-3 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
-                            <!-- Gauche : Icône sport -->
-                            <div class="flex items-center gap-4 w-full sm:w-auto">
+                events.forEach(match => {
+                    // Badge des chaînes TV
+                    const channelsHtml = match.channels && match.channels.length > 0 
+                        ? match.channels.map(ch => `<span class="px-2.5 py-1 rounded text-[11px] font-black uppercase tracking-wider bg-purple-900/80 text-purple-200 border border-purple-700/50">${ch}</span>`).join('')
+                        : '';
 
-<div class="w-10 h-10 rounded-lg bg-gray-900/90 border border-gray-800 flex items-center justify-center shrink-0 overflow-hidden p-1.5">
-    ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
-</div>
-                                
-                                <!-- Affiche équipes -->
-                                <div class="flex flex-col gap-1.5 flex-1">
-                                    <div class="flex items-center gap-2">
-                                        <img src="${match.team1Logo}" alt="" class="w-5 h-5 object-contain" onerror="this.style.display='none'">
-                                        <span class="text-sm font-bold text-gray-100">${match.team1}</span>
-                                        <span class="text-[9px] bg-gray-800 text-gray-400 px-1.5 py-0.5 rounded font-medium border border-gray-700">Dom</span>
+                    html += `
+                        <div class="bg-dark-800/80 hover:bg-dark-800 border border-gray-800/80 rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm">
+                            
+                            <!-- Gauche : Logo Ligue et Équipes / Infos -->
+                            <div class="flex items-start space-x-4 flex-grow">
+                                <!-- Logo Sport / Ligue -->
+                                <div class="w-10 h-10 rounded-lg bg-dark-900/90 border border-gray-800 flex items-center justify-center shrink-0 overflow-hidden p-1.5 mt-0.5 md:mt-0">
+                                    ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
+                                </div>
+
+                                <!-- Équipes / Événement -->
+                                <div class="space-y-1.5 flex-grow">
+                                    <!-- Ligne 1 : Équipe 1 -->
+                                    <div class="flex items-center space-x-2.5">
+                                        <img src="${match.team1Logo}" alt="" class="w-6 h-6 object-contain">
+                                        <span class="text-white font-bold text-sm tracking-tight">${match.team1}</span>
+                                        ${match.showHomeTeam1 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
-                                    <div class="flex items-center gap-2">
-                                        <img src="${match.team2Logo}" alt="" class="w-5 h-5 object-contain" onerror="this.style.display='none'">
-                                        <span class="text-sm font-semibold text-gray-300">${match.team2}</span>
+
+                                    <!-- Ligne 2 : Équipe 2 / Circuit -->
+                                    <div class="flex items-center space-x-2.5">
+                                        <img src="${match.team2Logo}" alt="" class="w-6 h-6 object-contain">
+                                        <span class="text-gray-300 text-sm font-medium">${match.team2}</span>
+                                        ${match.showHomeTeam2 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
+
+                                    <!-- Ligne 3 : Stade en italique (uniquement NFL si renseigné) -->
+                                    ${match.venue ? `<div class="text-xs text-gray-400 italic pl-8.5">${match.venue}</div>` : ''}
                                 </div>
                             </div>
 
-<!-- Milieu : Nature et Heure -->
-<div class="flex flex-col items-center justify-center shrink-0 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800/50">
-    ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5">${match.nature}</span>` : ''}
-    <span class="text-base font-extrabold text-white tracking-tight">${match.time}</span>
-</div>
+                            <!-- Centre & Droite : Nature, Heure et Chaînes -->
+                            <div class="flex items-center justify-between md:justify-end w-full md:w-auto gap-4 pt-2 md:pt-0 border-t md:border-t-0 border-gray-800/50">
+                                <!-- Bloc Heure fixe et centré -->
+                                <div class="flex flex-col items-center justify-center shrink-0 bg-dark-900/60 px-4 py-2 rounded-lg border border-gray-800/50 w-36">
+                                    ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5 text-center">${match.nature}</span>` : ''}
+                                    <span class="text-base font-extrabold text-white tracking-tight text-center">${match.time}</span>
+                                </div>
 
-                            <!-- Droite : Chaînes -->
-                            <div class="flex flex-wrap items-center justify-end gap-1.5 w-full sm:w-auto">
-                                ${channelsHtml}
+                                <!-- Chaînes TV -->
+                                <div class="flex items-center gap-1.5 flex-wrap justify-end">
+                                    ${channelsHtml}
+                                </div>
                             </div>
+
                         </div>
                     `;
                 });
-                matchesHtml += '</div>';
 
-                daySection.innerHTML = htmlHeader + matchesHtml;
-                container.appendChild(daySection);
+                html += `
+                        </div>
+                    </div>
+                `;
             }
+
+            container.innerHTML = html;
         }
 
-        // Lancement au chargement de la page
         loadData();
     </script>
 </body>
