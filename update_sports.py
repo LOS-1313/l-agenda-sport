@@ -23,8 +23,10 @@ circuit_data = {
     "Silverstone Circuit": {"flag": "gb", "city": "Silverstone"},
     "Hungaroring": {"flag": "hu", "city": "Budapest"},
     "Circuit de Spa-Francorchamps": {"flag": "be", "city": "Spa-Francorchamps"},
-    "Circuit Zandvoort": {"flag": "nl", "city": "Zandvoort"},
-    "Monza Circuit": {"flag": "it", "city": "Monza"},
+    "Circuit Park Zandvoort": {"flag": "nl", "city": "Zandvoort"},
+    "Autodromo Nazionale di Monza": {"flag": "it", "city": "Monza"},
+    "Madring": {"flag": "es", "city": "Madrid"},
+    "Sepang International Circuit": {"flag": "my", "city": "Sepang"},
     "Marina Bay Street Circuit": {"flag": "sg", "city": "Singapour"},
     "Circuit of the Americas": {"flag": "us", "city": "Austin"},
     "Autódromo Hermanos Rodríguez": {"flag": "mx", "city": "Mexico"},
@@ -49,6 +51,31 @@ def check_f1_status(date_str, time_str, duration_hours=2):
     except:
         return False, False
 
+def fetch_f1_results(round_num, session_type="results"):
+    # session_type peut être "results" (course), "qualifying", etc.
+    url = f"https://api.jolpi.ca/ergast/f1/2026/{round_num}/{session_type}.json"
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as response:
+            data = json.loads(response.read().decode('utf-8'))
+            table_key = "RaceTable" if session_type == "results" else "QualifyingTable"
+            races = data['MRData'][table_key]['Races']
+            if not races:
+                return ""
+            
+            key = "Results" if session_type == "results" else "QualifyingResults"
+            results = races[0].get(key, [])
+            
+            lines = []
+            for res in results[:10]: # Top 10 pour garder une carte propre
+                pos = res.get('position', '')
+                driver = res['Driver']
+                code = driver.get('code', driver['familyName'][:3].upper())
+                lines.append(f"{pos}. {code}")
+            return "<br>".join(lines)
+    except:
+        return ""
+
 def fetch_f1_calendar():
     url = "https://api.jolpi.ca/ergast/f1/2026.json"
     events = []
@@ -64,6 +91,7 @@ def fetch_f1_calendar():
             for i, race in enumerate(races):
                 race_name = race['raceName']
                 circuit_name = race['Circuit']['circuitName']
+                round_num = race['round']
                 
                 if "Qatar" in race_name or "Losail" in circuit_name:
                     info = {"flag": "qa", "city": "Lusail"}
@@ -76,34 +104,60 @@ def fetch_f1_calendar():
                 gp_number = i + 1
                 gp_label = f"GP {gp_number} / {total_races}"
                 
-                for sess_key, sess_name, dur in [('Qualifying', '(Qualifications)', 1), ('Sprint', '(Course Sprint)', 1)]:
-                    if sess_key in race:
-                        s_date = race[sess_key]['date']
-                        s_time = adjust_hour(race[sess_key].get('time', '14:00:00')[:5], 1)
-                        is_live, is_finished = check_f1_status(s_date, s_time, dur)
-                        events.append({
-                            "id": f"f1_{sess_key.lower()}_{i}",
-                            "date": s_date,
-                            "category": "f1",
-                            "sportIcon": f1_logo,
-                            "isImgIcon": True,
-                            "team1": race_name,
-                            "team1Extra": sess_name,
-                            "team1Logo": flag_url,
-                            "team2": circuit_display,
-                            "team2Logo": "",
-                            "time": s_time,
-                            "nature": gp_label,
-                            "isLive": is_live,
-                            "isFinished": is_finished,
-                            "score": "",
-                            "showHomeTeam1": False,
-                            "channels": ["canal+"]
-                        })
+                if 'Qualifying' in race:
+                    q_date = race['Qualifying']['date']
+                    q_time = adjust_hour(race['Qualifying'].get('time', '14:00:00')[:5], 1)
+                    is_live, is_finished = check_f1_status(q_date, q_time, 1)
+                    score_str = fetch_f1_results(round_num, "qualifying") if is_finished or is_live else ""
+                    events.append({
+                        "id": f"f1_qual_{i}",
+                        "date": q_date,
+                        "category": "f1",
+                        "sportIcon": f1_logo,
+                        "isImgIcon": True,
+                        "team1": race_name,
+                        "team1Extra": "(Qualifications)",
+                        "team1Logo": flag_url,
+                        "team2": circuit_display,
+                        "team2Logo": "",
+                        "time": q_time,
+                        "nature": gp_label,
+                        "isLive": is_live,
+                        "isFinished": is_finished,
+                        "score": score_str,
+                        "showHomeTeam1": False,
+                        "channels": ["canal+"]
+                    })
+
+                if 'Sprint' in race:
+                    s_date = race['Sprint']['date']
+                    s_time = adjust_hour(race['Sprint'].get('time', '12:00:00')[:5], 1)
+                    is_live, is_finished = check_f1_status(s_date, s_time, 1)
+                    score_str = fetch_f1_results(round_num, "results") if is_finished or is_live else ""
+                    events.append({
+                        "id": f"f1_sprint_{i}",
+                        "date": s_date,
+                        "category": "f1",
+                        "sportIcon": f1_logo,
+                        "isImgIcon": True,
+                        "team1": race_name,
+                        "team1Extra": "(Course Sprint)",
+                        "team1Logo": flag_url,
+                        "team2": circuit_display,
+                        "team2Logo": "",
+                        "time": s_time,
+                        "nature": gp_label,
+                        "isLive": is_live,
+                        "isFinished": is_finished,
+                        "score": score_str,
+                        "showHomeTeam1": False,
+                        "channels": ["canal+"]
+                    })
 
                 r_date = race['date']
                 r_time = adjust_hour(race.get('time', '14:00:00')[:5], 1)
                 is_live, is_finished = check_f1_status(r_date, r_time, 2)
+                score_str = fetch_f1_results(round_num, "results") if is_finished or is_live else ""
                 events.append({
                     "id": f"f1_race_{i}",
                     "date": r_date,
@@ -119,7 +173,7 @@ def fetch_f1_calendar():
                     "nature": gp_label,
                     "isLive": is_live,
                     "isFinished": is_finished,
-                    "score": "",
+                    "score": score_str,
                     "showHomeTeam1": False,
                     "channels": ["canal+"]
                 })
@@ -210,10 +264,99 @@ def fetch_espn_games(sport_path, category, phases):
                 pass
     return events
 
+def fetch_nba_calendar():
+    events = []
+    seen_ids = set()
+    today_dt = datetime.now()
+    nba_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
+    
+    year = today_dt.year
+    months = []
+    for i in range(9):
+        current_m = (today_dt.month - 1 + i) % 12 + 1
+        current_y = year + (today_dt.month - 1 + i) // 12
+        months.append(f"{current_y}{current_m:02d}")
+    
+    for month_str in months:
+        url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={month_str}&limit=1000"
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req) as response:
+                data = json.loads(response.read().decode('utf-8'))
+                
+                for i, event in enumerate(data.get('events', [])):
+                    competition = event['competitions'][0]
+                    date_iso = competition['date']
+                    date_str = date_iso[:10]
+                    
+                    event_id = event.get('id', f"nba_{date_str}_{i}")
+                    if event_id not in seen_ids:
+                        seen_ids.add(event_id)
+                        raw_time = date_iso[11:16]
+                        time_str = adjust_hour(raw_time, 1)
+                        
+                        status_type = event.get('status', {}).get('type', {})
+                        status_state = status_type.get('state', 'pre')
+                        is_live = (status_state == 'in')
+                        is_finished = (status_state == 'post')
+
+                        venue = competition.get('venue')
+                        if venue and venue.get('fullName'):
+                            v_name = venue.get('fullName')
+                            addr = venue.get('address', {})
+                            v_city = addr.get('city', '')
+                            v_country = addr.get('country', 'États-Unis')
+                            venue_info = f"{v_name} ({v_city} - {v_country})" if v_city else f"{v_name} ({v_country})"
+                        else:
+                            venue_info = "TBD"
+
+                        competitors = competition['competitors']
+                        team1 = competitors[0]
+                        team2 = competitors[1]
+                        
+                        t1_name = team1['team'].get('displayName', 'TBD')
+                        t2_name = team2['team'].get('displayName', 'TBD')
+                        is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
+
+                        score_str = ""
+                        if is_live or is_finished:
+                            s1 = team1.get('score', '0')
+                            s2 = team2.get('score', '0')
+                            score_str = f"{s1} - {s2}"
+
+                        season_type = event.get('season', {}).get('type', 2)
+                        nature_str = "Play-offs NBA" if season_type == 3 else "Saison Régulière"
+
+                        events.append({
+                            "id": f"nba_{event_id}",
+                            "date": date_str,
+                            "category": "nba",
+                            "sportIcon": nba_logo,
+                            "isImgIcon": True,
+                            "team1": t1_name,
+                            "team1Extra": "",
+                            "team1Logo": team1['team'].get('logo', ''),
+                            "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
+                            "team2": t2_name,
+                            "team2Logo": team2['team'].get('logo', ''),
+                            "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
+                            "venue": venue_info,
+                            "time": time_str,
+                            "nature": nature_str,
+                            "isLive": is_live,
+                            "isFinished": is_finished,
+                            "score": score_str,
+                            "channels": ["beinsports", "dazn"]
+                        })
+        except Exception as e:
+            print(f"Erreur NBA mois {month_str} : {e}")
+            
+    return events
+
 def main():
     f1_events = fetch_f1_calendar()
     nfl_events = fetch_espn_games("football/nfl", "nfl", [(2, 19, 18), (3, 5, 4)])
-    nba_events = fetch_espn_games("basketball/nba", "nba", [(2, 27, 26), (3, 5, 4)])
+    nba_events = fetch_nba_calendar()
     
     all_events = f1_events + nfl_events + nba_events
     all_events.sort(key=lambda x: (x['date'], x['time']))
