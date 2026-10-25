@@ -1,6 +1,14 @@
 import json
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
+
+def adjust_hour(time_str, hours_to_add=1):
+    try:
+        parts = time_str.split(':')
+        dt = datetime.now().replace(hour=int(parts[0]), minute=int(parts[1])) + timedelta(hours=hours_to_add)
+        return dt.strftime('%H:%M')
+    except:
+        return time_str
 
 def fetch_f1_calendar():
     url = "https://api.jolpi.ca/ergast/f1/2026.json"
@@ -12,7 +20,8 @@ def fetch_f1_calendar():
             races = data['MRData']['RaceTable']['Races']
             for i, race in enumerate(races):
                 date_str = race['date']
-                time_str = race.get('time', '15:00:00')[:5]
+                raw_time = race.get('time', '14:00:00')[:5]
+                time_str = adjust_hour(raw_time, 1) # Ajustement heure française
                 if date_str >= datetime.now().strftime('%Y-%m-%d'):
                     events.append({
                         "id": f"f1_{i}",
@@ -31,7 +40,6 @@ def fetch_f1_calendar():
     return events
 
 def fetch_nfl_calendar():
-    # Source de données publique et ouverte pour le planning de la NFL
     url = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
     events = []
     try:
@@ -40,9 +48,12 @@ def fetch_nfl_calendar():
             data = json.loads(response.read().decode('utf-8'))
             for i, event in enumerate(data.get('events', [])):
                 competition = event['competitions'][0]
-                date_iso = competition['date'] # Format ISO (ex: 2026-10-28T00:15:00Z)
+                date_iso = competition['date']
                 date_str = date_iso[:10]
-                time_str = date_iso[11:16] # Heure UTC qu'on peut ajuster si besoin
+                raw_time = date_iso[11:16]
+                
+                # Conversion de l'heure UTC vers l'heure française (+1h ou +2h selon besoin)
+                time_str = adjust_hour(raw_time, 1)
                 
                 competitors = competition['competitors']
                 team1 = competitors[0]['team']['displayName']
@@ -68,14 +79,10 @@ def fetch_nfl_calendar():
 
 def main():
     all_events = fetch_f1_calendar() + fetch_nfl_calendar()
-    
-    # Tri chronologique des événements
     all_events.sort(key=lambda x: (x['date'], x['time']))
     
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(all_events, f, ensure_ascii=False, indent=4)
-    
-    print(f"Succès : {len(all_events)} événements totaux synchronisés (F1 + NFL).")
 
 if __name__ == "__main__":
     main()
