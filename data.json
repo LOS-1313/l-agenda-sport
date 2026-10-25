@@ -209,6 +209,141 @@
         ]
     },
     {
+        "id": "nfl_401873023",
+        "date": "2026-10-30",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Green Bay Packers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "team2": "Carolina Panthers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "time": "01:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873026",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Buffalo Bills",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "team2": "Baltimore Ravens",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873031",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cincinnati Bengals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "team2": "Tennessee Titans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873024",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Dallas Cowboys",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "team2": "Arizona Cardinals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873030",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Detroit Lions",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "team2": "Minnesota Vikings",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873029",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Jets",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873027",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Pittsburgh Steelers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "team2": "Cleveland Browns",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873025",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tampa Bay Buccaneers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "team2": "Atlanta Falcons",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873028",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Jacksonville Jaguars",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "team2": "Indianapolis Colts",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
         "id": "f1_18",
         "date": "2026-11-01",
         "category": "f1",
@@ -220,6 +355,111 @@
         "time": "21:00",
         "channels": [
             "canal+"
+        ]
+    },
+    {
+        "id": "nfl_401873032",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Rams",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "team2": "Los Angeles Chargers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873033",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Denver Broncos",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "team2": "Kansas City Chiefs",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873034",
+        "date": "2026-11-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Miami Dolphins",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "team2": "New England Patriots",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873035",
+        "date": "2026-11-02",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Washington Commanders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "team2": "Philadelphia Eagles",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873036",
+        "date": "2026-11-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Seattle Seahawks",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "team2": "Chicago Bears",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873037",
+        "date": "2026-11-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Baltimore Ravens",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "team2": "Jacksonville Jaguars",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873038",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Atlanta Falcons",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "team2": "Cincinnati Bengals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "time": "15:30",
+        "channels": [
+            "beinsports",
+            "dazn"
         ]
     },
     {
@@ -237,6 +477,426 @@
         ]
     },
     {
+        "id": "nfl_401873040",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Indianapolis Colts",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "team2": "Dallas Cowboys",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873045",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Kansas City Chiefs",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "team2": "New York Jets",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873042",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Miami Dolphins",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "team2": "Detroit Lions",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873039",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New Orleans Saints",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "team2": "Cleveland Browns",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873044",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Philadelphia Eagles",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "team2": "New York Giants",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873043",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Washington Commanders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "team2": "Los Angeles Rams",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873041",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Carolina Panthers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "team2": "Denver Broncos",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873046",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Chargers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "team2": "Houston Texans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873047",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "San Francisco 49ers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873049",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New England Patriots",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "team2": "Green Bay Packers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873048",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Seattle Seahawks",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "team2": "Arizona Cardinals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873050",
+        "date": "2026-11-09",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Chicago Bears",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "team2": "Tampa Bay Buccaneers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873051",
+        "date": "2026-11-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Minnesota Vikings",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "team2": "Buffalo Bills",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873052",
+        "date": "2026-11-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Giants",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "team2": "Washington Commanders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873053",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Detroit Lions",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "team2": "New England Patriots",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "time": "15:30",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873058",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Atlanta Falcons",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "team2": "Kansas City Chiefs",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873056",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cleveland Browns",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "team2": "Houston Texans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873060",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Green Bay Packers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "team2": "Minnesota Vikings",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873057",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tennessee Titans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "team2": "Jacksonville Jaguars",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873059",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Indianapolis Colts",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "team2": "Miami Dolphins",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873055",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New Orleans Saints",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "team2": "Carolina Panthers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873054",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Jets",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "team2": "Buffalo Bills",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873062",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Las Vegas Raiders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "team2": "Seattle Seahawks",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873061",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Arizona Cardinals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "team2": "Los Angeles Rams",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873063",
+        "date": "2026-11-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Dallas Cowboys",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "team2": "San Francisco 49ers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873064",
+        "date": "2026-11-16",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cincinnati Bengals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "team2": "Pittsburgh Steelers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873065",
+        "date": "2026-11-17",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Baltimore Ravens",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "team2": "Los Angeles Chargers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873066",
+        "date": "2026-11-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Houston Texans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "team2": "Indianapolis Colts",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
         "id": "f1_20",
         "date": "2026-11-22",
         "category": "f1",
@@ -248,6 +908,261 @@
         "time": "05:00",
         "channels": [
             "canal+"
+        ]
+    },
+    {
+        "id": "nfl_401873070",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Buffalo Bills",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "team2": "Miami Dolphins",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873071",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Chicago Bears",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "team2": "New Orleans Saints",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873073",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Dallas Cowboys",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "team2": "Tennessee Titans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873072",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Detroit Lions",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "team2": "Tampa Bay Buccaneers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873067",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Kansas City Chiefs",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "team2": "Arizona Cardinals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873069",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Giants",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "team2": "Jacksonville Jaguars",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873068",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Carolina Panthers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "team2": "Baltimore Ravens",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873074",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Chargers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "team2": "New York Jets",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873075",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Denver Broncos",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873076",
+        "date": "2026-11-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Philadelphia Eagles",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "team2": "Pittsburgh Steelers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873077",
+        "date": "2026-11-23",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "San Francisco 49ers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "team2": "Minnesota Vikings",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873078",
+        "date": "2026-11-24",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Washington Commanders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "team2": "Cincinnati Bengals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873079",
+        "date": "2026-11-26",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Rams",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "team2": "Green Bay Packers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "time": "02:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873081",
+        "date": "2026-11-26",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Detroit Lions",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "team2": "Chicago Bears",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873080",
+        "date": "2026-11-26",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Dallas Cowboys",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "team2": "Philadelphia Eagles",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "time": "22:30",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873082",
+        "date": "2026-11-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Buffalo Bills",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "team2": "Kansas City Chiefs",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873083",
+        "date": "2026-11-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Pittsburgh Steelers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "team2": "Denver Broncos",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "time": "21:00",
+        "channels": [
+            "beinsports",
+            "dazn"
         ]
     },
     {
@@ -265,6 +1180,186 @@
         ]
     },
     {
+        "id": "nfl_401873087",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cincinnati Bengals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "team2": "New Orleans Saints",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873086",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cleveland Browns",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873088",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Indianapolis Colts",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "team2": "New York Giants",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873089",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Miami Dolphins",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "team2": "New York Jets",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873084",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Minnesota Vikings",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "team2": "Atlanta Falcons",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873085",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Houston Texans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "team2": "Baltimore Ravens",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873090",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Jacksonville Jaguars",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "team2": "Tennessee Titans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873092",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Arizona Cardinals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "team2": "Washington Commanders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873091",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "San Francisco 49ers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "team2": "Seattle Seahawks",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873093",
+        "date": "2026-11-30",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Chargers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "team2": "New England Patriots",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873094",
+        "date": "2026-12-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tampa Bay Buccaneers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "team2": "Carolina Panthers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873096",
+        "date": "2026-12-04",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Rams",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "team2": "Kansas City Chiefs",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
         "id": "f1_22",
         "date": "2026-12-06",
         "category": "f1",
@@ -276,6 +1371,1386 @@
         "time": "14:00",
         "channels": [
             "canal+"
+        ]
+    },
+    {
+        "id": "nfl_401873098",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Atlanta Falcons",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "team2": "Detroit Lions",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873100",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Chicago Bears",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "team2": "Jacksonville Jaguars",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873097",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cleveland Browns",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "team2": "Cincinnati Bengals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873102",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tennessee Titans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "team2": "Washington Commanders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873099",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New Orleans Saints",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "team2": "Green Bay Packers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873095",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Giants",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "team2": "San Francisco 49ers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873101",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tampa Bay Buccaneers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "team2": "Los Angeles Chargers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873103",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Denver Broncos",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "team2": "Miami Dolphins",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873104",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Arizona Cardinals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "team2": "Philadelphia Eagles",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873106",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Minnesota Vikings",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "team2": "Carolina Panthers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873105",
+        "date": "2026-12-06",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New England Patriots",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "team2": "Buffalo Bills",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873107",
+        "date": "2026-12-07",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Pittsburgh Steelers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "team2": "Houston Texans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873108",
+        "date": "2026-12-08",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Seattle Seahawks",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "team2": "Dallas Cowboys",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873109",
+        "date": "2026-12-11",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New England Patriots",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "team2": "Minnesota Vikings",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873110",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cleveland Browns",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "team2": "Atlanta Falcons",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873117",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Detroit Lions",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "team2": "Tennessee Titans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873111",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Miami Dolphins",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "team2": "Chicago Bears",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873112",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Jets",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "team2": "Denver Broncos",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873114",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Philadelphia Eagles",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "team2": "Indianapolis Colts",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873113",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Washington Commanders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "team2": "Houston Texans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873115",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Carolina Panthers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "team2": "New Orleans Saints",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873116",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Baltimore Ravens",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "team2": "Tampa Bay Buccaneers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873118",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Las Vegas Raiders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "team2": "Los Angeles Chargers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873119",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cincinnati Bengals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "team2": "Kansas City Chiefs",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873120",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "San Francisco 49ers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "team2": "Los Angeles Rams",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873121",
+        "date": "2026-12-13",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Seattle Seahawks",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "team2": "New York Giants",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873122",
+        "date": "2026-12-14",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Green Bay Packers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "team2": "Buffalo Bills",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873123",
+        "date": "2026-12-15",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Jacksonville Jaguars",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "team2": "Pittsburgh Steelers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873124",
+        "date": "2026-12-18",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Chargers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "team2": "San Francisco 49ers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873125",
+        "date": "2026-12-19",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Philadelphia Eagles",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "team2": "Seattle Seahawks",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "time": "23:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873126",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Buffalo Bills",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "team2": "Chicago Bears",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873133",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Green Bay Packers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "team2": "Miami Dolphins",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873131",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tennessee Titans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "team2": "Indianapolis Colts",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873130",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Giants",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "team2": "Cleveland Browns",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873128",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Pittsburgh Steelers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "team2": "Baltimore Ravens",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873134",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tampa Bay Buccaneers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "team2": "New Orleans Saints",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873127",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Washington Commanders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "team2": "Atlanta Falcons",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873129",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Carolina Panthers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "team2": "Cincinnati Bengals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873132",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Houston Texans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "team2": "Jacksonville Jaguars",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873135",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Arizona Cardinals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "team2": "New York Jets",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873137",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Las Vegas Raiders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "team2": "Denver Broncos",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873136",
+        "date": "2026-12-20",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Rams",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "team2": "Dallas Cowboys",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873138",
+        "date": "2026-12-21",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Minnesota Vikings",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "team2": "Detroit Lions",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873139",
+        "date": "2026-12-22",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Kansas City Chiefs",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "team2": "New England Patriots",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873140",
+        "date": "2026-12-25",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Philadelphia Eagles",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "team2": "Houston Texans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873141",
+        "date": "2026-12-25",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Chicago Bears",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "team2": "Green Bay Packers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873142",
+        "date": "2026-12-25",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Denver Broncos",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "team2": "Buffalo Bills",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "time": "22:30",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873143",
+        "date": "2026-12-26",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Seattle Seahawks",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "team2": "Los Angeles Rams",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873146",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Atlanta Falcons",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "team2": "Tampa Bay Buccaneers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873145",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Indianapolis Colts",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "team2": "Cincinnati Bengals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873147",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Minnesota Vikings",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "team2": "Washington Commanders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873144",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Pittsburgh Steelers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "team2": "Carolina Panthers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873150",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Miami Dolphins",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "team2": "Los Angeles Chargers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873148",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New Orleans Saints",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "team2": "Arizona Cardinals",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873151",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Jets",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "team2": "New England Patriots",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873149",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Baltimore Ravens",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "team2": "Cleveland Browns",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873152",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Las Vegas Raiders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "team2": "Tennessee Titans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873153",
+        "date": "2026-12-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Kansas City Chiefs",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "team2": "San Francisco 49ers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873154",
+        "date": "2026-12-28",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Dallas Cowboys",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "team2": "Jacksonville Jaguars",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873155",
+        "date": "2026-12-29",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Detroit Lions",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "team2": "New York Giants",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873156",
+        "date": "2027-01-01",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cincinnati Bengals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "team2": "Baltimore Ravens",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873157",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New England Patriots",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "team2": "Denver Broncos",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873158",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Chargers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "team2": "Kansas City Chiefs",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873159",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tampa Bay Buccaneers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "team2": "Los Angeles Rams",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873160",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Jacksonville Jaguars",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "team2": "Washington Commanders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873164",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Atlanta Falcons",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "team2": "New Orleans Saints",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873162",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cleveland Browns",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "team2": "Indianapolis Colts",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873165",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Dallas Cowboys",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "team2": "New York Giants",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873166",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Tennessee Titans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "team2": "Pittsburgh Steelers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873161",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Miami Dolphins",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "team2": "Buffalo Bills",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873163",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Jets",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "team2": "Minnesota Vikings",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873167",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Carolina Panthers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "team2": "Seattle Seahawks",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "time": "19:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873168",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Arizona Cardinals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "time": "22:05",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873169",
+        "date": "2027-01-03",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Chicago Bears",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "team2": "Detroit Lions",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "time": "22:25",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873170",
+        "date": "2027-01-04",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "San Francisco 49ers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "team2": "Philadelphia Eagles",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "time": "02:20",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873171",
+        "date": "2027-01-05",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Green Bay Packers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "team2": "Houston Texans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "time": "02:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873181",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Buffalo Bills",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "team2": "New York Jets",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873174",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Cincinnati Bengals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+        "team2": "Cleveland Browns",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873179",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Denver Broncos",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "team2": "Los Angeles Chargers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873176",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Green Bay Packers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+        "team2": "Detroit Lions",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873177",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Indianapolis Colts",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+        "team2": "Jacksonville Jaguars",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873178",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Kansas City Chiefs",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873185",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Los Angeles Rams",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "team2": "Seattle Seahawks",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873173",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Minnesota Vikings",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "team2": "Chicago Bears",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873180",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New England Patriots",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "team2": "Miami Dolphins",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873186",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New Orleans Saints",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+        "team2": "Tampa Bay Buccaneers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873182",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "New York Giants",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "team2": "Philadelphia Eagles",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873184",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Arizona Cardinals",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+        "team2": "San Francisco 49ers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873175",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Washington Commanders",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "team2": "Dallas Cowboys",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873172",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Carolina Panthers",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+        "team2": "Atlanta Falcons",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873183",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Baltimore Ravens",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+        "team2": "Pittsburgh Steelers",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873187",
+        "date": "2027-01-10",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Houston Texans",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+        "team2": "Tennessee Titans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "time": "06:00",
+        "channels": [
+            "beinsports",
+            "dazn"
         ]
     }
 ]
