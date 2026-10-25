@@ -237,19 +237,19 @@
                         ? `<div class="flex items-center justify-start px-4 py-1.5 rounded-lg bg-dark-900/80 border border-gray-800 text-xs font-bold text-white tracking-wider shrink-0 shadow-inner text-left leading-tight">${match.score}</div>` 
                         : '';
 
-                    // Bordure colorée autour du conteneur du logo (intérieur sombre)
-                    let sportBorder = 'border-gray-800';
-                    if (match.category === 'nba') sportBorder = 'border-orange-500 shadow-sm shadow-orange-500/30';
-                    else if (match.category === 'nfl') sportBorder = 'border-purple-500 shadow-sm shadow-purple-500/30';
-                    else if (match.category === 'f1') sportBorder = 'border-white/70 shadow-sm shadow-white/10';
+                    // Style de la boîte logo : Bordure nette et fond doux semi-transparent (sans teinter le logo)
+                    let sportBoxStyle = 'border-gray-800 bg-dark-900/95';
+                    if (match.category === 'nba') sportBoxStyle = 'border-orange-500 bg-orange-950/30 shadow-sm shadow-orange-500/20';
+                    else if (match.category === 'nfl') sportBoxStyle = 'border-purple-500 bg-purple-950/30 shadow-sm shadow-purple-500/20';
+                    else if (match.category === 'f1') sportBoxStyle = 'border-white/80 bg-white/10 shadow-sm shadow-white/5';
 
                     html += `
                         <div class="${cardClass} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm" data-id="${match.id}" data-live="${match.isLive}" data-finished="${match.isFinished}">
                             
                             <!-- Gauche -->
                             <div class="flex items-center space-x-4 flex-grow">
-                                <div class="w-10 h-10 rounded-lg bg-dark-900/95 border-2 ${sportBorder} flex items-center justify-center shrink-0 overflow-hidden p-1.5 shadow-sm">
-                                    ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
+                                <div class="w-10 h-10 rounded-lg border-2 ${sportBoxStyle} flex items-center justify-center shrink-0 overflow-hidden p-1.5 relative">
+                                    ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain relative z-10">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400 relative z-10"></i>`}
                                 </div>
 
                                 <div class="flex flex-col items-center justify-center shrink-0 ${centerBlockClass} px-3 py-1.5 rounded-lg border w-32">
