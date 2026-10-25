@@ -237,18 +237,18 @@
                         ? `<div class="flex items-center justify-start px-4 py-1.5 rounded-lg bg-dark-900/80 border border-gray-800 text-xs font-bold text-white tracking-wider shrink-0 shadow-inner text-left leading-tight">${match.score}</div>` 
                         : '';
 
-                    // Couleur de fond du conteneur du logo selon la catégorie
-                    let sportIconBg = 'bg-dark-900/95';
-                    if (match.category === 'nba') sportIconBg = 'bg-orange-600';
-                    else if (match.category === 'nfl') sportIconBg = 'bg-purple-600';
-                    else if (match.category === 'f1') sportIconBg = 'bg-white';
+                    // Bordure colorée autour du conteneur du logo (intérieur sombre)
+                    let sportBorder = 'border-gray-800';
+                    if (match.category === 'nba') sportBorder = 'border-orange-500 shadow-sm shadow-orange-500/30';
+                    else if (match.category === 'nfl') sportBorder = 'border-purple-500 shadow-sm shadow-purple-500/30';
+                    else if (match.category === 'f1') sportBorder = 'border-white/70 shadow-sm shadow-white/10';
 
                     html += `
                         <div class="${cardClass} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm" data-id="${match.id}" data-live="${match.isLive}" data-finished="${match.isFinished}">
                             
                             <!-- Gauche -->
                             <div class="flex items-center space-x-4 flex-grow">
-                                <div class="w-10 h-10 rounded-lg ${sportIconBg} border border-gray-800 flex items-center justify-center shrink-0 overflow-hidden p-1.5 shadow-sm">
+                                <div class="w-10 h-10 rounded-lg bg-dark-900/95 border-2 ${sportBorder} flex items-center justify-center shrink-0 overflow-hidden p-1.5 shadow-sm">
                                     ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
                                 </div>
 
