@@ -3,921 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'agenda sport - Programme TV Sports</title>
-    <!-- Tailwind CSS CDN -->
+    <title>L'agenda sport</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        broadcast: {
-                            bg: '#080a0f',
-                            card: '#121722',
-                            cardHover: '#182030',
-                            border: '#1f293d',
-                            accent: '#3b82f6',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        sport: ['Oswald', 'sans-serif']
+                        darkbg: '#0b0f19',
+                        cardbg: '#131826',
+                        cardhover: '#1a2236',
+                        canal: '#000000',
+                        bein: '#purple-600',
+                        dazn: '#00f2fe',
+                        lequipe: '#d91414',
+                        francetv: '#0055a5',
                     }
                 }
             }
         }
     </script>
-    <style>
-        body {
-            background-color: #080a0f;
-            color: #f3f4f6;
-            font-family: 'Inter', sans-serif;
-            background-image: 
-                radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.12), transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(225, 6, 0, 0.06), transparent 40%);
-            background-attachment: fixed;
-        }
-
-        /* Banner Grid layout */
-        .match-banner {
-            display: grid;
-            grid-template-columns: 70px 1.8fr 1fr 1.2fr;
-            align-items: center;
-            background: linear-gradient(180deg, rgba(18, 23, 34, 0.95) 0%, rgba(10, 13, 20, 0.98) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            transition: all 0.2s ease-in-out;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .match-banner:hover {
-            border-color: rgba(59, 130, 246, 0.4);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
-        }
-
-        .sport-icon-col {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.35);
-            border-right: 1px solid rgba(255, 255, 255, 0.06);
-            padding: 8px;
-        }
-
-        .teams-col {
-            padding: 10px 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .time-col {
-            background-color: rgba(6, 8, 13, 0.8);
-            border-left: 1px solid rgba(255, 255, 255, 0.06);
-            border-right: 1px solid rgba(255, 255, 255, 0.06);
-            height: 100%;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .broadcasters-col {
-            padding: 10px 16px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 6px;
-        }
-
-        /* Broadcaster Badges with official corporate styling */
-        .channel-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-            border: 1px solid rgba(255,255,255,0.15);
-        }
-
-        /* Corporate Colors for TV Networks */
-        .bg-canal { background: linear-gradient(135deg, #000000 0%, #1f1f1f 100%); color: #ffffff; border-color: #ffffff; }
-        .bg-bein { background: linear-gradient(135deg, #4b1481 0%, #2e0b52 100%); color: #ffffff; border-color: #a855f7; }
-        .bg-dazn { background: #f8f8f8; color: #000000; font-weight: 900; }
-        .bg-tf1 { background: linear-gradient(135deg, #002395 0%, #ed2939 100%); color: #ffffff; }
-        .bg-francetv { background: linear-gradient(135deg, #0055a5 0%, #001f3f 100%); color: #ffffff; border-color: #38bdf8; }
-        .bg-lequipe { background: #e10600; color: #ffffff; font-style: italic; }
-        .bg-eurosport { background: #001430; color: #00d2ff; border-color: #00d2ff; }
-        .bg-rmc { background: #cc0000; color: #ffffff; }
-        .bg-nflpass { background: #013369; color: #d50a0a; border-color: #d50a0a; }
-        .bg-nbapass { background: #17408b; color: #c9082a; border-color: #ffffff; }
-        .bg-fanseat { background: #111827; color: #f59e0b; border-color: #f59e0b; }
-
-        .logo-box {
-            width: 28px;
-            height: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 6px;
-            padding: 2px;
-        }
-
-        .logo-box img, .logo-box svg {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.6));
-        }
-
-        .flag-box {
-            width: 26px;
-            height: 18px;
-            border-radius: 3px;
-            overflow: hidden;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.5);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            border: 1px solid rgba(255,255,255,0.15);
-        }
-
-        .flag-box svg, .flag-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        @media (max-width: 850px) {
-            .match-banner {
-                grid-template-columns: 50px 1fr;
-            }
-            .time-col {
-                grid-column: span 2;
-                border-left: none;
-                border-right: none;
-                border-top: 1px solid rgba(255, 255, 255, 0.06);
-                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            }
-            .broadcasters-col {
-                grid-column: span 2;
-                justify-content: flex-start;
-            }
-        }
-    </style>
 </head>
-<body class="min-h-screen pb-16">
+<body class="bg-darkbg text-white min-h-screen font-sans antialiased selection:bg-blue-500 selection:text-white pb-12">
 
-    <!-- HEADER / NAVBAR -->
-    <header class="sticky top-0 z-40 bg-black/85 backdrop-blur-md border-b border-white/10 px-4 py-3">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            
+    <!-- Header -->
+    <header class="border-b border-gray-800 bg-cardbg/80 backdrop-blur sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-xl flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-blue-500/30">
-                    <i class="fa-solid fa-trophy"></i>
+                <div class="bg-blue-600 p-2.5 rounded-xl shadow-lg shadow-blue-600/30">
+                    <i class="fa-solid fa-trophy text-white text-xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-sport text-2xl tracking-wide uppercase text-white font-bold leading-none">L'AGENDA <span class="text-blue-500">SPORT</span></h1>
-                    <p class="text-xs text-gray-400">Programme TV officiel des affiches sportives</p>
+                    <h1 class="text-xl font-black tracking-wider uppercase bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">L'agenda sport</h1>
+                    <p class="text-xs text-gray-400">Plannings officiels et diffusions en direct</p>
                 </div>
             </div>
 
-            <!-- Controls -->
-            <div class="flex items-center gap-2 w-full md:w-auto overflow-x-auto pb-1 md:pb-0">
-                <button onclick="openModal()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition-all flex items-center gap-2 shadow-lg shadow-blue-600/30 shrink-0">
-                    <i class="fa-solid fa-plus"></i>
-                    <span>Ajouter une affiche</span>
-                </button>
-
-                <button onclick="resetData()" title="Réinitialiser le programme" class="bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs px-3 py-2.5 rounded-lg border border-white/10 transition-all shrink-0">
-                    <i class="fa-solid fa-rotate-left"></i>
-                    <span class="ml-1 hidden sm:inline">Réinitialiser</span>
-                </button>
+            <!-- Filtres par catégorie -->
+            <div class="flex flex-wrap items-center justify-center gap-2" id="categoryFilters">
+                <button onclick="filterCategory('all')" data-cat="all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-all shadow-md">Tous</button>
+                <button onclick="filterCategory('football')" data-cat="football" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Football</button>
+                <button onclick="filterCategory('combat')" data-cat="combat" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Combat</button>
+                <button onclick="filterCategory('f1')" data-cat="f1" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">F1</button>
+                <button onclick="filterCategory('nfl')" data-cat="nfl" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">NFL</button>
+                <button onclick="filterCategory('spartiates')" data-cat="spartiates" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Spartiates</button>
+                <button onclick="filterCategory('nba')" data-cat="nba" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">NBA</button>
+                <button onclick="filterCategory('tennis')" data-cat="tennis" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">Tennis</button>
             </div>
-
         </div>
     </header>
 
-    <!-- MAIN CONTAINER -->
-    <main class="max-w-6xl mx-auto px-4 pt-6 space-y-6">
-
-        <!-- CATEGORIES FILTER BAR -->
-        <section class="bg-broadcast-card/80 border border-white/10 rounded-xl p-3 backdrop-blur-sm">
-            <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none" id="categoryFilters">
-                <!-- Injected dynamically -->
-            </div>
-        </section>
-
-        <!-- EVENT LISTINGS BY DAY -->
-        <div id="eventsContainer" class="space-y-8">
-            <!-- Dynamic Injection -->
+    <!-- Main Container -->
+    <main class="max-w-5xl mx-auto px-4 mt-8">
+        <div id="scheduleContainer" class="space-y-8">
+            <!-- Les affiches seront injectées ici dynamiquement -->
+            <div class="text-center py-12 text-gray-500">Chargement des plannings officiels...</div>
         </div>
-
-        <!-- EMPTY STATE -->
-        <div id="emptyState" class="hidden text-center py-16 bg-broadcast-card/40 border border-white/5 rounded-2xl">
-            <i class="fa-solid fa-calendar-xmark text-5xl text-gray-600 mb-3"></i>
-            <h3 class="text-lg font-bold text-gray-300">Aucune affiche sportive trouvée</h3>
-            <p class="text-sm text-gray-500 max-w-md mx-auto mt-1">Sélectionnez une autre catégorie ou ajoutez un nouvel événement.</p>
-        </div>
-
     </main>
 
-    <!-- MODAL FOR ADDING / EDITING EVENT -->
-    <div id="eventModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
-        <div class="bg-broadcast-card border border-white/15 rounded-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto p-6 shadow-2xl relative">
-            
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <h2 id="modalTitle" class="font-sport text-xl font-bold uppercase text-white mb-6 border-b border-white/10 pb-3 flex items-center gap-2">
-                <i class="fa-solid fa-pen-to-square text-blue-500"></i>
-                <span>Ajouter une Affiche Sportive</span>
-            </h2>
-
-            <form id="eventForm" onsubmit="saveEvent(event)" class="space-y-4">
-                <input type="hidden" id="eventId">
-
-                <!-- Sport / Catégorie -->
-                <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Catégorie / Sport</label>
-                    <select id="eventCategory" required class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                        <!-- Dynamic options -->
-                    </select>
-                </div>
-
-                <!-- Date & Heure -->
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Date</label>
-                        <input type="date" id="eventDate" required class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Heure (ex: 21:00)</label>
-                        <input type="text" id="eventTime" placeholder="21:00" required class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                    </div>
-                </div>
-
-                <!-- Format de l'affiche -->
-                <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Format de l'affiche</label>
-                    <select id="eventFormat" onchange="toggleFormatFields()" class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                        <option value="versus">Match à 2 adversaires (Football, Basketball, Hockey, Tennis, Combat)</option>
-                        <option value="event">Événement de Course (F1, Moto...)</option>
-                    </select>
-                </div>
-
-                <!-- Section Match 2 Adversaires -->
-                <div id="versusFields" class="space-y-3 border-t border-white/10 pt-3">
-                    <div>
-                        <label class="block text-xs font-semibold text-blue-400 uppercase mb-1 flex items-center gap-1">
-                            <span>1ère Ligne - Domicile / Joueur 1</span>
-                            <span class="bg-blue-900/60 text-blue-300 text-[10px] px-1.5 py-0.5 rounded border border-blue-500/30">🏠 DOMICILE</span>
-                        </label>
-                        <div class="grid grid-cols-3 gap-2">
-                            <input type="text" id="homeName" placeholder="ex: Olympique de Marseille" class="col-span-2 bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                            <input type="text" id="homeLogo" placeholder="Clé prédéfinie ou URL image" class="bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">2ème Ligne - Extérieur / Joueur 2</label>
-                        <div class="grid grid-cols-3 gap-2">
-                            <input type="text" id="awayName" placeholder="ex: PSG / Real Madrid" class="col-span-2 bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                            <input type="text" id="awayLogo" placeholder="Clé prédéfinie ou URL image" class="bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section Événement Solo / F1 -->
-                <div id="eventFields" class="hidden border-t border-white/10 pt-3 space-y-3">
-                    <div>
-                        <label class="block text-xs font-semibold text-amber-400 uppercase mb-1">Intitulé du Grand Prix / Événement</label>
-                        <input type="text" id="eventNameInput" placeholder="ex: Grand Prix de Monaco - Qualifications" class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Code Drapeau Pays (ex: mc, it, fr, us, mx)</label>
-                        <input type="text" id="eventFlagInput" placeholder="ex: mc" class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                    </div>
-                </div>
-
-                <!-- Compétition & Diffuseurs -->
-                <div class="border-t border-white/10 pt-3 space-y-3">
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Compétition / Championnat</label>
-                        <input type="text" id="eventCompetition" placeholder="ex: Ligue 1, UEFA Champions League, F1" required class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Support(s) de diffusion TV</label>
-                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 max-h-36 overflow-y-auto p-2 bg-black/30 border border-white/10 rounded-lg" id="broadcasterCheckboxes">
-                            <!-- Injected dynamically -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Actions -->
-                <div class="flex justify-end gap-3 border-t border-white/10 pt-4 mt-6">
-                    <button type="button" onclick="closeModal()" class="px-4 py-2 rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 text-sm font-semibold">Annuler</button>
-                    <button type="submit" class="px-5 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 text-sm font-semibold shadow-lg shadow-blue-600/30">Enregistrer l'affiche</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- JAVASCRIPT LOGIC WITH OFFICIAL EMBLEMS & HIGH-QUALITY ICONS -->
+    <!-- Script de chargement et rendu -->
     <script>
-        // TV BROADCASTERS DICTIONARY
-        const BROADCASTERS = [
-            { id: 'canal', name: 'Canal+', class: 'bg-canal', icon: 'fa-tv' },
-            { id: 'bein', name: 'beIN SPORTS', class: 'bg-bein', icon: 'fa-circle-play' },
-            { id: 'dazn', name: 'DAZN', class: 'bg-dazn', icon: 'fa-bolt' },
-            { id: 'tf1', name: 'TF1', class: 'bg-tf1', icon: 'fa-tower-broadcast' },
-            { id: 'francetv', name: 'France TV', class: 'bg-francetv', icon: 'fa-tv' },
-            { id: 'lequipe', name: "L'Équipe", class: 'bg-lequipe', icon: 'fa-newspaper' },
-            { id: 'eurosport', name: 'Eurosport', class: 'bg-eurosport', icon: 'fa-star' },
-            { id: 'rmc', name: 'RMC Sport', class: 'bg-rmc', icon: 'fa-play' },
-            { id: 'nflpass', name: 'NFL GamePass', class: 'bg-nflpass', icon: 'fa-football' },
-            { id: 'nbapass', name: 'NBA League Pass', class: 'bg-nbapass', icon: 'fa-basketball' },
-            { id: 'fanseat', name: 'Fanseat', class: 'bg-fanseat', icon: 'fa-hockey-puck' }
-        ];
+        let sportsData = [];
 
-        // CATEGORIES DEFINITION (WITH EXPLICIT SVG FOR TENNIS & ALL SPORTS)
-        const CATEGORIES = [
-            { id: 'all', name: 'Tous les sports', customIcon: `<i class="fa-solid fa-globe text-gray-300 text-xl"></i>` },
-            { id: 'football', name: 'Football', customIcon: `<i class="fa-solid fa-futbol text-emerald-400 text-xl"></i>` },
-            { id: 'f1', name: 'Formule 1', customIcon: `<i class="fa-solid fa-flag-checkered text-red-500 text-xl"></i>` },
-            { id: 'nfl', name: 'NFL', customIcon: `<i class="fa-solid fa-football text-blue-500 text-xl"></i>` },
-            { id: 'spartiates', name: 'Spartiates Marseille', customIcon: `<i class="fa-solid fa-hockey-puck text-amber-500 text-xl"></i>` },
-            { id: 'nba', name: 'NBA', customIcon: `<i class="fa-solid fa-basketball text-orange-500 text-xl"></i>` },
-            
-            // CLEAN OFFICIAL TENNIS RACKET & BALL SVG ICON
-            { 
-                id: 'tennis', 
-                name: 'Tennis', 
-                customIcon: `
-                    <svg viewBox="0 0 24 24" class="w-6 h-6 text-yellow-400 fill-current">
-                        <path d="M14.5 2a6.5 6.5 0 0 0-6.16 8.58l-5.63 5.63a1.5 1.5 0 0 0 0 2.12l1.77 1.77a1.5 1.5 0 0 0 2.12 0l5.63-5.63A6.5 6.5 0 1 0 14.5 2zm0 2a4.5 4.5 0 0 1 3.18 7.68l-6.36-6.36A4.47 4.47 0 0 1 14.5 4zm-4.36 2.5 6.36 6.36A4.5 4.5 0 0 1 10.14 6.5zM20 19a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                    </svg>
-                ` 
-            },
-            
-            { id: 'combat', name: 'Combat (MMA / Boxe)', customIcon: `<i class="fa-solid fa-hand-fist text-purple-500 text-xl"></i>` }
-        ];
-
-        // OFFICIAL WIKIMEDIA LOGO DIRECT URLS & VECTOR ASSETS
-        const OFFICIAL_LOGOS = {
-            // CLUBS FOOTBALL & ÉQUIPES NATIONALES (OFFICIAL CRESTS)
-            om: 'https://upload.wikimedia.org/wikipedia/fr/4/43/Logo_Olympique_de_Marseille_2024.svg',
-            psg: 'https://upload.wikimedia.org/wikipedia/fr/7/76/Paris_Saint-Germain_FC_logo.svg',
-            barca: 'https://upload.wikimedia.org/wikipedia/fr/a/a1/Logo_FC_Barcelone.svg',
-            real: 'https://upload.wikimedia.org/wikipedia/fr/c/c7/Logo_Real_Madrid.svg',
-            france: 'https://upload.wikimedia.org/wikipedia/fr/b/b1/Équipe_de_France_de_football_logo_2018.svg', // Official FFF emblem with 2 stars!
-            italie: 'https://upload.wikimedia.org/wikipedia/fr/0/05/FIGC_logo_2023.svg',
-
-            // HOCKEY ON ICE
-            spartiates: 'https://upload.wikimedia.org/wikipedia/fr/b/be/Logo_Marseille_Hockey_Club.png',
-            rouen: 'https://upload.wikimedia.org/wikipedia/fr/2/22/Dragons_de_Rouen.png',
-
-            // NBA TEAMS
-            lakers: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg',
-            warriors: 'https://upload.wikimedia.org/wikipedia/fr/d/de/Warriors_de_Golden_State_logo.svg',
-
-            // NFL TEAMS
-            steelers: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg',
-            saints: 'https://upload.wikimedia.org/wikipedia/commons/5/50/New_Orleans_Saints_logo.svg'
+        // Dictionnaire des styles des chaînes TV
+        const channelStyles = {
+            'canal+': { name: 'CANAL+', bg: 'bg-black border border-gray-700 text-white font-black tracking-tighter' },
+            'beinsports': { name: 'beIN SPORTS', bg: 'bg-purple-900 border border-purple-600 text-purple-200 font-bold' },
+            'dazn': { name: 'DAZN', bg: 'bg-cyan-950 border border-cyan-500 text-cyan-300 font-extrabold tracking-widest' },
+            'lequipe': { name: "L'ÉQUIPE", bg: 'bg-red-700 text-white font-black tracking-wide' },
+            'francetv': { name: 'FRANCE TV', bg: 'bg-blue-800 text-white font-bold' },
+            'eurosport': { name: 'EUROSPORT', bg: 'bg-blue-600 text-white font-bold' }
         };
 
-        // COUNTRY FLAGS FOR F1 (LOCATIONS) AND ATHLETES (NATIONALITIES)
-        const COUNTRY_FLAGS = {
-            fr: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="1" height="2" x="0" fill="#002395"/><rect width="1" height="2" x="1" fill="#ffffff"/><rect width="1" height="2" x="2" fill="#ed2939"/></svg>`,
-            es: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="3" height="2" fill="#aa151b"/><rect width="3" height="1" y="0.5" fill="#f1bf00"/></svg>`,
-            it: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="1" height="2" x="0" fill="#009246"/><rect width="1" height="2" x="1" fill="#ffffff"/><rect width="1" height="2" x="2" fill="#ce2b37"/></svg>`,
-            mc: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="3" height="1" y="0" fill="#ce1126"/><rect width="3" height="1" y="1" fill="#ffffff"/></svg>`,
-            us: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="3" height="2" fill="#bb133e"/><path d="M0 0h3v.15H0zm0 .3h3v.15H0zm0 .3h3v.15H0zm0 .3h3v.15H0zm0 .3h3v.15H0zm0 .3h3v.15H0z" fill="#fff"/><rect width="1.2" height="1.07" fill="#002147"/></svg>`,
-            mx: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="1" height="2" x="0" fill="#006847"/><rect width="1" height="2" x="1" fill="#ffffff"/><rect width="1" height="2" x="2" fill="#ce1126"/><circle cx="1.5" cy="1" r="0.2" fill="#a2723c"/></svg>`,
-            gb: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="3" height="2" fill="#012169"/><path d="M0 0 L3 2 M3 0 L0 2" stroke="#fff" stroke-width="0.3"/><path d="M0 0 L3 2 M3 0 L0 2" stroke="#C8102E" stroke-width="0.15"/><path d="M1.5 0 V2 M0 1 H3" stroke="#fff" stroke-width="0.5"/><path d="M1.5 0 V2 M0 1 H3" stroke="#C8102E" stroke-width="0.3"/></svg>`,
-            ge: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="3" height="2" fill="#ffffff"/><path d="M1.2 0 h0.6 v2 h-0.6 Z M0 0.7 h3 v0.6 h-3 Z" fill="#ff0000"/></svg>`,
-            sr: `<svg viewBox="0 0 3 2" class="w-full h-full"><rect width="3" height="0.67" y="0" fill="#c6363c"/><rect width="3" height="0.67" y="0.67" fill="#0c4076"/><rect width="3" height="0.67" y="1.34" fill="#ffffff"/></svg>`
-        };
-
-        // INITIAL DEMO DATASET
-        const DEFAULT_EVENTS = [
-            {
-                id: '1',
-                category: 'football',
-                date: getRelativeDate(0),
-                time: '20:45',
-                type: 'versus',
-                homeTeam: 'Olympique de Marseille',
-                homeLogo: 'om',
-                awayTeam: 'Paris Saint-Germain',
-                awayLogo: 'psg',
-                competition: 'Ligue 1 McDonald\'s',
-                broadcasters: ['dazn']
-            },
-            {
-                id: '2',
-                category: 'f1',
-                date: getRelativeDate(0),
-                time: '21:00',
-                type: 'event',
-                eventName: 'Grand Prix du Mexique - Course principale',
-                eventFlag: 'mx',
-                competition: 'Formule 1',
-                broadcasters: ['canal']
-            },
-            {
-                id: '3',
-                category: 'nfl',
-                date: getRelativeDate(0),
-                time: '18:00',
-                type: 'versus',
-                homeTeam: 'Pittsburgh Steelers',
-                homeLogo: 'steelers',
-                awayTeam: 'New Orleans Saints',
-                awayLogo: 'saints',
-                competition: 'NFL International Game',
-                broadcasters: ['bein', 'nflpass', 'francetv']
-            },
-            {
-                id: '4',
-                category: 'spartiates',
-                date: getRelativeDate(1),
-                time: '20:00',
-                type: 'versus',
-                homeTeam: 'Spartiates de Marseille',
-                homeLogo: 'spartiates',
-                awayTeam: 'Dragons de Rouen',
-                awayLogo: 'rouen',
-                competition: 'Ligue Magnus Hockey',
-                broadcasters: ['fanseat', 'lequipe']
-            },
-            {
-                id: '5',
-                category: 'football',
-                date: getRelativeDate(1),
-                time: '21:00',
-                type: 'versus',
-                homeTeam: 'FC Barcelone',
-                homeLogo: 'barca',
-                awayTeam: 'Real Madrid',
-                awayLogo: 'real',
-                competition: 'El Clásico - LaLiga',
-                broadcasters: ['bein']
-            },
-            {
-                id: '6',
-                category: 'nba',
-                date: getRelativeDate(1),
-                time: '01:30',
-                type: 'versus',
-                homeTeam: 'LA Lakers',
-                homeLogo: 'lakers',
-                awayTeam: 'Golden State Warriors',
-                awayLogo: 'warriors',
-                competition: 'Saison Régulière NBA',
-                broadcasters: ['bein', 'nbapass']
-            },
-            {
-                id: '7',
-                category: 'football',
-                date: getRelativeDate(2),
-                time: '21:00',
-                type: 'versus',
-                homeTeam: 'Real Madrid',
-                homeLogo: 'real',
-                awayTeam: 'Olympique de Marseille',
-                awayLogo: 'om',
-                competition: 'UEFA Champions League',
-                broadcasters: ['canal']
-            },
-            {
-                id: '8',
-                category: 'combat',
-                date: getRelativeDate(2),
-                time: '04:00',
-                type: 'versus',
-                homeTeam: 'Benoît Saint-Denis',
-                homeLogo: 'fr',
-                awayTeam: 'Ilia Topuria',
-                awayLogo: 'ge',
-                competition: 'UFC Main Card Lightweight',
-                broadcasters: ['rmc']
-            },
-            {
-                id: '9',
-                category: 'football',
-                date: getRelativeDate(3),
-                time: '20:45',
-                type: 'versus',
-                homeTeam: 'Équipe de France',
-                homeLogo: 'france', // Official FFF Rooster emblem
-                awayTeam: 'Italie',
-                awayLogo: 'italie',
-                competition: 'UEFA Nations League',
-                broadcasters: ['tf1']
-            },
-            {
-                id: '10',
-                category: 'tennis',
-                date: getRelativeDate(3),
-                time: '15:00',
-                type: 'versus',
-                homeTeam: 'Carlos Alcaraz',
-                homeLogo: 'es',
-                awayTeam: 'Novak Djokovic',
-                awayLogo: 'sr',
-                competition: 'Roland-Garros - Finale',
-                broadcasters: ['francetv', 'eurosport']
+        // Chargement automatique du fichier data.json généré par le robot
+        async function loadData() {
+            try {
+                const response = await fetch('data.json?' + new Date().getTime());
+                if (!response.ok) throw new Error('Erreur de chargement');
+                sportsData = await response.json();
+                renderSchedule('all');
+            } catch (error) {
+                console.error('Impossible de charger data.json :', error);
+                document.getElementById('scheduleContainer').innerHTML = `
+                    <div class="text-center py-12 bg-cardbg rounded-2xl border border-gray-800 p-6">
+                        <i class="fa-solid fa-triangle-exclamation text-amber-500 text-3xl mb-3"></i>
+                        <p class="text-gray-300 font-medium">Aucune donnée disponible pour le moment.</p>
+                        <p class="text-xs text-gray-500 mt-1">Vérifiez que le script s'est bien exécuté dans l'onglet Actions de GitHub.</p>
+                    </div>
+                `;
             }
-        ];
-
-        let events = [];
-        let activeCategoryFilter = 'all';
-
-        function getRelativeDate(daysOffset) {
-            const date = new Date();
-            date.setDate(date.getDate() + daysOffset);
-            return date.toISOString().split('T')[0];
         }
 
-        function formatDateFR(dateString) {
-            const todayStr = getRelativeDate(0);
-            const tomorrowStr = getRelativeDate(1);
+        function filterCategory(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if(btn.dataset.cat === category) {
+                    btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-all shadow-md";
+                } else {
+                    btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all";
+                }
+            });
+            renderSchedule(category);
+        }
 
-            if (dateString === todayStr) return "AUJOURD'HUI";
-            if (dateString === tomorrowStr) return "DEMAIN";
-
-            const options = { weekday: 'long', day: 'numeric', month: 'long' };
-            const date = new Date(dateString + 'T00:00:00');
+        function formatDateFr(dateStr) {
+            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+            const date = new Date(dateStr);
             return date.toLocaleDateString('fr-FR', options).toUpperCase();
         }
 
-        function initApp() {
-            const stored = localStorage.getItem('sports_broadcast_v5');
-            if (stored) {
-                try {
-                    events = JSON.parse(stored);
-                } catch(e) {
-                    events = [...DEFAULT_EVENTS];
-                }
-            } else {
-                events = [...DEFAULT_EVENTS];
-                saveToLocalStorage();
+        function renderSchedule(filterCat) {
+            const container = document.getElementById('scheduleContainer');
+            container.innerHTML = '';
+
+            let filtered = sportsData;
+            if (filterCat !== 'all') {
+                filtered = sportsData.filter(item => item.category === filterCat);
             }
-
-            renderCategoryFilters();
-            populateCategoryDropdown();
-            renderBroadcasterCheckboxes();
-            renderEvents();
-        }
-
-        function saveToLocalStorage() {
-            localStorage.setItem('sports_broadcast_v5', JSON.stringify(events));
-        }
-
-        function resetData() {
-            if (confirm("Réinitialiser le programme complet avec les logos officiels ?")) {
-                events = [...DEFAULT_EVENTS];
-                saveToLocalStorage();
-                renderEvents();
-            }
-        }
-
-        function renderCategoryFilters() {
-            const container = document.getElementById('categoryFilters');
-            container.innerHTML = CATEGORIES.map(cat => `
-                <button 
-                    onclick="filterByCategory('${cat.id}')"
-                    class="px-3.5 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center gap-2 border ${
-                        activeCategoryFilter === cat.id 
-                        ? 'bg-blue-600 text-white border-blue-400 shadow-md shadow-blue-600/30' 
-                        : 'bg-black/40 text-gray-400 border-white/5 hover:bg-white/10 hover:text-white'
-                    }"
-                >
-                    ${cat.customIcon}
-                    <span>${cat.name}</span>
-                </button>
-            `).join('');
-        }
-
-        function populateCategoryDropdown() {
-            const select = document.getElementById('eventCategory');
-            select.innerHTML = CATEGORIES.filter(c => c.id !== 'all').map(cat => `
-                <option value="${cat.id}">${cat.name}</option>
-            `).join('');
-        }
-
-        function renderBroadcasterCheckboxes() {
-            const container = document.getElementById('broadcasterCheckboxes');
-            container.innerHTML = BROADCASTERS.map(b => `
-                <label class="flex items-center gap-2 text-xs text-gray-300 p-1 hover:bg-white/5 rounded cursor-pointer">
-                    <input type="checkbox" name="broadcasters" value="${b.id}" class="rounded bg-black border-white/20 text-blue-600 focus:ring-0">
-                    <span class="channel-badge ${b.class} text-[10px] px-1.5 py-0.5">${b.name}</span>
-                </label>
-            `).join('');
-        }
-
-        function filterByCategory(catId) {
-            activeCategoryFilter = catId;
-            renderCategoryFilters();
-            renderEvents();
-        }
-
-        function renderEvents() {
-            const container = document.getElementById('eventsContainer');
-            const emptyState = document.getElementById('emptyState');
-
-            let filtered = events.filter(e => {
-                if (activeCategoryFilter === 'all') return true;
-                return e.category === activeCategoryFilter;
-            });
 
             if (filtered.length === 0) {
-                container.innerHTML = '';
-                emptyState.classList.remove('hidden');
+                container.innerHTML = `
+                    <div class="text-center py-12 bg-cardbg rounded-2xl border border-gray-800 p-6">
+                        <p class="text-gray-400">Aucun événement trouvé pour cette catégorie.</p>
+                    </div>
+                `;
                 return;
-            } else {
-                emptyState.classList.add('hidden');
             }
 
+            // Grouper par date
             const grouped = {};
-            filtered.sort((a,b) => new Date(a.date) - new Date(b.date));
-
-            filtered.forEach(e => {
-                if (!grouped[e.date]) grouped[e.date] = [];
-                grouped[e.date].push(e);
+            filtered.forEach(item => {
+                if (!grouped[item.date]) grouped[item.date] = [];
+                grouped[item.date].push(item);
             });
 
-            let html = '';
-            for (const [dateStr, dayEvents] of Object.entries(grouped)) {
-                html += `
-                    <div class="space-y-3">
-                        <div class="flex items-center gap-3 border-b border-white/10 pb-2">
-                            <span class="font-sport tracking-wider text-lg font-bold text-gray-200">
-                                ${formatDateFR(dateStr)}
-                            </span>
-                            <span class="text-xs text-gray-500 font-semibold">${dateStr}</span>
-                            <div class="h-px bg-gradient-to-r from-blue-500/50 to-transparent flex-1"></div>
+            // Affichage par jour
+            for (const [date, matches] of Object.entries(grouped)) {
+                const daySection = document.createElement('div');
+                daySection.className = 'space-y-3';
+                
+                let htmlHeader = `<h2 class="text-sm font-bold tracking-widest text-blue-400 uppercase pb-1 border-b border-gray-800/80 flex items-center gap-2">
+                    <i class="fa-regular fa-calendar-days"></i> ${formatDateFr(date)}
+                </h2>`;
+                
+                let matchesHtml = '<div class="space-y-2">';
+                matches.forEach(match => {
+                    let channelsHtml = match.channels.map(ch => {
+                        const style = channelStyles[ch] || { name: ch.toUpperCase(), bg: 'bg-gray-800 text-white font-bold' };
+                        return `<span class="px-2.5 py-1 rounded text-[10px] ${style.bg} shadow-sm">${style.name}</span>`;
+                    }).join('');
+
+                    matchesHtml += `
+                        <div class="bg-cardbg hover:bg-cardhover transition-all border border-gray-800/80 rounded-xl p-3 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
+                            <!-- Gauche : Icône sport -->
+                            <div class="flex items-center gap-4 w-full sm:w-auto">
+                                <div class="w-10 h-10 rounded-lg bg-gray-900/90 border border-gray-800 flex items-center justify-center text-blue-400 shrink-0">
+                                    <i class="fa-solid ${match.sportIcon} text-lg"></i>
+                                </div>
+                                <!-- Affiche équipes -->
+                                <div class="flex flex-col gap-1.5 flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <img src="${match.team1Logo}" alt="" class="w-5 h-5 object-contain" onerror="this.style.display='none'">
+                                        <span class="text-sm font-bold text-gray-100">${match.team1}</span>
+                                        <span class="text-[9px] bg-gray-800 text-gray-400 px-1.5 py-0.5 rounded font-medium border border-gray-700">Dom</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <img src="${match.team2Logo}" alt="" class="w-5 h-5 object-contain" onerror="this.style.display='none'">
+                                        <span class="text-sm font-semibold text-gray-300">${match.team2}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Milieu : Heure -->
+                            <div class="flex items-center gap-3 shrink-0 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800/50">
+                                <span class="text-base font-extrabold text-white tracking-tight">${match.time}</span>
+                            </div>
+
+                            <!-- Droite : Chaînes -->
+                            <div class="flex flex-wrap items-center justify-end gap-1.5 w-full sm:w-auto">
+                                ${channelsHtml}
+                            </div>
                         </div>
+                    `;
+                });
+                matchesHtml += '</div>';
 
-                        <div class="space-y-2.5">
-                            ${dayEvents.map(e => createMatchBannerHTML(e)).join('')}
-                        </div>
-                    </div>
-                `;
-            }
-
-            container.innerHTML = html;
-        }
-
-        // VISUAL ASSET RENDERER (OFFICIAL LOGOS & COUNTRY FLAGS)
-        function renderVisualAsset(key, forceFlag = false) {
-            if (!key) return `<div class="logo-box"><i class="fa-solid fa-shield-halved text-gray-500 text-sm"></i></div>`;
-            
-            const cleanKey = key.toLowerCase().trim();
-
-            // 1. Check if key is a Country Flag Code
-            if (COUNTRY_FLAGS[cleanKey] && (forceFlag || ['fr', 'es', 'it', 'mc', 'us', 'mx', 'gb', 'ge', 'sr'].includes(cleanKey))) {
-                return `<div class="flag-box">${COUNTRY_FLAGS[cleanKey]}</div>`;
-            }
-
-            // 2. Check if key is an Official Logo Key
-            if (OFFICIAL_LOGOS[cleanKey]) {
-                return `<div class="logo-box"><img src="${OFFICIAL_LOGOS[cleanKey]}" alt="Logo" loading="lazy" onerror="this.src='https://placehold.co/50x50/111827/ffffff?text=Logo'"></div>`;
-            }
-
-            // 3. Direct Image URL Support
-            if (key.startsWith('http://') || key.startsWith('https://')) {
-                return `<div class="logo-box"><img src="${key}" alt="Logo" loading="lazy" onerror="this.src='https://placehold.co/50x50/111827/ffffff?text=Logo'"></div>`;
-            }
-
-            // Fallback Icon
-            return `<div class="logo-box"><i class="fa-solid fa-trophy text-blue-400 text-xs"></i></div>`;
-        }
-
-        // CREATE MATCH BANNER HTML
-        function createMatchBannerHTML(event) {
-            const catObj = CATEGORIES.find(c => c.id === event.category) || CATEGORIES[0];
-            
-            // Broadcaster Badges
-            const broadcasterBadges = (event.broadcasters || []).map(bId => {
-                const b = BROADCASTERS.find(x => x.id === bId);
-                if (!b) return '';
-                return `
-                    <span class="channel-badge ${b.class}">
-                        <i class="fa-solid ${b.icon}"></i>
-                        <span>${b.name}</span>
-                    </span>
-                `;
-            }).join('');
-
-            // Opponents Block
-            let matchTextHTML = '';
-            if (event.type === 'versus') {
-                const isAthleteMatch = ['tennis', 'combat'].includes(event.category);
-                matchTextHTML = `
-                    <div class="flex items-center gap-2.5">
-                        ${renderVisualAsset(event.homeLogo, isAthleteMatch)}
-                        <span class="text-sm font-extrabold text-white tracking-wide">${event.homeTeam}</span>
-                        <span class="text-[10px] font-bold bg-blue-900/60 text-blue-300 border border-blue-500/30 px-1.5 py-0.5 rounded flex items-center gap-1">
-                            <i class="fa-solid fa-house text-[9px]"></i> DOMICILE
-                        </span>
-                    </div>
-                    <div class="flex items-center gap-2.5">
-                        ${renderVisualAsset(event.awayLogo, isAthleteMatch)}
-                        <span class="text-sm font-bold text-gray-300 tracking-wide">${event.awayTeam}</span>
-                    </div>
-                `;
-            } else {
-                matchTextHTML = `
-                    <div class="flex items-center gap-2.5">
-                        ${renderVisualAsset(event.eventFlag, true)}
-                        <span class="text-sm font-extrabold text-white tracking-wide">${event.eventName}</span>
-                    </div>
-                `;
-            }
-
-            // Clean Time Format (No "FR")
-            const cleanTime = (event.time || '').replace(/fr/gi, '').trim();
-
-            return `
-                <div class="match-banner group">
-                    
-                    <!-- COLONNE 1 : LOGO CATEGORIE / SPORT -->
-                    <div class="sport-icon-col">
-                        ${catObj.customIcon}
-                    </div>
-
-                    <!-- COLONNE 2 : L'AFFICHE (2 LIGNES + LOGO OFFICIEL / BADGE DOMICILE) -->
-                    <div class="teams-col">
-                        ${matchTextHTML}
-                    </div>
-
-                    <!-- COLONNE 3 : CHAMPIONNAT / HEURE -->
-                    <div class="time-col">
-                        <span class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-0.5">${event.competition}</span>
-                        <span class="font-sport text-2xl font-bold text-white tracking-widest">${cleanTime}</span>
-                    </div>
-
-                    <!-- COLONNE 4 : SUPPORTS DE DIFFUSION -->
-                    <div class="broadcasters-col relative">
-                        ${broadcasterBadges || '<span class="text-xs text-gray-500 italic">Non confirmé</span>'}
-
-                        <!-- Quick Hover Edit / Delete -->
-                        <div class="absolute right-2 top-2 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 bg-black/90 px-2 py-1 rounded border border-white/10 shadow-lg">
-                            <button onclick="editEvent('${event.id}')" title="Modifier" class="text-gray-400 hover:text-blue-400 p-1">
-                                <i class="fa-solid fa-pen text-xs"></i>
-                            </button>
-                            <button onclick="deleteEvent('${event.id}')" title="Supprimer" class="text-gray-400 hover:text-red-400 p-1">
-                                <i class="fa-solid fa-trash text-xs"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            `;
-        }
-
-        // MODAL CONTROLS & FORM
-        function toggleFormatFields() {
-            const format = document.getElementById('eventFormat').value;
-            if (format === 'versus') {
-                document.getElementById('versusFields').classList.remove('hidden');
-                document.getElementById('eventFields').classList.add('hidden');
-            } else {
-                document.getElementById('versusFields').classList.add('hidden');
-                document.getElementById('eventFields').classList.remove('hidden');
+                daySection.innerHTML = htmlHeader + matchesHtml;
+                container.appendChild(daySection);
             }
         }
 
-        function openModal(editId = null) {
-            const modal = document.getElementById('eventModal');
-            const form = document.getElementById('eventForm');
-            const modalTitle = document.getElementById('modalTitle');
-
-            // Reset checkboxes
-            document.querySelectorAll('input[name="broadcasters"]').forEach(cb => cb.checked = false);
-
-            if (editId) {
-                const ev = events.find(e => e.id === editId);
-                if (!ev) return;
-
-                document.getElementById('eventId').value = ev.id;
-                document.getElementById('eventCategory').value = ev.category;
-                document.getElementById('eventDate').value = ev.date;
-                document.getElementById('eventTime').value = (ev.time || '').replace(/fr/gi, '').trim();
-                document.getElementById('eventFormat').value = ev.type || 'versus';
-                toggleFormatFields();
-
-                if (ev.type === 'versus') {
-                    document.getElementById('homeName').value = ev.homeTeam || '';
-                    document.getElementById('homeLogo').value = ev.homeLogo || '';
-                    document.getElementById('awayName').value = ev.awayTeam || '';
-                    document.getElementById('awayLogo').value = ev.awayLogo || '';
-                } else {
-                    document.getElementById('eventNameInput').value = ev.eventName || '';
-                    document.getElementById('eventFlagInput').value = ev.eventFlag || '';
-                }
-
-                document.getElementById('eventCompetition').value = ev.competition || '';
-
-                if (ev.broadcasters) {
-                    ev.broadcasters.forEach(bId => {
-                        const cb = document.querySelector(`input[name="broadcasters"][value="${bId}"]`);
-                        if (cb) cb.checked = true;
-                    });
-                }
-
-                modalTitle.querySelector('span').innerText = "Modifier l'Affiche Sportive";
-            } else {
-                form.reset();
-                document.getElementById('eventId').value = '';
-                document.getElementById('eventDate').value = getRelativeDate(0);
-                document.getElementById('eventTime').value = '21:00';
-                document.getElementById('eventFormat').value = 'versus';
-                toggleFormatFields();
-                modalTitle.querySelector('span').innerText = "Ajouter une Affiche Sportive";
-            }
-
-            modal.classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('eventModal').classList.add('hidden');
-        }
-
-        function saveEvent(e) {
-            e.preventDefault();
-
-            const id = document.getElementById('eventId').value || Date.now().toString();
-            const category = document.getElementById('eventCategory').value;
-            const date = document.getElementById('eventDate').value;
-            const time = document.getElementById('eventTime').value.replace(/fr/gi, '').trim();
-            const type = document.getElementById('eventFormat').value;
-            const competition = document.getElementById('eventCompetition').value;
-
-            const checkedBroadcasters = Array.from(document.querySelectorAll('input[name="broadcasters"]:checked')).map(cb => cb.value);
-
-            let eventObj = { id, category, date, time, type, competition, broadcasters: checkedBroadcasters };
-
-            if (type === 'versus') {
-                eventObj.homeTeam = document.getElementById('homeName').value;
-                eventObj.homeLogo = document.getElementById('homeLogo').value;
-                eventObj.awayTeam = document.getElementById('awayName').value;
-                eventObj.awayLogo = document.getElementById('awayLogo').value;
-            } else {
-                eventObj.eventName = document.getElementById('eventNameInput').value;
-                eventObj.eventFlag = document.getElementById('eventFlagInput').value || 'mc';
-            }
-
-            const index = events.findIndex(item => item.id === id);
-            if (index >= 0) {
-                events[index] = eventObj;
-            } else {
-                events.push(eventObj);
-            }
-
-            saveToLocalStorage();
-            renderEvents();
-            closeModal();
-        }
-
-        function editEvent(id) {
-            openModal(id);
-        }
-
-        function deleteEvent(id) {
-            if (confirm("Supprimer cette affiche sportive ?")) {
-                events = events.filter(e => e.id !== id);
-                saveToLocalStorage();
-                renderEvents();
-            }
-        }
-
-        window.onload = initApp;
+        // Lancement au chargement de la page
+        loadData();
     </script>
 </body>
 </html>
