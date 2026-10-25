@@ -1,1 +1,86 @@
-[]
+[
+    {
+        "id": 18,
+        "date": "2026-10-25",
+        "category": "f1",
+        "sportIcon": "fa-flag-checkered",
+        "team1": "United States Grand Prix",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Circuit of the Americas",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "20:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": 19,
+        "date": "2026-11-01",
+        "category": "f1",
+        "sportIcon": "fa-flag-checkered",
+        "team1": "Mexico City Grand Prix",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Autódromo Hermanos Rodríguez",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "20:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": 20,
+        "date": "2026-11-08",
+        "category": "f1",
+        "sportIcon": "fa-flag-checkered",
+        "team1": "Brazilian Grand Prix",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Autódromo José Carlos Pace",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "17:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": 21,
+        "date": "2026-11-22",
+        "category": "f1",
+        "sportIcon": "fa-flag-checkered",
+        "team1": "Las Vegas Grand Prix",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Las Vegas Strip Street Circuit",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "04:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": 22,
+        "date": "2026-11-29",
+        "category": "f1",
+        "sportIcon": "fa-flag-checkered",
+        "team1": "Qatar Grand Prix",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Lusail International Circuit",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "16:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": 23,
+        "date": "2026-12-06",
+        "category": "f1",
+        "sportIcon": "fa-flag-checkered",
+        "team1": "Abu Dhabi Grand Prix",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Yas Marina Circuit",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "13:00",
+        "channels": [
+            "canal+"
+        ]
+    }
+]
