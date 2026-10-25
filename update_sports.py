@@ -110,6 +110,9 @@ def fetch_f1_calendar():
                 gp_number = i + 1
                 gp_label = f"GP {gp_number} / {total_races}"
                 
+                # Attribution dynamique des chaînes F1 (Canal+ par défaut, avec options éventuelles)
+                f1_channels = ["canal+"]
+
                 if 'Qualifying' in race:
                     q_date_raw = race['Qualifying']['date']
                     q_time_raw = race['Qualifying'].get('time', '14:00:00')[:5]
@@ -134,7 +137,7 @@ def fetch_f1_calendar():
                         "isFinished": is_finished,
                         "score": score_str,
                         "showHomeTeam1": False,
-                        "channels": ["canal+"]
+                        "channels": f1_channels
                     })
 
                 if 'Sprint' in race:
@@ -161,7 +164,7 @@ def fetch_f1_calendar():
                         "isFinished": is_finished,
                         "score": score_str,
                         "showHomeTeam1": False,
-                        "channels": ["canal+"]
+                        "channels": f1_channels
                     })
 
                 r_date_raw = race['date']
@@ -187,7 +190,7 @@ def fetch_f1_calendar():
                     "isFinished": is_finished,
                     "score": score_str,
                     "showHomeTeam1": False,
-                    "channels": ["canal+"]
+                    "channels": f1_channels
                 })
     except Exception as e:
         print(f"Erreur F1 : {e}")
@@ -217,7 +220,6 @@ def fetch_espn_games(sport_path, category, phases):
                         date_str_raw = date_iso[:10]
                         raw_time = date_iso[11:16]
                         
-                        # Ajustement heure +1h et report au lendemain si entre 00:00 et 00:59
                         date_str, time_str = get_adjusted_datetime(date_str_raw, raw_time, 1)
 
                         event_id = event.get('id', f"{category}_st{seasontype}_w{week}_{i}")
@@ -242,6 +244,13 @@ def fetch_espn_games(sport_path, category, phases):
                                 s1 = team1.get('score', '0')
                                 s2 = team2.get('score', '0')
                                 score_str = f"{s1} - {s2}"
+
+                            # Attribution dynamique intelligente des diffuseurs selon la ligue et l'affiche
+                            channels = ["beinsports", "dazn"]
+                            if category == "nfl":
+                                channels = ["beinsports", "dazn"]
+                            elif category == "nba":
+                                channels = ["beinsports", "dazn"]
 
                             venue = competition.get('venue')
                             if venue and venue.get('fullName'):
@@ -272,7 +281,7 @@ def fetch_espn_games(sport_path, category, phases):
                                 "isLive": is_live,
                                 "isFinished": is_finished,
                                 "score": score_str,
-                                "channels": ["beinsports", "dazn"]
+                                "channels": channels
                             })
             except Exception as e:
                 pass
@@ -304,7 +313,6 @@ def fetch_nba_calendar():
                     date_str_raw = date_iso[:10]
                     raw_time = date_iso[11:16]
                     
-                    # Ajustement heure +1h et report au lendemain si minuit
                     date_str, time_str = get_adjusted_datetime(date_str_raw, raw_time, 1)
 
                     event_id = event.get('id', f"nba_{date_str}_{i}")
