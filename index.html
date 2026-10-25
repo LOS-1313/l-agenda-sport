@@ -139,8 +139,25 @@
                     const logo1Html = match.team1Logo && match.team1 !== 'TBD' ? `<img src="${match.team1Logo}" alt="" class="w-6 h-6 object-contain">` : '';
                     const logo2Html = match.team2Logo && match.team2 !== 'TBD' ? `<img src="${match.team2Logo}" alt="" class="w-6 h-6 object-contain">` : '';
 
+                    // Style carte si terminée (grisée mais lisible)
+                    const cardClass = match.isFinished 
+                        ? 'bg-dark-800/40 border-gray-800/40 opacity-50' 
+                        : 'bg-dark-800/80 hover:bg-dark-800 border border-gray-800/80';
+
+                    // Style bloc central selon Live ou Terminé
+                    const centerBlockClass = match.isLive 
+                        ? 'border-red-500/80 bg-red-950/20 shadow-lg shadow-red-500/10' 
+                        : 'border-gray-800/50 bg-dark-900/60';
+
+                    // Contenu du bas du bloc central (Heure, LIVE ou TERMINÉ)
+                    const timeOrStatusContent = match.isLive
+                        ? `<span class="flex items-center justify-center gap-1.5 text-xs font-black text-red-500 uppercase tracking-wider animate-pulse"><span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>LIVE</span>`
+                        : (match.isFinished 
+                            ? `<span class="text-xs font-extrabold text-gray-400 uppercase tracking-wider text-center">TERMINÉ</span>` 
+                            : `<span class="text-base font-extrabold text-white tracking-tight text-center">${match.time}</span>`);
+
                     html += `
-                        <div class="bg-dark-800/80 hover:bg-dark-800 border border-gray-800/80 rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm">
+                        <div class="${cardClass} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm">
                             
                             <!-- Gauche : Logo Ligue, Bloc Heure/Nature, et Équipes -->
                             <div class="flex items-center space-x-4 flex-grow">
@@ -149,15 +166,11 @@
                                     ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
                                 </div>
 
-
-
-<!-- 2. Bloc Heure, Nature et Statut Live -->
-<div class="flex flex-col items-center justify-center shrink-0 bg-dark-900/60 px-3 py-1.5 rounded-lg border ${match.isLive ? 'border-red-500/80 bg-red-950/20 shadow-lg shadow-red-500/10' : 'border-gray-800/50'} w-32">
-    ${match.isLive 
-        ? `<span class="flex items-center gap-1.5 text-[11px] font-black text-red-500 uppercase tracking-wider mb-0.5 animate-pulse"><span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>LIVE</span>` 
-        : (match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5 text-center">${match.nature}</span>` : '')}
-    <span class="text-base font-extrabold text-white tracking-tight text-center">${match.isLive ? 'EN COURS' : match.time}</span>
-</div>
+                                <!-- 2. Bloc Heure / Nature / Statut -->
+                                <div class="flex flex-col items-center justify-center shrink-0 ${centerBlockClass} px-3 py-1.5 rounded-lg border w-32">
+                                    ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5 text-center">${match.nature}</span>` : ''}
+                                    ${timeOrStatusContent}
+                                </div>
 
                                 <!-- 3. Équipes / Événement -->
                                 <div class="space-y-1.5 flex-grow pl-2">
@@ -178,7 +191,7 @@
                                         ${match.showHomeTeam2 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
 
-                                    <!-- Ligne 3 : Stade en italique (uniquement NFL/NBA si renseigné) -->
+                                    <!-- Ligne 3 : Stade en italique -->
                                     ${match.venue ? `<div class="text-xs text-gray-400 italic pl-8.5">${match.venue}</div>` : ''}
                                 </div>
                             </div>
