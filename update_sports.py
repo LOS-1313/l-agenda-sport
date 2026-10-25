@@ -57,7 +57,6 @@ def fetch_f1_calendar():
                 gp_number = i + 1
                 gp_label = f"GP {gp_number} / {total_races}"
                 
-                # 1. Qualifications
                 if 'Qualifying' in race:
                     q_date = race['Qualifying']['date']
                     q_time = adjust_hour(race['Qualifying'].get('time', '14:00:00')[:5], 1)
@@ -72,14 +71,13 @@ def fetch_f1_calendar():
                             "team1Extra": "(Qualifications)",
                             "team1Logo": flag_url,
                             "team2": circuit_name,
-                            "team2Logo": "", # Pas d'image pour le circuit
+                            "team2Logo": "",
                             "time": q_time,
                             "nature": gp_label,
                             "showHomeTeam1": False,
                             "channels": ["canal+"]
                         })
 
-                # 2. Course Sprint
                 if 'Sprint' in race:
                     s_date = race['Sprint']['date']
                     s_time = adjust_hour(race['Sprint'].get('time', '12:00:00')[:5], 1)
@@ -101,7 +99,6 @@ def fetch_f1_calendar():
                             "channels": ["canal+"]
                         })
 
-                # 3. Course principale
                 r_date = race['date']
                 r_time = adjust_hour(race.get('time', '14:00:00')[:5], 1)
                 if r_date >= today_str:
