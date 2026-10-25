@@ -52,20 +52,20 @@
         </div>
     </header>
 
-    <!-- Contenu Principal avec Layout en Grille (Menu Calendrier à gauche, Affiches à droite) -->
+    <!-- Contenu Principal -->
     <main class="max-w-7xl mx-auto px-4 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
             
-            <!-- Colonne de Gauche : Menu Calendrier & Bouton Maintenant -->
+            <!-- Colonne de Gauche : Menu Calendrier Multiple & Bouton Maintenant -->
             <aside class="space-y-4 lg:sticky lg:top-24 h-fit">
                 <div class="bg-dark-800/80 border border-gray-800/80 rounded-xl p-4 space-y-3 shadow-sm">
                     <h3 class="text-xs font-black text-gray-400 uppercase tracking-wider px-2"><i class="fa-solid fa-calendar-days mr-2"></i>Calendrier</h3>
                     <div class="flex flex-col space-y-1">
-                        <button onclick="filterDateRange('avenir')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all bg-blue-600 text-white shadow-md shadow-blue-600/20" data-range="avenir">À venir</button>
-                        <button onclick="filterDateRange('aujourdhui')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white" data-range="aujourdhui">Aujourd'hui</button>
-                        <button onclick="filterDateRange('hier')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white" data-range="hier">Hier</button>
-                        <button onclick="filterDateRange('semaine')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white" data-range="semaine">Semaine dernière</button>
-                        <button onclick="filterDateRange('toute')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white" data-range="toute">Toute la saison</button>
+                        <button onclick="toggleDateRange('avenir')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all bg-blue-600 text-white shadow-md shadow-blue-600/20" data-range="avenir">À venir</button>
+                        <button onclick="toggleDateRange('aujourdhui')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all bg-blue-600 text-white shadow-md shadow-blue-600/20" data-range="aujourdhui">Aujourd'hui</button>
+                        <button onclick="toggleDateRange('hier')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white" data-range="hier">Hier</button>
+                        <button onclick="toggleDateRange('semaine')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white" data-range="semaine">Semaine dernière</button>
+                        <button onclick="toggleDateRange('toute')" class="date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white" data-range="toute">Toute la saison</button>
                     </div>
                 </div>
 
@@ -86,11 +86,12 @@
         </div>
     </main>
 
-    <!-- Script de chargement, rendu et filtrage -->
+    <!-- Script de chargement, rendu et filtrage multiple -->
     <script>
         let allEvents = [];
         let currentCategory = 'tous';
-        let currentDateRange = 'avenir'; // Par défaut : A venir
+        // Par défaut, "avenir" et "aujourdhui" sont cochés simultanément
+        let activeDateRanges = new Set(['avenir', 'aujourdhui']);
 
         async function loadData() {
             try {
@@ -119,10 +120,16 @@
             renderAgenda();
         }
 
-        function filterDateRange(range) {
-            currentDateRange = range;
+        function toggleDateRange(range) {
+            if (activeDateRanges.has(range)) {
+                activeDateRanges.delete(range);
+            } else {
+                activeDateRanges.add(range);
+            }
+
             document.querySelectorAll('.date-filter-btn').forEach(btn => {
-                if (btn.dataset.range === range) {
+                const r = btn.dataset.range;
+                if (activeDateRanges.has(r)) {
                     btn.className = "date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all bg-blue-600 text-white shadow-md shadow-blue-600/20";
                 } else {
                     btn.className = "date-filter-btn w-full text-left px-3 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:bg-dark-700 hover:text-white";
@@ -148,26 +155,32 @@
             const today = new Date();
             today.setHours(0, 0, 0, 0);
 
-            // 1. Filtrage par catégorie et par plage de calendrier
+            // Filtrage combiné (si l'événement correspond à au moins un des filtres actifs du set)
             const filtered = allEvents.filter(e => {
                 if (currentCategory !== 'tous' && e.category !== currentCategory) return false;
+                if (activeDateRanges.size === 0) return false;
 
                 const evDate = getNormalizedDate(e.date);
                 const diffDays = Math.round((evDate - today) / (1000 * 60 * 60 * 24));
 
-                if (currentDateRange === 'avenir') {
-                    // n+1 à l'infini OU match en cours aujourd'hui
-                    return diffDays > 0 || (diffDays === 0 && (e.isLive || !e.isFinished));
-                } else if (currentDateRange === 'aujourdhui') {
-                    return diffDays === 0;
-                } else if (currentDateRange === 'hier') {
-                    return diffDays === -1;
-                } else if (currentDateRange === 'semaine') {
-                    return diffDays >= -7 && diffDays < 0;
-                } else if (currentDateRange === 'toute') {
-                    return true;
+                let matchAnyRange = false;
+
+                if (activeDateRanges.has('toute')) return true;
+
+                if (activeDateRanges.has('avenir') && (diffDays > 0 || (diffDays === 0 && (e.isLive || !e.isFinished)))) {
+                    matchAnyRange = true;
                 }
-                return true;
+                if (activeDateRanges.has('aujourdhui') && diffDays === 0) {
+                    matchAnyRange = true;
+                }
+                if (activeDateRanges.has('hier') && diffDays === -1) {
+                    matchAnyRange = true;
+                }
+                if (activeDateRanges.has('semaine') && diffDays >= -7 && diffDays < 0) {
+                    matchAnyRange = true;
+                }
+
+                return matchAnyRange;
             });
 
             if (filtered.length === 0) {
@@ -206,47 +219,40 @@
                     const logo1Html = match.team1Logo && match.team1 !== 'TBD' ? `<img src="${match.team1Logo}" alt="" class="w-6 h-6 object-contain">` : '';
                     const logo2Html = match.team2Logo && match.team2 !== 'TBD' ? `<img src="${match.team2Logo}" alt="" class="w-6 h-6 object-contain">` : '';
 
-                    // Style carte si terminée (grisée mais lisible)
                     const cardClass = match.isFinished 
                         ? 'bg-dark-800/40 border-gray-800/40 opacity-50 match-card' 
                         : 'bg-dark-800/80 hover:bg-dark-800 border border-gray-800/80 match-card';
 
-                    // Style bloc central selon Live ou Terminé
                     const centerBlockClass = match.isLive 
                         ? 'border-red-500/80 bg-red-950/20 shadow-lg shadow-red-500/10' 
                         : 'border-gray-800/50 bg-dark-900/60';
 
-                    // Bloc Heure / Statut Live / Terminé
                     const timeOrStatusContent = match.isLive
                         ? `<span class="flex items-center justify-center gap-1.5 text-xs font-black text-red-500 uppercase tracking-wider animate-pulse"><span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>LIVE</span>`
                         : (match.isFinished 
                             ? `<span class="text-xs font-extrabold text-gray-400 uppercase tracking-wider text-center">TERMINÉ</span>` 
                             : `<span class="text-base font-extrabold text-white tracking-tight text-center">${match.time}</span>`);
 
-                    // Colonne centrale de résultat (si live ou terminé et score disponible)
+                    // Colonne de score ou classement F1
                     const scoreColumnHtml = (match.isLive || match.isFinished) && match.score 
-                        ? `<div class="flex items-center justify-center px-4 py-1.5 rounded-lg bg-dark-900/80 border border-gray-800 text-sm font-black text-white tracking-widest shrink-0 shadow-inner">${match.score}</div>` 
+                        ? `<div class="flex items-center justify-center px-4 py-1.5 rounded-lg bg-dark-900/80 border border-gray-800 text-xs font-bold text-white tracking-wider shrink-0 shadow-inner text-center leading-tight">${match.score}</div>` 
                         : '';
 
                     html += `
                         <div class="${cardClass} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm" data-id="${match.id}" data-live="${match.isLive}">
                             
-                            <!-- Gauche : Logo Ligue, Bloc Heure/Nature, et Équipes -->
+                            <!-- Gauche -->
                             <div class="flex items-center space-x-4 flex-grow">
-                                <!-- 1. Logo Sport / Ligue -->
                                 <div class="w-10 h-10 rounded-lg bg-dark-900/90 border border-gray-800 flex items-center justify-center shrink-0 overflow-hidden p-1.5">
                                     ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
                                 </div>
 
-                                <!-- 2. Bloc Heure / Nature / Statut -->
                                 <div class="flex flex-col items-center justify-center shrink-0 ${centerBlockClass} px-3 py-1.5 rounded-lg border w-32">
                                     ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5 text-center">${match.nature}</span>` : ''}
                                     ${timeOrStatusContent}
                                 </div>
 
-                                <!-- 3. Équipes / Événement -->
                                 <div class="space-y-1.5 flex-grow pl-2">
-                                    <!-- Ligne 1 : Équipe 1 / Grand Prix -->
                                     <div class="flex items-center space-x-2.5">
                                         ${logo1Html}
                                         <div class="flex items-center space-x-1.5">
@@ -256,19 +262,17 @@
                                         ${match.showHomeTeam1 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
 
-                                    <!-- Ligne 2 : Équipe 2 / Circuit F1 -->
                                     <div class="flex items-center space-x-2.5">
                                         ${logo2Html}
                                         <span class="${match.category === 'f1' ? 'text-gray-300 text-xs italic font-normal' : 'text-gray-100 font-bold text-sm tracking-tight'}">${match.team2}</span>
                                         ${match.showHomeTeam2 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
 
-                                    <!-- Ligne 3 : Stade en italique -->
                                     ${match.venue ? `<div class="text-xs text-gray-400 italic pl-8.5">${match.venue}</div>` : ''}
                                 </div>
                             </div>
 
-                            <!-- Milieu / Droite : Score et Chaînes TV -->
+                            <!-- Droite -->
                             <div class="flex items-center gap-3 flex-wrap justify-end w-full md:w-auto pt-2 md:pt-0 border-t md:border-t-0 border-gray-800/50">
                                 ${scoreColumnHtml}
                                 <div class="flex items-center gap-1.5 flex-wrap justify-end">
@@ -289,19 +293,14 @@
             container.innerHTML = html;
         }
 
-        // Fonction du bouton "Maintenant" sans impacter les filtres du calendrier
         function scrollToNow() {
-            // 1. Chercher un match en direct visible actuellement
             let targetCard = document.querySelector('[data-live="true"]');
-            
-            // 2. Si aucun live, chercher la première carte affichée
             if (!targetCard) {
                 targetCard = document.querySelector('.match-card');
             }
 
             if (targetCard) {
                 targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                // Effet visuel de mise en valeur temporaire
                 targetCard.classList.add('ring-2', 'ring-blue-500', 'transition-all');
                 setTimeout(() => {
                     targetCard.classList.remove('ring-2', 'ring-blue-500');
