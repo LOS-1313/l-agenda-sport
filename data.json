@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -497,7 +497,7 @@
         "nature": "GP 10 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. PIA<br>6. HAD<br>7. NOR<br>8. BOR<br>9. LIN<br>10. COL",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -539,7 +539,7 @@
         "nature": "GP 11 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. NOR<br>2. VER<br>3. ANT<br>4. LEC<br>5. HAM<br>6. HAD<br>7. RUS<br>8. LAW<br>9. HUL<br>10. LIN",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -560,7 +560,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -602,7 +602,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -644,7 +644,7 @@
         "nature": "GP 13 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. ANT<br>2. RUS<br>3. VER<br>4. NOR<br>5. PIA<br>6. HAM<br>7. GAS<br>8. LIN<br>9. COL<br>10. TSU",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -734,7 +734,7 @@
         "nature": "GP 14 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. ANT<br>2. VER<br>3. NOR<br>4. LEC<br>5. RUS<br>6. LAW<br>7. COL<br>8. PIA<br>9. LIN<br>10. HUL",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -1520,7 +1520,7 @@
         "nature": "GP 15 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. RUS<br>2. VER<br>3. HAD<br>4. LEC<br>5. ANT<br>6. HAM<br>7. LIN<br>8. OCO<br>9. BEA<br>10. SAI",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -1970,7 +1970,7 @@
         "nature": "GP 16 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. VER<br>2. ANT<br>3. HAM<br>4. LEC<br>5. HAD<br>6. PIA<br>7. LAW<br>8. ALO<br>9. NOR<br>10. LIN",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -2951,7 +2951,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -3185,7 +3185,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -5702,7 +5702,7 @@
         "nature": "Semaine 7 / 18",
         "isLive": true,
         "isFinished": false,
-        "score": "7 - 21",
+        "score": "14 - 21",
         "channels": [
             "beinsports",
             "dazn"
@@ -5726,7 +5726,7 @@
         "nature": "Semaine 7 / 18",
         "isLive": true,
         "isFinished": false,
-        "score": "6 - 33",
+        "score": "6 - 36",
         "channels": [
             "beinsports",
             "dazn"
@@ -5750,7 +5750,7 @@
         "nature": "Semaine 7 / 18",
         "isLive": true,
         "isFinished": false,
-        "score": "13 - 7",
+        "score": "13 - 14",
         "channels": [
             "beinsports",
             "dazn"
