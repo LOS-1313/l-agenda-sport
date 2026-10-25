@@ -734,7 +734,7 @@
         "nature": "GP 14 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. VER<br>3. NOR<br>4. LEC<br>5. RUS<br>6. LAW<br>7. COL<br>8. PIA<br>9. LIN<br>10. HUL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -5750,7 +5750,7 @@
         "nature": "Semaine 7 / 18",
         "isLive": true,
         "isFinished": false,
-        "score": "13 - 0",
+        "score": "13 - 7",
         "channels": [
             "beinsports",
             "dazn"
