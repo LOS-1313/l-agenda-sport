@@ -40,8 +40,8 @@ def fetch_f1_calendar():
     return events
 
 def fetch_nfl_calendar():
-    # URL globale de la saison NFL pour récupérer toutes les semaines officielles planifiées
-    url = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026"
+    # URL par défaut sans filtre restrictif pour récupérer la grille active complète
+    url = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
     events = []
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -74,7 +74,7 @@ def fetch_nfl_calendar():
                         "channels": ["beinsports", "dazn"]
                     })
     except Exception as e:
-        print(f"Erreur NFL complète : {e}")
+        print(f"Erreur NFL : {e}")
     return events
 
 def main():
