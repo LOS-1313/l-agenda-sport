@@ -218,13 +218,16 @@ def fetch_nba_calendar():
     today_str = today_dt.strftime('%Y-%m-%d')
     nba_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
     
-    # On parcourt les 6 prochains mois pour récupérer les journées de championnat planifiées
-    for m in range(6):
-        # Génération des blocs de dates par tranches de 10 jours pour interroger l'API proprement
-        start_date = today_dt + timedelta(days=m * 10)
-        date_str_param = start_date.strftime('%Y%m%d')
-        
-        url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={date_str_param}"
+    # Génération des paramètres mensuels (YYYYMM) d'octobre 2026 à juin 2027
+    year = today_dt.year
+    months = []
+    for i in range(9):
+        current_m = (today_dt.month - 1 + i) % 12 + 1
+        current_y = year + (today_dt.month - 1 + i) // 12
+        months.append(f"{current_y}{current_m:02d}")
+    
+    for month_str in months:
+        url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={month_str}&limit=1000"
         try:
             req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
             with urllib.request.urlopen(req) as response:
@@ -264,6 +267,10 @@ def fetch_nba_calendar():
                             t2_name = team2['team'].get('displayName', 'TBD')
                             is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
 
+                            # Identification du type de saison (2 = Saison Régulière, 3 = Play-offs)
+                            season_type = event.get('season', {}).get('type', 2)
+                            nature_str = "Play-offs NBA" if season_type == 3 else "Saison Régulière"
+
                             events.append({
                                 "id": f"nba_{event_id}",
                                 "date": date_str,
@@ -279,14 +286,14 @@ def fetch_nba_calendar():
                                 "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
                                 "venue": venue_info,
                                 "time": time_str,
-                                "nature": "Saison Régulière NBA",
+                                "nature": nature_str,
                                 "channels": ["beinsports", "dazn"]
                             })
         except Exception as e:
-            print(f"Erreur NBA : {e}")
+            print(f"Erreur NBA mois {month_str} : {e}")
             
     return events
-    
+
 def main():
     f1_events = fetch_f1_calendar()
     nfl_events = fetch_nfl_calendar()
