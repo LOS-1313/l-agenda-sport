@@ -76,51 +76,30 @@ def fetch_f1_calendar():
                 gp_number = i + 1
                 gp_label = f"GP {gp_number} / {total_races}"
                 
-                if 'Qualifying' in race:
-                    q_date = race['Qualifying']['date']
-                    q_time = adjust_hour(race['Qualifying'].get('time', '14:00:00')[:5], 1)
-                    is_live, is_finished = check_f1_status(q_date, q_time, 1)
-                    events.append({
-                        "id": f"f1_qual_{i}",
-                        "date": q_date,
-                        "category": "f1",
-                        "sportIcon": f1_logo,
-                        "isImgIcon": True,
-                        "team1": race_name,
-                        "team1Extra": "(Qualifications)",
-                        "team1Logo": flag_url,
-                        "team2": circuit_display,
-                        "team2Logo": "",
-                        "time": q_time,
-                        "nature": gp_label,
-                        "isLive": is_live,
-                        "isFinished": is_finished,
-                        "showHomeTeam1": False,
-                        "channels": ["canal+"]
-                    })
-
-                if 'Sprint' in race:
-                    s_date = race['Sprint']['date']
-                    s_time = adjust_hour(race['Sprint'].get('time', '12:00:00')[:5], 1)
-                    is_live, is_finished = check_f1_status(s_date, s_time, 1)
-                    events.append({
-                        "id": f"f1_sprint_{i}",
-                        "date": s_date,
-                        "category": "f1",
-                        "sportIcon": f1_logo,
-                        "isImgIcon": True,
-                        "team1": race_name,
-                        "team1Extra": "(Course Sprint)",
-                        "team1Logo": flag_url,
-                        "team2": circuit_display,
-                        "team2Logo": "",
-                        "time": s_time,
-                        "nature": gp_label,
-                        "isLive": is_live,
-                        "isFinished": is_finished,
-                        "showHomeTeam1": False,
-                        "channels": ["canal+"]
-                    })
+                for sess_key, sess_name, dur in [('Qualifying', '(Qualifications)', 1), ('Sprint', '(Course Sprint)', 1)]:
+                    if sess_key in race:
+                        s_date = race[sess_key]['date']
+                        s_time = adjust_hour(race[sess_key].get('time', '14:00:00')[:5], 1)
+                        is_live, is_finished = check_f1_status(s_date, s_time, dur)
+                        events.append({
+                            "id": f"f1_{sess_key.lower()}_{i}",
+                            "date": s_date,
+                            "category": "f1",
+                            "sportIcon": f1_logo,
+                            "isImgIcon": True,
+                            "team1": race_name,
+                            "team1Extra": sess_name,
+                            "team1Logo": flag_url,
+                            "team2": circuit_display,
+                            "team2Logo": "",
+                            "time": s_time,
+                            "nature": gp_label,
+                            "isLive": is_live,
+                            "isFinished": is_finished,
+                            "score": "",
+                            "showHomeTeam1": False,
+                            "channels": ["canal+"]
+                        })
 
                 r_date = race['date']
                 r_time = adjust_hour(race.get('time', '14:00:00')[:5], 1)
@@ -140,6 +119,7 @@ def fetch_f1_calendar():
                     "nature": gp_label,
                     "isLive": is_live,
                     "isFinished": is_finished,
+                    "score": "",
                     "showHomeTeam1": False,
                     "channels": ["canal+"]
                 })
@@ -147,35 +127,30 @@ def fetch_f1_calendar():
         print(f"Erreur F1 : {e}")
     return events
 
-def fetch_nfl_calendar():
+def fetch_espn_games(sport_path, category, phases):
     events = []
     seen_ids = set()
-    nfl_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png"
-    
-    phases = [
-        (2, 19, 18),
-        (3, 5, 4)
-    ]
+    logo_url = f"https://a.espncdn.com/i/teamlogos/leagues/500/{category}.png"
     
     for seasontype, max_weeks, total_weeks in phases:
         for week in range(1, max_weeks):
-            url = f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype={seasontype}&week={week}"
+            url = f"https://site.api.espn.com/apis/site/v2/sports/{sport_path}/scoreboard?seasontype={seasontype}&week={week}"
             try:
                 req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
                 with urllib.request.urlopen(req) as response:
                     data = json.loads(response.read().decode('utf-8'))
                     
-                    if seasontype == 3:
-                        nature_str = f"Play-offs ({week} / {total_weeks})"
+                    if category == "nfl":
+                        nature_str = f"Play-offs ({week} / {total_weeks})" if seasontype == 3 else f"Semaine {week} / {total_weeks}"
                     else:
-                        nature_str = f"Semaine {week} / {total_weeks}"
+                        nature_str = "Play-offs NBA" if seasontype == 3 else "Saison Régulière"
 
                     for i, event in enumerate(data.get('events', [])):
                         competition = event['competitions'][0]
                         date_iso = competition['date']
                         date_str = date_iso[:10]
                         
-                        event_id = event.get('id', f"nfl_st{seasontype}_w{week}_{i}")
+                        event_id = event.get('id', f"{category}_st{seasontype}_w{week}_{i}")
                         if event_id not in seen_ids:
                             seen_ids.add(event_id)
                             raw_time = date_iso[11:16]
@@ -186,16 +161,6 @@ def fetch_nfl_calendar():
                             is_live = (status_state == 'in')
                             is_finished = (status_state == 'post')
 
-                            venue = competition.get('venue')
-                            if venue and venue.get('fullName'):
-                                venue_name = venue.get('fullName')
-                                addr = venue.get('address', {})
-                                venue_city = addr.get('city', '')
-                                venue_country = addr.get('country', 'États-Unis')
-                                venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
-                            else:
-                                venue_info = "TBD"
-
                             competitors = competition['competitors']
                             team1 = competitors[0]
                             team2 = competitors[1]
@@ -204,11 +169,27 @@ def fetch_nfl_calendar():
                             t2_name = team2['team'].get('displayName', 'TBD')
                             is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
 
+                            score_str = ""
+                            if is_live or is_finished:
+                                s1 = team1.get('score', '0')
+                                s2 = team2.get('score', '0')
+                                score_str = f"{s1} - {s2}"
+
+                            venue = competition.get('venue')
+                            if venue and venue.get('fullName'):
+                                v_name = venue.get('fullName')
+                                addr = venue.get('address', {})
+                                v_city = addr.get('city', '')
+                                v_country = addr.get('country', 'États-Unis')
+                                venue_info = f"{v_name} ({v_city} - {v_country})" if v_city else f"{v_name} ({v_country})"
+                            else:
+                                venue_info = "TBD"
+
                             events.append({
-                                "id": f"nfl_{event_id}",
+                                "id": f"{category}_{event_id}",
                                 "date": date_str,
-                                "category": "nfl",
-                                "sportIcon": nfl_logo,
+                                "category": category,
+                                "sportIcon": logo_url,
                                 "isImgIcon": True,
                                 "team1": t1_name,
                                 "team1Extra": "",
@@ -222,98 +203,17 @@ def fetch_nfl_calendar():
                                 "nature": nature_str,
                                 "isLive": is_live,
                                 "isFinished": is_finished,
+                                "score": score_str,
                                 "channels": ["beinsports", "dazn"]
                             })
             except Exception as e:
                 pass
     return events
 
-def fetch_nba_calendar():
-    events = []
-    seen_ids = set()
-    today_dt = datetime.now()
-    nba_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
-    
-    year = today_dt.year
-    months = []
-    for i in range(9):
-        current_m = (today_dt.month - 1 + i) % 12 + 1
-        current_y = year + (today_dt.month - 1 + i) // 12
-        months.append(f"{current_y}{current_m:02d}")
-    
-    for month_str in months:
-        url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={month_str}&limit=1000"
-        try:
-            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-            with urllib.request.urlopen(req) as response:
-                data = json.loads(response.read().decode('utf-8'))
-                
-                for i, event in enumerate(data.get('events', [])):
-                    competition = event['competitions'][0]
-                    date_iso = competition['date']
-                    date_str = date_iso[:10]
-                    
-                    event_id = event.get('id', f"nba_{date_str}_{i}")
-                    if event_id not in seen_ids:
-                        seen_ids.add(event_id)
-                        raw_time = date_iso[11:16]
-                        time_str = adjust_hour(raw_time, 1)
-                        
-                        status_type = event.get('status', {}).get('type', {})
-                        status_state = status_type.get('state', 'pre')
-                        is_live = (status_state == 'in')
-                        is_finished = (status_state == 'post')
-
-                        venue = competition.get('venue')
-                        if venue and venue.get('fullName'):
-                            venue_name = venue.get('fullName')
-                            addr = venue.get('address', {})
-                            venue_city = addr.get('city', '')
-                            venue_country = addr.get('country', 'États-Unis')
-                            venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
-                        else:
-                            venue_info = "TBD"
-
-                        competitors = competition['competitors']
-                        team1 = competitors[0]
-                        team2 = competitors[1]
-                        
-                        t1_name = team1['team'].get('displayName', 'TBD')
-                        t2_name = team2['team'].get('displayName', 'TBD')
-                        is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
-
-                        season_type = event.get('season', {}).get('type', 2)
-                        nature_str = "Play-offs NBA" if season_type == 3 else "Saison Régulière"
-
-                        events.append({
-                            "id": f"nba_{event_id}",
-                            "date": date_str,
-                            "category": "nba",
-                            "sportIcon": nba_logo,
-                            "isImgIcon": True,
-                            "team1": t1_name,
-                            "team1Extra": "",
-                            "team1Logo": team1['team'].get('logo', ''),
-                            "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
-                            "team2": t2_name,
-                            "team2Logo": team2['team'].get('logo', ''),
-                            "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
-                            "venue": venue_info,
-                            "time": time_str,
-                            "nature": nature_str,
-                            "isLive": is_live,
-                            "isFinished": is_finished,
-                            "channels": ["beinsports", "dazn"]
-                        })
-        except Exception as e:
-            print(f"Erreur NBA mois {month_str} : {e}")
-            
-    return events
-
 def main():
     f1_events = fetch_f1_calendar()
-    nfl_events = fetch_nfl_calendar()
-    nba_events = fetch_nba_calendar()
+    nfl_events = fetch_espn_games("football/nfl", "nfl", [(2, 19, 18), (3, 5, 4)])
+    nba_events = fetch_espn_games("basketball/nba", "nba", [(2, 27, 26), (3, 5, 4)])
     
     all_events = f1_events + nfl_events + nba_events
     all_events.sort(key=lambda x: (x['date'], x['time']))
