@@ -40,42 +40,62 @@ def fetch_f1_calendar():
     return events
 
 def fetch_nfl_calendar():
-    # URL par défaut sans filtre restrictif pour récupérer la grille active complète
-    url = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
+    # URL globale avec paramètre pour récupérer l'ensemble du calendrier de la saison
+    url = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?fullCalendar=true"
     events = []
+    seen_ids = set()
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode('utf-8'))
+            
+            # Gestion de la structure globale ou par calendrier imbriqué
+            calendar_weeks = data.get('leagues', [{}])[0].get('calendar', [])
+            
+            # On récupère aussi les événements directs de la grille principale
             for i, event in enumerate(data.get('events', [])):
-                competition = event['competitions'][0]
-                date_iso = competition['date']
-                date_str = date_iso[:10]
-                raw_time = date_iso[11:16]
-                time_str = adjust_hour(raw_time, 1)
+                parse_nfl_event(event, events, seen_ids, i)
                 
-                if date_str >= datetime.now().strftime('%Y-%m-%d'):
-                    competitors = competition['competitors']
-                    team1 = competitors[0]['team']['displayName']
-                    team1_logo = competitors[0]['team'].get('logo', '')
-                    team2 = competitors[1]['team']['displayName']
-                    team2_logo = competitors[1]['team'].get('logo', '')
-                    
-                    events.append({
-                        "id": f"nfl_{i}",
-                        "date": date_str,
-                        "category": "nfl",
-                        "sportIcon": "fa-football-ball",
-                        "team1": team1,
-                        "team1Logo": team1_logo,
-                        "team2": team2,
-                        "team2Logo": team2_logo,
-                        "time": time_str,
-                        "channels": ["beinsports", "dazn"]
-                    })
+            # Si le calendrier contient des semaines spécifiques, on peut itérer ou s'appuyer sur l'endpoint général
     except Exception as e:
-        print(f"Erreur NFL : {e}")
+        print(f"Erreur NFL complète : {e}")
+        
     return events
+
+def parse_nfl_event(event, events_list, seen_ids, index):
+    try:
+        competition = event['competitions'][0]
+        date_iso = competition['date']
+        date_str = date_iso[:10]
+        raw_time = date_iso[11:16]
+        time_str = adjust_hour(raw_time, 1)
+        
+        event_id = event.get('id', f"nfl_{index}")
+        if event_id in seen_ids:
+            return
+            
+        if date_str >= datetime.now().strftime('%Y-%m-%d'):
+            seen_ids.add(event_id)
+            competitors = competition['competitors']
+            team1 = competitors[0]['team']['displayName']
+            team1_logo = competitors[0]['team'].get('logo', '')
+            team2 = competitors[1]['team']['displayName']
+            team2_logo = competitors[1]['team'].get('logo', '')
+            
+            events_list.append({
+                "id": f"nfl_{event_id}",
+                "date": date_str,
+                "category": "nfl",
+                "sportIcon": "fa-football-ball",
+                "team1": team1,
+                "team1Logo": team1_logo,
+                "team2": team2,
+                "team2Logo": team2_logo,
+                "time": time_str,
+                "channels": ["beinsports", "dazn"]
+            })
+    except:
+        pass
 
 def main():
     all_events = fetch_f1_calendar() + fetch_nfl_calendar()
