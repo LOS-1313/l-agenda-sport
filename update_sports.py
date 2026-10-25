@@ -54,13 +54,11 @@ def fetch_f1_calendar():
                 race_name = race['raceName']
                 circuit_name = race['Circuit']['circuitName']
                 
-                # Recherche sécurisée incluant une vérification sur le nom du Grand Prix si le circuit échoue
-                info = circuit_data.get(circuit_name)
-                if not info:
-                    if "Qatar" in race_name:
-                        info = {"flag": "qa", "city": "Lusail"}
-                    else:
-                        info = {"flag": "un", "city": ""}
+                # Forçage direct si Qatar détecté dans le nom ou le circuit
+                if "Qatar" in race_name or "Losail" in circuit_name:
+                    info = {"flag": "qa", "city": "Lusail"}
+                else:
+                    info = circuit_data.get(circuit_name, {"flag": "un", "city": ""})
 
                 flag_url = f"https://flagcdn.com/w80/{info['flag']}.png"
                 circuit_display = f"{circuit_name} ({info['city']})" if info['city'] else circuit_name
@@ -219,74 +217,67 @@ def fetch_nba_calendar():
     today_str = datetime.now().strftime('%Y-%m-%d')
     nba_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
     
-    # Balayage complet par semaine pour la NBA sur un format identique à la NFL
-    phases = [
-        (2, 27, "Saison Régulière"),
-        (3, 5, "Play-offs NBA")
-    ]
-    
-    for seasontype, max_weeks, phase_label in phases:
-        for week in range(1, max_weeks):
-            url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?seasontype={seasontype}&week={week}"
-            try:
-                req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-                with urllib.request.urlopen(req) as response:
-                    data = json.loads(response.read().decode('utf-8'))
-                    
-                    for i, event in enumerate(data.get('events', [])):
-                        competition = event['competitions'][0]
-                        date_iso = competition['date']
-                        date_str = date_iso[:10]
+    # Appel direct et global de l'endpoint scoreboard NBA sans filtre strict de semaine pour récupérer la grille active et planifiée
+    url = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as response:
+            data = json.loads(response.read().decode('utf-8'))
+            
+            for i, event in enumerate(data.get('events', [])):
+                competition = event['competitions'][0]
+                date_iso = competition['date']
+                date_str = date_iso[:10]
+                
+                if date_str >= today_str:
+                    event_id = event.get('id', f"nba_{i}")
+                    if event_id not in seen_ids:
+                        seen_ids.add(event_id)
+                        raw_time = date_iso[11:16]
+                        time_str = adjust_hour(raw_time, 1)
                         
-                        if date_str >= today_str:
-                            event_id = event.get('id', f"nba_st{seasontype}_w{week}_{i}")
-                            if event_id not in seen_ids:
-                                seen_ids.add(event_id)
-                                raw_time = date_iso[11:16]
-                                time_str = adjust_hour(raw_time, 1)
-                                
-                                venue = competition.get('venue')
-                                if venue and venue.get('fullName'):
-                                    venue_name = venue.get('fullName')
-                                    addr = venue.get('address', {})
-                                    venue_city = addr.get('city', '')
-                                    venue_country = addr.get('country', 'États-Unis')
-                                    
-                                    if venue_city:
-                                        venue_info = f"{venue_name} ({venue_city} - {venue_country})"
-                                    else:
-                                        venue_info = f"{venue_name} ({venue_country})"
-                                else:
-                                    venue_info = "TBD"
+                        venue = competition.get('venue')
+                        if venue and venue.get('fullName'):
+                            venue_name = venue.get('fullName')
+                            addr = venue.get('address', {})
+                            venue_city = addr.get('city', '')
+                            venue_country = addr.get('country', 'États-Unis')
+                            
+                            if venue_city:
+                                venue_info = f"{venue_name} ({venue_city} - {venue_country})"
+                            else:
+                                venue_info = f"{venue_name} ({venue_country})"
+                        else:
+                            venue_info = "TBD"
 
-                                competitors = competition['competitors']
-                                team1 = competitors[0]
-                                team2 = competitors[1]
-                                
-                                t1_name = team1['team'].get('displayName', 'TBD')
-                                t2_name = team2['team'].get('displayName', 'TBD')
-                                is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
+                        competitors = competition['competitors']
+                        team1 = competitors[0]
+                        team2 = competitors[1]
+                        
+                        t1_name = team1['team'].get('displayName', 'TBD')
+                        t2_name = team2['team'].get('displayName', 'TBD')
+                        is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
 
-                                events.append({
-                                    "id": f"nba_{event_id}",
-                                    "date": date_str,
-                                    "category": "nba",
-                                    "sportIcon": nba_logo,
-                                    "isImgIcon": True,
-                                    "team1": t1_name,
-                                    "team1Extra": "",
-                                    "team1Logo": team1['team'].get('logo', ''),
-                                    "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
-                                    "team2": t2_name,
-                                    "team2Logo": team2['team'].get('logo', ''),
-                                    "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
-                                    "venue": venue_info,
-                                    "time": time_str,
-                                    "nature": phase_label,
-                                    "channels": ["beinsports", "dazn"]
-                                })
-            except Exception as e:
-                pass
+                        events.append({
+                            "id": f"nba_{event_id}",
+                            "date": date_str,
+                            "category": "nba",
+                            "sportIcon": nba_logo,
+                            "isImgIcon": True,
+                            "team1": t1_name,
+                            "team1Extra": "",
+                            "team1Logo": team1['team'].get('logo', ''),
+                            "showHomeTeam1": False if is_tbd else team1.get('homeAway') == 'home',
+                            "team2": t2_name,
+                            "team2Logo": team2['team'].get('logo', ''),
+                            "showHomeTeam2": False if is_tbd else team2.get('homeAway') == 'home',
+                            "venue": venue_info,
+                            "time": time_str,
+                            "nature": "Saison NBA",
+                            "channels": ["beinsports", "dazn"]
+                        })
+    except Exception as e:
+        print(f"Erreur NBA : {e}")
             
     return events
 
