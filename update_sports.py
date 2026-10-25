@@ -10,32 +10,6 @@ def adjust_hour(time_str, hours_to_add=1):
     except:
         return time_str
 
-circuit_countries = {
-    "Bahrain International Circuit": "Bahreïn",
-    "Jeddah Corniche Circuit": "Arabie saoudite",
-    "Albert Park Grand Prix Circuit": "Australie",
-    "Baku City Circuit": "Azerbaïdjan",
-    "Miami International Autodrome": "États-Unis",
-    "Circuit de Monaco": "Monaco",
-    "Circuit Gilles Villeneuve": "Canada",
-    "Circuit de Barcelona-Catalunya": "Espagne",
-    "Red Bull Ring": "Autriche",
-    "Silverstone Circuit": "Grande-Bretagne",
-    "Hungaroring": "Hongrie",
-    "Circuit de Spa-Francorchamps": "Belgique",
-    "Circuit Zandvoort": "Pays-Bas",
-    "Monza Circuit": "Italie",
-    "Marina Bay Street Circuit": "Singapour",
-    "Circuit of the Americas": "États-Unis",
-    "Autódromo Hermanos Rodríguez": "Mexique",
-    "Autódromo José Carlos Pace": "Brésil",
-    "Las Vegas Strip Circuit": "États-Unis",
-    "Losail International Circuit": "Qatar",
-    "Yas Marina Circuit": "Émirats arabes unis",
-    "Shanghai International Circuit": "Chine",
-    "Suzuka Circuit": "Japon"
-}
-
 circuit_flags = {
     "Bahrain International Circuit": "bh",
     "Jeddah Corniche Circuit": "sa",
@@ -55,7 +29,7 @@ circuit_flags = {
     "Circuit of the Americas": "us",
     "Autódromo Hermanos Rodríguez": "mx",
     "Autódromo José Carlos Pace": "br",
-    "Las Vegas Strip Circuit": "us",
+    "Las Vegas Strip Street Circuit": "us",
     "Losail International Circuit": "qa",
     "Yas Marina Circuit": "ae",
     "Shanghai International Circuit": "cn",
@@ -94,13 +68,14 @@ def fetch_f1_calendar():
                             "category": "f1",
                             "sportIcon": f1_logo,
                             "isImgIcon": True,
-                            "team1": f"{race_name} (Qualifications)",
+                            "team1": race_name,
+                            "team1Extra": "(Qualifications)",
                             "team1Logo": flag_url,
                             "team2": circuit_name,
-                            "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+                            "team2Logo": "", # Pas d'image pour le circuit
                             "time": q_time,
                             "nature": gp_label,
-                            "showHomeTeam1": False, # Pas de mention Domicile pour la F1
+                            "showHomeTeam1": False,
                             "channels": ["canal+"]
                         })
 
@@ -115,10 +90,11 @@ def fetch_f1_calendar():
                             "category": "f1",
                             "sportIcon": f1_logo,
                             "isImgIcon": True,
-                            "team1": f"{race_name} (Course Sprint)",
+                            "team1": race_name,
+                            "team1Extra": "(Course Sprint)",
                             "team1Logo": flag_url,
                             "team2": circuit_name,
-                            "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+                            "team2Logo": "",
                             "time": s_time,
                             "nature": gp_label,
                             "showHomeTeam1": False,
@@ -135,10 +111,11 @@ def fetch_f1_calendar():
                         "category": "f1",
                         "sportIcon": f1_logo,
                         "isImgIcon": True,
-                        "team1": f"{race_name} (Course)",
+                        "team1": race_name,
+                        "team1Extra": "(Course)",
                         "team1Logo": flag_url,
                         "team2": circuit_name,
-                        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+                        "team2Logo": "",
                         "time": r_time,
                         "nature": gp_label,
                         "showHomeTeam1": False,
@@ -186,7 +163,6 @@ def fetch_nfl_calendar():
                                 
                                 venue_name = competition.get('venue', {}).get('fullName', '')
                                 venue_addr = competition.get('venue', {}).get('address', {})
-                                venue_city = venue_addr.get('city', '')
                                 venue_country = venue_addr.get('country', 'États-Unis')
                                 
                                 venue_info = ""
@@ -197,30 +173,19 @@ def fetch_nfl_calendar():
                                 team1 = competitors[0]
                                 team2 = competitors[1]
                                 
-                                t1_name = team1['team']['displayName']
-                                t1_logo = team1['team'].get('logo', '')
-                                t1_home = team1.get('homeAway') == 'home'
-
-                                t2_name = team2['team']['displayName']
-                                t2_logo = team2['team'].get('logo', '')
-                                t2_home = team2.get('homeAway') == 'home'
-
-                                # Condition : afficher "Domicile" uniquement si l'une des équipes est qualifiée comme "home"
-                                show_t1_home = t1_home
-                                show_t2_home = t2_home
-
                                 events.append({
                                     "id": f"nfl_{event_id}",
                                     "date": date_str,
                                     "category": "nfl",
                                     "sportIcon": nfl_logo,
                                     "isImgIcon": True,
-                                    "team1": t1_name,
-                                    "team1Logo": t1_logo,
-                                    "showHomeTeam1": show_t1_home,
-                                    "team2": t2_name,
-                                    "team2Logo": t2_logo,
-                                    "showHomeTeam2": show_t2_home,
+                                    "team1": team1['team']['displayName'],
+                                    "team1Extra": "",
+                                    "team1Logo": team1['team'].get('logo', ''),
+                                    "showHomeTeam1": team1.get('homeAway') == 'home',
+                                    "team2": team2['team']['displayName'],
+                                    "team2Logo": team2['team'].get('logo', ''),
+                                    "showHomeTeam2": team2.get('homeAway') == 'home',
                                     "venue": venue_info,
                                     "time": time_str,
                                     "nature": nature_str,
