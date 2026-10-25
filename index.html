@@ -46,8 +46,8 @@
                 <button onclick="filterCategory('football')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="football">Football</button>
                 <button onclick="filterCategory('f1')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="f1">F1</button>
                 <button onclick="filterCategory('nfl')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="nfl">NFL</button>
-                <button onclick="filterCategory('spartiates')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="spartiates">Spartiates</button>
                 <button onclick="filterCategory('nba')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="nba">NBA</button>
+                <button onclick="filterCategory('spartiates')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-dark-700 text-gray-400 hover:text-white" data-category="spartiates">Spartiates</button>
             </div>
         </div>
     </header>
@@ -136,7 +136,6 @@
                         ? match.channels.map(ch => `<span class="px-2.5 py-1 rounded text-[11px] font-black uppercase tracking-wider bg-purple-900/80 text-purple-200 border border-purple-700/50">${ch}</span>`).join('')
                         : '';
 
-                    // Gestion de l'affichage sécurisé des logos (masqué si TBD ou vide)
                     const logo1Html = match.team1Logo && match.team1 !== 'TBD' ? `<img src="${match.team1Logo}" alt="" class="w-6 h-6 object-contain">` : '';
                     const logo2Html = match.team2Logo && match.team2 !== 'TBD' ? `<img src="${match.team2Logo}" alt="" class="w-6 h-6 object-contain">` : '';
 
@@ -175,7 +174,7 @@
                                         ${match.showHomeTeam2 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
 
-                                    <!-- Ligne 3 : Stade en italique (uniquement NFL si renseigné) -->
+                                    <!-- Ligne 3 : Stade en italique (uniquement NFL/NBA si renseigné) -->
                                     ${match.venue ? `<div class="text-xs text-gray-400 italic pl-8.5">${match.venue}</div>` : ''}
                                 </div>
                             </div>
