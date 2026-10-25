@@ -158,9 +158,11 @@
                         <div class="bg-cardbg hover:bg-cardhover transition-all border border-gray-800/80 rounded-xl p-3 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
                             <!-- Gauche : Icône sport -->
                             <div class="flex items-center gap-4 w-full sm:w-auto">
-                                <div class="w-10 h-10 rounded-lg bg-gray-900/90 border border-gray-800 flex items-center justify-center text-blue-400 shrink-0">
-                                    <i class="fa-solid ${match.sportIcon} text-lg"></i>
-                                </div>
+
+<div class="w-10 h-10 rounded-lg bg-gray-900/90 border border-gray-800 flex items-center justify-center shrink-0 overflow-hidden p-1.5">
+    ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
+</div>
+                                
                                 <!-- Affiche équipes -->
                                 <div class="flex flex-col gap-1.5 flex-1">
                                     <div class="flex items-center gap-2">
@@ -175,7 +177,7 @@
                                 </div>
                             </div>
 
-                            <!-- Milieu : Nature du match et Heure -->
+<!-- Milieu : Nature et Heure -->
 <div class="flex flex-col items-center justify-center shrink-0 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800/50">
     ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5">${match.nature}</span>` : ''}
     <span class="text-base font-extrabold text-white tracking-tight">${match.time}</span>
