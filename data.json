@@ -1,89 +1,5 @@
 [
     {
-        "id": "nba_401909863",
-        "date": "2026-10-25",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "New York Knicks",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
-        "showHomeTeam1": true,
-        "team2": "Orlando Magic",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
-        "showHomeTeam2": false,
-        "venue": "Madison Square Garden (New York - États-Unis)",
-        "time": "00:00",
-        "nature": "Saison NBA",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
-        "id": "nba_401909864",
-        "date": "2026-10-25",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Minnesota Timberwolves",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
-        "showHomeTeam1": true,
-        "team2": "Toronto Raptors",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
-        "showHomeTeam2": false,
-        "venue": "Target Center (Minneapolis - États-Unis)",
-        "time": "00:00",
-        "nature": "Saison NBA",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
-        "id": "nba_401909865",
-        "date": "2026-10-25",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Oklahoma City Thunder",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
-        "showHomeTeam1": true,
-        "team2": "LA Clippers",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
-        "showHomeTeam2": false,
-        "venue": "Paycom Center (Oklahoma City - États-Unis)",
-        "time": "00:00",
-        "nature": "Saison NBA",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
-        "id": "nba_401909866",
-        "date": "2026-10-25",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Philadelphia 76ers",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
-        "showHomeTeam1": true,
-        "team2": "Detroit Pistons",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
-        "showHomeTeam2": false,
-        "venue": "Xfinity Mobile Arena (Philadelphia - États-Unis)",
-        "time": "00:30",
-        "nature": "Saison NBA",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
         "id": "nfl_401873011",
         "date": "2026-10-25",
         "category": "nfl",
@@ -333,48 +249,6 @@
         ]
     },
     {
-        "id": "nba_401909861",
-        "date": "2026-10-25",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Utah Jazz",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
-        "showHomeTeam1": true,
-        "team2": "Los Angeles Lakers",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-        "showHomeTeam2": false,
-        "venue": "Delta Center (Salt Lake City - États-Unis)",
-        "time": "22:00",
-        "nature": "Saison NBA",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
-        "id": "nba_401909862",
-        "date": "2026-10-25",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Brooklyn Nets",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
-        "showHomeTeam1": true,
-        "team2": "Indiana Pacers",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
-        "showHomeTeam2": false,
-        "venue": "Barclays Center (Brooklyn - États-Unis)",
-        "time": "23:00",
-        "nature": "Saison NBA",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
         "id": "nfl_401873022",
         "date": "2026-10-26",
         "category": "nfl",
@@ -390,27 +264,6 @@
         "venue": "Lumen Field (Seattle - USA)",
         "time": "01:20",
         "nature": "Semaine 7 / 18",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
-        "id": "nba_401909867",
-        "date": "2026-10-26",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Sacramento Kings",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
-        "showHomeTeam1": true,
-        "team2": "Memphis Grizzlies",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
-        "showHomeTeam2": false,
-        "venue": "Golden 1 Center (Sacramento - États-Unis)",
-        "time": "02:00",
-        "nature": "Saison NBA",
         "channels": [
             "beinsports",
             "dazn"
