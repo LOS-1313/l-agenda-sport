@@ -194,6 +194,21 @@
         ]
     },
     {
+        "id": "nfl_13",
+        "date": "2026-10-27",
+        "category": "nfl",
+        "sportIcon": "fa-football-ball",
+        "team1": "Philadelphia Eagles",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "team2": "Dallas Cowboys",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "time": "01:15",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
         "id": "f1_18",
         "date": "2026-11-01",
         "category": "f1",
