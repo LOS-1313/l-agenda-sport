@@ -149,11 +149,15 @@
                                     ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
                                 </div>
 
-                                <!-- 2. Bloc Heure et Nature -->
-                                <div class="flex flex-col items-center justify-center shrink-0 bg-dark-900/60 px-3 py-1.5 rounded-lg border border-gray-800/50 w-32">
-                                    ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5 text-center">${match.nature}</span>` : ''}
-                                    <span class="text-base font-extrabold text-white tracking-tight text-center">${match.time}</span>
-                                </div>
+
+
+<!-- 2. Bloc Heure, Nature et Statut Live -->
+<div class="flex flex-col items-center justify-center shrink-0 bg-dark-900/60 px-3 py-1.5 rounded-lg border ${match.isLive ? 'border-red-500/80 bg-red-950/20 shadow-lg shadow-red-500/10' : 'border-gray-800/50'} w-32">
+    ${match.isLive 
+        ? `<span class="flex items-center gap-1.5 text-[11px] font-black text-red-500 uppercase tracking-wider mb-0.5 animate-pulse"><span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>LIVE</span>` 
+        : (match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5 text-center">${match.nature}</span>` : '')}
+    <span class="text-base font-extrabold text-white tracking-tight text-center">${match.isLive ? 'EN COURS' : match.time}</span>
+</div>
 
                                 <!-- 3. Équipes / Événement -->
                                 <div class="space-y-1.5 flex-grow pl-2">
