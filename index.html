@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Agenda Sport</title>
+    <!-- Favicon Calendrier -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path fill='%233b82f6' d='M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 336c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-336c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l352 0 0 288c0 8.8-7.2 16-16 16L64 496c-8.8 0-16-7.2-16-16l0-288z'/></svg>">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome pour les icônes de repli -->
@@ -231,17 +233,22 @@
                             ? `<span class="text-xs font-extrabold text-gray-400 uppercase tracking-wider text-center">TERMINÉ</span>` 
                             : `<span class="text-base font-extrabold text-white tracking-tight text-center">${match.time}</span>`);
 
-                    // Colonne de score ou classement F1 (alignée à gauche)
                     const scoreColumnHtml = (match.isLive || match.isFinished) && match.score 
                         ? `<div class="flex items-center justify-start px-4 py-1.5 rounded-lg bg-dark-900/80 border border-gray-800 text-xs font-bold text-white tracking-wider shrink-0 shadow-inner text-left leading-tight">${match.score}</div>` 
                         : '';
+
+                    // Couleur de fond du conteneur du logo selon la catégorie
+                    let sportIconBg = 'bg-dark-900/95';
+                    if (match.category === 'nba') sportIconBg = 'bg-orange-600';
+                    else if (match.category === 'nfl') sportIconBg = 'bg-purple-600';
+                    else if (match.category === 'f1') sportIconBg = 'bg-white';
 
                     html += `
                         <div class="${cardClass} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm" data-id="${match.id}" data-live="${match.isLive}" data-finished="${match.isFinished}">
                             
                             <!-- Gauche -->
                             <div class="flex items-center space-x-4 flex-grow">
-                                <div class="w-10 h-10 rounded-lg bg-dark-900/90 border border-gray-800 flex items-center justify-center shrink-0 overflow-hidden p-1.5">
+                                <div class="w-10 h-10 rounded-lg ${sportIconBg} border border-gray-800 flex items-center justify-center shrink-0 overflow-hidden p-1.5 shadow-sm">
                                     ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
                                 </div>
 
@@ -292,10 +299,8 @@
         }
 
         function scrollToNow() {
-            // 1. Chercher un match en direct en priorité
             let targetCard = document.querySelector('[data-live="true"]');
             
-            // 2. Si aucun live, chercher le premier match non terminé (à venir) parmi les cartes affichées
             if (!targetCard) {
                 const cards = document.querySelectorAll('.match-card');
                 for (let card of cards) {
@@ -306,7 +311,6 @@
                 }
             }
 
-            // 3. Si vraiment aucun match à venir n'est visible, prendre la première carte
             if (!targetCard) {
                 targetCard = document.querySelector('.match-card');
             }
