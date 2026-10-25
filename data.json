@@ -1,20 +1,5 @@
 [
     {
-        "id": "nfl_12",
-        "date": "2026-10-23",
-        "category": "nfl",
-        "sportIcon": "fa-football-ball",
-        "team1": "Chicago Bears",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
-        "team2": "New England Patriots",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
-        "time": "01:15",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
         "id": "nfl_0",
         "date": "2026-10-25",
         "category": "nfl",
@@ -203,21 +188,6 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "time": "01:20",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
-        "id": "nfl_13",
-        "date": "2026-10-27",
-        "category": "nfl",
-        "sportIcon": "fa-football-ball",
-        "team1": "Philadelphia Eagles",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
-        "team2": "Dallas Cowboys",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
-        "time": "01:15",
         "channels": [
             "beinsports",
             "dazn"
