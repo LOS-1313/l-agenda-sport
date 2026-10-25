@@ -21,7 +21,7 @@ def fetch_f1_calendar():
             for i, race in enumerate(races):
                 date_str = race['date']
                 raw_time = race.get('time', '14:00:00')[:5]
-                time_str = adjust_hour(raw_time, 1) # Ajustement heure française
+                time_str = adjust_hour(raw_time, 1)
                 if date_str >= datetime.now().strftime('%Y-%m-%d'):
                     events.append({
                         "id": f"f1_{i}",
@@ -40,7 +40,8 @@ def fetch_f1_calendar():
     return events
 
 def fetch_nfl_calendar():
-    url = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
+    # URL globale de la saison NFL pour récupérer toutes les semaines officielles planifiées
+    url = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026"
     events = []
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -51,30 +52,29 @@ def fetch_nfl_calendar():
                 date_iso = competition['date']
                 date_str = date_iso[:10]
                 raw_time = date_iso[11:16]
-                
-                # Conversion de l'heure UTC vers l'heure française (+1h ou +2h selon besoin)
                 time_str = adjust_hour(raw_time, 1)
                 
-                competitors = competition['competitors']
-                team1 = competitors[0]['team']['displayName']
-                team1_logo = competitors[0]['team'].get('logo', '')
-                team2 = competitors[1]['team']['displayName']
-                team2_logo = competitors[1]['team'].get('logo', '')
-                
-                events.append({
-                    "id": f"nfl_{i}",
-                    "date": date_str,
-                    "category": "nfl",
-                    "sportIcon": "fa-football-ball",
-                    "team1": team1,
-                    "team1Logo": team1_logo,
-                    "team2": team2,
-                    "team2Logo": team2_logo,
-                    "time": time_str,
-                    "channels": ["beinsports", "dazn"]
-                })
+                if date_str >= datetime.now().strftime('%Y-%m-%d'):
+                    competitors = competition['competitors']
+                    team1 = competitors[0]['team']['displayName']
+                    team1_logo = competitors[0]['team'].get('logo', '')
+                    team2 = competitors[1]['team']['displayName']
+                    team2_logo = competitors[1]['team'].get('logo', '')
+                    
+                    events.append({
+                        "id": f"nfl_{i}",
+                        "date": date_str,
+                        "category": "nfl",
+                        "sportIcon": "fa-football-ball",
+                        "team1": team1,
+                        "team1Logo": team1_logo,
+                        "team2": team2,
+                        "team2Logo": team2_logo,
+                        "time": time_str,
+                        "channels": ["beinsports", "dazn"]
+                    })
     except Exception as e:
-        print(f"Erreur NFL : {e}")
+        print(f"Erreur NFL complète : {e}")
     return events
 
 def main():
