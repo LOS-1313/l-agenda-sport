@@ -146,7 +146,7 @@
                                     ${match.isImgIcon ? `<img src="${match.sportIcon}" alt="" class="w-full h-full object-contain">` : `<i class="fa-solid ${match.sportIcon} text-lg text-blue-400"></i>`}
                                 </div>
 
-                                <!-- 2. Bloc Heure et Nature (placé juste après le logo) -->
+                                <!-- 2. Bloc Heure et Nature -->
                                 <div class="flex flex-col items-center justify-center shrink-0 bg-dark-900/60 px-3 py-1.5 rounded-lg border border-gray-800/50 w-32">
                                     ${match.nature ? `<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-0.5 text-center">${match.nature}</span>` : ''}
                                     <span class="text-base font-extrabold text-white tracking-tight text-center">${match.time}</span>
@@ -154,16 +154,19 @@
 
                                 <!-- 3. Équipes / Événement -->
                                 <div class="space-y-1.5 flex-grow pl-2">
-                                    <!-- Ligne 1 : Équipe 1 -->
+                                    <!-- Ligne 1 : Équipe 1 / Grand Prix (Gras, et extra en normal) -->
                                     <div class="flex items-center space-x-2.5">
                                         <img src="${match.team1Logo}" alt="" class="w-6 h-6 object-contain">
-                                        <span class="text-gray-200 font-normal text-sm tracking-tight">${match.team1}</span>
+                                        <div class="flex items-center space-x-1.5">
+                                            <span class="text-gray-100 font-bold text-sm tracking-tight">${match.team1}</span>
+                                            ${match.team1Extra ? `<span class="text-gray-300 font-normal text-sm">${match.team1Extra}</span>` : ''}
+                                        </div>
                                         ${match.showHomeTeam1 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
 
-                                    <!-- Ligne 2 : Équipe 2 / Circuit -->
+                                    <!-- Ligne 2 : Équipe 2 / Circuit F1 (Sans image si vide, police italique uniforme) -->
                                     <div class="flex items-center space-x-2.5">
-                                        <img src="${match.team2Logo}" alt="" class="w-6 h-6 object-contain">
+                                        ${match.team2Logo ? `<img src="${match.team2Logo}" alt="" class="w-6 h-6 object-contain">` : ''}
                                         <span class="text-gray-300 text-xs italic font-normal">${match.team2}</span>
                                         ${match.showHomeTeam2 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
