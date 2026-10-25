@@ -218,7 +218,7 @@ def fetch_nba_calendar():
     today_str = today_dt.strftime('%Y-%m-%d')
     nba_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
     
-    # Génération des paramètres mensuels (YYYYMM) d'octobre 2026 à juin 2027
+    # Balayage mensuel (YYYYMM) de la saison NBA active d'octobre 2026 à juin 2027
     year = today_dt.year
     months = []
     for i in range(9):
@@ -267,7 +267,6 @@ def fetch_nba_calendar():
                             t2_name = team2['team'].get('displayName', 'TBD')
                             is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
 
-                            # Identification du type de saison (2 = Saison Régulière, 3 = Play-offs)
                             season_type = event.get('season', {}).get('type', 2)
                             nature_str = "Play-offs NBA" if season_type == 3 else "Saison Régulière"
 
