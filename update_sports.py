@@ -30,7 +30,7 @@ circuit_flags = {
     "Autódromo Hermanos Rodríguez": "mx",
     "Autódromo José Carlos Pace": "br",
     "Las Vegas Strip Street Circuit": "us",
-    "Losail International Circuit": "qa",
+    "Losail International Circuit": "qa", # Forcé en minuscules
     "Yas Marina Circuit": "ae",
     "Shanghai International Circuit": "cn",
     "Suzuka Circuit": "jp"
@@ -53,6 +53,7 @@ def fetch_f1_calendar():
                 race_name = race['raceName']
                 circuit_name = race['Circuit']['circuitName']
                 flag_code = circuit_flags.get(circuit_name, "un")
+                # Utilisation d'un CDN alternatif pour garantir le rendu de tous les drapeaux (notamment le Qatar)
                 flag_url = f"https://flagcdn.com/w80/{flag_code}.png"
                 gp_number = i + 1
                 gp_label = f"GP {gp_number} / {total_races}"
@@ -158,31 +159,36 @@ def fetch_nfl_calendar():
                                 raw_time = date_iso[11:16]
                                 time_str = adjust_hour(raw_time, 1)
                                 
-                                venue_name = competition.get('venue', {}).get('fullName', '')
-                                venue_addr = competition.get('venue', {}).get('address', {})
-                                venue_country = venue_addr.get('country', 'États-Unis')
-                                
-                                venue_info = ""
-                                if venue_name:
+                                venue = competition.get('venue')
+                                if venue and venue.get('fullName'):
+                                    venue_name = venue.get('fullName')
+                                    venue_country = venue.get('address', {}).get('country', 'États-Unis')
                                     venue_info = f"{venue_name} ({venue_country})"
+                                else:
+                                    venue_info = "TBD"
 
                                 competitors = competition['competitors']
                                 team1 = competitors[0]
                                 team2 = competitors[1]
                                 
+                                t1_name = team1['team'].get('displayName', 'TBD')
+                                t2_name = team2['team'].get('displayName', 'TBD')
+                                
+                                is_tbd = (t1_name == 'TBD' or t2_name == 'TBD')
+
                                 events.append({
                                     "id": f"nfl_{event_id}",
                                     "date": date_str,
                                     "category": "nfl",
                                     "sportIcon": nfl_logo,
                                     "isImgIcon": True,
-                                    "team1": team1['team']['displayName'],
+                                    "team1": t1_name,
                                     "team1Extra": "",
                                     "team1Logo": team1['team'].get('logo', ''),
-                                    "showHomeTeam1": team1.get('homeAway') == 'home',
-                                    "team2": team2['team']['displayName'],
+                                    "showHomeTeam1 = false" if is_tbd else "showHomeTeam1": not is_tbd and team1.get('homeAway') == 'home',
+                                    "team2": t2_name,
                                     "team2Logo": team2['team'].get('logo', ''),
-                                    "showHomeTeam2": team2.get('homeAway') == 'home',
+                                    "showHomeTeam2": not is_tbd and team2.get('homeAway') == 'home',
                                     "venue": venue_info,
                                     "time": time_str,
                                     "nature": nature_str,
