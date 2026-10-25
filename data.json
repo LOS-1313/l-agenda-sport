@@ -120,11 +120,11 @@
         ]
     },
     {
-        "id": "f1_17",
+        "id": "f1_race_17",
         "date": "2026-10-25",
         "category": "f1",
         "sportIcon": "fa-flag-checkered",
-        "team1": "United States Grand Prix",
+        "team1": "United States Grand Prix (Course)",
         "team1Logo": "https://flagcdn.com/w80/un.png",
         "team2": "Circuit of the Americas",
         "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
@@ -221,6 +221,20 @@
         "channels": [
             "beinsports",
             "dazn"
+        ]
+    },
+    {
+        "id": "f1_qual_18",
+        "date": "2026-10-31",
+        "category": "f1",
+        "sportIcon": "fa-stopwatch",
+        "team1": "Mexico City Grand Prix (Qualifications)",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Autódromo Hermanos Rodríguez",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "22:00",
+        "channels": [
+            "canal+"
         ]
     },
     {
@@ -344,11 +358,11 @@
         ]
     },
     {
-        "id": "f1_18",
+        "id": "f1_race_18",
         "date": "2026-11-01",
         "category": "f1",
         "sportIcon": "fa-flag-checkered",
-        "team1": "Mexico City Grand Prix",
+        "team1": "Mexico City Grand Prix (Course)",
         "team1Logo": "https://flagcdn.com/w80/un.png",
         "team2": "Autódromo Hermanos Rodríguez",
         "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
@@ -448,6 +462,20 @@
         ]
     },
     {
+        "id": "f1_qual_19",
+        "date": "2026-11-07",
+        "category": "f1",
+        "sportIcon": "fa-stopwatch",
+        "team1": "Brazilian Grand Prix (Qualifications)",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Autódromo José Carlos Pace",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "19:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
         "id": "nfl_401873038",
         "date": "2026-11-08",
         "category": "nfl",
@@ -463,11 +491,11 @@
         ]
     },
     {
-        "id": "f1_19",
+        "id": "f1_race_19",
         "date": "2026-11-08",
         "category": "f1",
         "sportIcon": "fa-flag-checkered",
-        "team1": "Brazilian Grand Prix",
+        "team1": "Brazilian Grand Prix (Course)",
         "team1Logo": "https://flagcdn.com/w80/un.png",
         "team2": "Autódromo José Carlos Pace",
         "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
@@ -897,11 +925,25 @@
         ]
     },
     {
-        "id": "f1_20",
+        "id": "f1_qual_20",
+        "date": "2026-11-21",
+        "category": "f1",
+        "sportIcon": "fa-stopwatch",
+        "team1": "Las Vegas Grand Prix (Qualifications)",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Las Vegas Strip Street Circuit",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "05:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": "f1_race_20",
         "date": "2026-11-22",
         "category": "f1",
         "sportIcon": "fa-flag-checkered",
-        "team1": "Las Vegas Grand Prix",
+        "team1": "Las Vegas Grand Prix (Course)",
         "team1Logo": "https://flagcdn.com/w80/un.png",
         "team2": "Las Vegas Strip Street Circuit",
         "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
@@ -1166,11 +1208,25 @@
         ]
     },
     {
-        "id": "f1_21",
+        "id": "f1_qual_21",
+        "date": "2026-11-28",
+        "category": "f1",
+        "sportIcon": "fa-stopwatch",
+        "team1": "Qatar Grand Prix (Qualifications)",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Lusail International Circuit",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "19:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": "f1_race_21",
         "date": "2026-11-29",
         "category": "f1",
         "sportIcon": "fa-flag-checkered",
-        "team1": "Qatar Grand Prix",
+        "team1": "Qatar Grand Prix (Course)",
         "team1Logo": "https://flagcdn.com/w80/un.png",
         "team2": "Lusail International Circuit",
         "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
@@ -1360,11 +1416,25 @@
         ]
     },
     {
-        "id": "f1_22",
+        "id": "f1_qual_22",
+        "date": "2026-12-05",
+        "category": "f1",
+        "sportIcon": "fa-stopwatch",
+        "team1": "Abu Dhabi Grand Prix (Qualifications)",
+        "team1Logo": "https://flagcdn.com/w80/un.png",
+        "team2": "Yas Marina Circuit",
+        "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
+        "time": "15:00",
+        "channels": [
+            "canal+"
+        ]
+    },
+    {
+        "id": "f1_race_22",
         "date": "2026-12-06",
         "category": "f1",
         "sportIcon": "fa-flag-checkered",
-        "team1": "Abu Dhabi Grand Prix",
+        "team1": "Abu Dhabi Grand Prix (Course)",
         "team1Logo": "https://flagcdn.com/w80/un.png",
         "team2": "Yas Marina Circuit",
         "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
