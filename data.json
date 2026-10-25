@@ -12,7 +12,7 @@
         "team2": "Pittsburgh Steelers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
         "showHomeTeam2": false,
-        "venue": "Stade de France (France)",
+        "venue": "Stade de France (Saint-Denis - France)",
         "time": "14:30",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -33,7 +33,7 @@
         "team2": "San Francisco 49ers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
         "showHomeTeam2": false,
-        "venue": "Mercedes-Benz Stadium (USA)",
+        "venue": "Mercedes-Benz Stadium (Atlanta - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -54,7 +54,7 @@
         "team2": "Cleveland Browns",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "showHomeTeam2": false,
-        "venue": "Nissan Stadium (USA)",
+        "venue": "Nissan Stadium (Nashville - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -75,7 +75,7 @@
         "team2": "Indianapolis Colts",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
         "showHomeTeam2": false,
-        "venue": "U.S. Bank Stadium (USA)",
+        "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -96,7 +96,7 @@
         "team2": "Miami Dolphins",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -117,7 +117,7 @@
         "team2": "Tampa Bay Buccaneers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
         "showHomeTeam2": false,
-        "venue": "Bank of America Stadium (USA)",
+        "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -138,7 +138,7 @@
         "team2": "Cincinnati Bengals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
         "showHomeTeam2": false,
-        "venue": "M&T Bank Stadium (USA)",
+        "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -159,7 +159,7 @@
         "team2": "New York Giants",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
         "showHomeTeam2": false,
-        "venue": "Reliant Stadium (USA)",
+        "venue": "Reliant Stadium (Houston - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -176,7 +176,7 @@
         "team1": "United States Grand Prix",
         "team1Extra": "(Course)",
         "team1Logo": "https://flagcdn.com/w80/us.png",
-        "team2": "Circuit of the Americas",
+        "team2": "Circuit of the Americas (Austin)",
         "team2Logo": "",
         "time": "21:00",
         "nature": "GP 18 / 23",
@@ -198,7 +198,7 @@
         "team2": "Denver Broncos",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
         "showHomeTeam2": false,
-        "venue": "State Farm Stadium (USA)",
+        "venue": "State Farm Stadium (Glendale - USA)",
         "time": "21:05",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -219,7 +219,7 @@
         "team2": "Green Bay Packers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
         "showHomeTeam2": false,
-        "venue": "Ford Field (USA)",
+        "venue": "Ford Field (Detroit - USA)",
         "time": "21:25",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -240,7 +240,7 @@
         "team2": "Los Angeles Rams",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
         "showHomeTeam2": false,
-        "venue": "Allegiant Stadium (USA)",
+        "venue": "Allegiant Stadium (Las Vegas - USA)",
         "time": "21:25",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -261,7 +261,7 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "showHomeTeam2": false,
-        "venue": "Lumen Field (USA)",
+        "venue": "Lumen Field (Seattle - USA)",
         "time": "01:20",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -282,7 +282,7 @@
         "team2": "Dallas Cowboys",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
         "showHomeTeam2": false,
-        "venue": "Lincoln Financial Field (USA)",
+        "venue": "Lincoln Financial Field (Philadelphia - USA)",
         "time": "01:15",
         "nature": "Semaine 7 / 18",
         "channels": [
@@ -303,7 +303,7 @@
         "team2": "Carolina Panthers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
         "showHomeTeam2": false,
-        "venue": "Lambeau Field (USA)",
+        "venue": "Lambeau Field (Green Bay - USA)",
         "time": "01:15",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -320,7 +320,7 @@
         "team1": "Mexico City Grand Prix",
         "team1Extra": "(Qualifications)",
         "team1Logo": "https://flagcdn.com/w80/mx.png",
-        "team2": "Autódromo Hermanos Rodríguez",
+        "team2": "Autódromo Hermanos Rodríguez (Mexico)",
         "team2Logo": "",
         "time": "22:00",
         "nature": "GP 19 / 23",
@@ -342,7 +342,7 @@
         "team2": "Baltimore Ravens",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
         "showHomeTeam2": false,
-        "venue": "Highmark Stadium (USA)",
+        "venue": "Highmark Stadium (Orchard Park - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -363,7 +363,7 @@
         "team2": "Tennessee Titans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
         "showHomeTeam2": false,
-        "venue": "Paycor Stadium (USA)",
+        "venue": "Paycor Stadium (Cincinnati - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -384,7 +384,7 @@
         "team2": "Arizona Cardinals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
         "showHomeTeam2": false,
-        "venue": "AT&T Stadium (USA)",
+        "venue": "AT&T Stadium (Arlington - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -405,7 +405,7 @@
         "team2": "Minnesota Vikings",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
         "showHomeTeam2": false,
-        "venue": "Ford Field (USA)",
+        "venue": "Ford Field (Detroit - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -426,7 +426,7 @@
         "team2": "Las Vegas Raiders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -447,7 +447,7 @@
         "team2": "Cleveland Browns",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "showHomeTeam2": false,
-        "venue": "Acrisure Stadium (USA)",
+        "venue": "Acrisure Stadium (Pittsburgh - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -468,7 +468,7 @@
         "team2": "Atlanta Falcons",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
         "showHomeTeam2": false,
-        "venue": "Raymond James Stadium (USA)",
+        "venue": "Raymond James Stadium (Tampa - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -489,7 +489,7 @@
         "team2": "Indianapolis Colts",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
         "showHomeTeam2": false,
-        "venue": "EverBank Stadium (USA)",
+        "venue": "EverBank Stadium (Jacksonville - USA)",
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -506,7 +506,7 @@
         "team1": "Mexico City Grand Prix",
         "team1Extra": "(Course)",
         "team1Logo": "https://flagcdn.com/w80/mx.png",
-        "team2": "Autódromo Hermanos Rodríguez",
+        "team2": "Autódromo Hermanos Rodríguez (Mexico)",
         "team2Logo": "",
         "time": "21:00",
         "nature": "GP 19 / 23",
@@ -528,7 +528,7 @@
         "team2": "Los Angeles Chargers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "22:05",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -549,7 +549,7 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "showHomeTeam2": false,
-        "venue": "Empower Field at Mile High (USA)",
+        "venue": "Empower Field at Mile High (Denver - USA)",
         "time": "22:25",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -570,7 +570,7 @@
         "team2": "New England Patriots",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
         "showHomeTeam2": false,
-        "venue": "Hard Rock Stadium (USA)",
+        "venue": "Hard Rock Stadium (Miami Gardens - USA)",
         "time": "22:25",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -591,7 +591,7 @@
         "team2": "Philadelphia Eagles",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
         "showHomeTeam2": false,
-        "venue": "Northwest Stadium (USA)",
+        "venue": "Northwest Stadium (Landover - USA)",
         "time": "02:20",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -612,7 +612,7 @@
         "team2": "Chicago Bears",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
         "showHomeTeam2": false,
-        "venue": "Lumen Field (USA)",
+        "venue": "Lumen Field (Seattle - USA)",
         "time": "02:15",
         "nature": "Semaine 8 / 18",
         "channels": [
@@ -633,7 +633,7 @@
         "team2": "Jacksonville Jaguars",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
         "showHomeTeam2": false,
-        "venue": "M&T Bank Stadium (USA)",
+        "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "02:15",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -650,7 +650,7 @@
         "team1": "Brazilian Grand Prix",
         "team1Extra": "(Qualifications)",
         "team1Logo": "https://flagcdn.com/w80/br.png",
-        "team2": "Autódromo José Carlos Pace",
+        "team2": "Autódromo José Carlos Pace (São Paulo)",
         "team2Logo": "",
         "time": "19:00",
         "nature": "GP 20 / 23",
@@ -672,7 +672,7 @@
         "team2": "Cincinnati Bengals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
         "showHomeTeam2": false,
-        "venue": "Santiago Bernabéu (Spain)",
+        "venue": "Santiago Bernabéu (Madrid - Spain)",
         "time": "15:30",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -689,7 +689,7 @@
         "team1": "Brazilian Grand Prix",
         "team1Extra": "(Course)",
         "team1Logo": "https://flagcdn.com/w80/br.png",
-        "team2": "Autódromo José Carlos Pace",
+        "team2": "Autódromo José Carlos Pace (São Paulo)",
         "team2Logo": "",
         "time": "18:00",
         "nature": "GP 20 / 23",
@@ -711,7 +711,7 @@
         "team2": "Dallas Cowboys",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
         "showHomeTeam2": false,
-        "venue": "Lucas Oil Stadium (USA)",
+        "venue": "Lucas Oil Stadium (Indianapolis - USA)",
         "time": "19:00",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -732,7 +732,7 @@
         "team2": "New York Jets",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
         "showHomeTeam2": false,
-        "venue": "Arrowhead Stadium (USA)",
+        "venue": "Arrowhead Stadium (Kansas City - USA)",
         "time": "19:00",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -753,7 +753,7 @@
         "team2": "Detroit Lions",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
         "showHomeTeam2": false,
-        "venue": "Hard Rock Stadium (USA)",
+        "venue": "Hard Rock Stadium (Miami Gardens - USA)",
         "time": "19:00",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -774,7 +774,7 @@
         "team2": "Cleveland Browns",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "showHomeTeam2": false,
-        "venue": "Caesars Superdome (USA)",
+        "venue": "Caesars Superdome (New Orleans - USA)",
         "time": "19:00",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -795,7 +795,7 @@
         "team2": "New York Giants",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
         "showHomeTeam2": false,
-        "venue": "Lincoln Financial Field (USA)",
+        "venue": "Lincoln Financial Field (Philadelphia - USA)",
         "time": "19:00",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -816,7 +816,7 @@
         "team2": "Los Angeles Rams",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
         "showHomeTeam2": false,
-        "venue": "Northwest Stadium (USA)",
+        "venue": "Northwest Stadium (Landover - USA)",
         "time": "19:00",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -837,7 +837,7 @@
         "team2": "Denver Broncos",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
         "showHomeTeam2": false,
-        "venue": "Bank of America Stadium (USA)",
+        "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "19:00",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -858,7 +858,7 @@
         "team2": "Houston Texans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "22:05",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -879,7 +879,7 @@
         "team2": "Las Vegas Raiders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
         "showHomeTeam2": false,
-        "venue": "Levi's Stadium (USA)",
+        "venue": "Levi's Stadium (Santa Clara - USA)",
         "time": "22:05",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -900,7 +900,7 @@
         "team2": "Green Bay Packers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
         "showHomeTeam2": false,
-        "venue": "Gillette Stadium (USA)",
+        "venue": "Gillette Stadium (Foxborough - USA)",
         "time": "22:25",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -921,7 +921,7 @@
         "team2": "Arizona Cardinals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
         "showHomeTeam2": false,
-        "venue": "Lumen Field (USA)",
+        "venue": "Lumen Field (Seattle - USA)",
         "time": "22:25",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -942,7 +942,7 @@
         "team2": "Tampa Bay Buccaneers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
         "showHomeTeam2": false,
-        "venue": "Soldier Field (USA)",
+        "venue": "Soldier Field (Chicago - USA)",
         "time": "02:20",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -963,7 +963,7 @@
         "team2": "Buffalo Bills",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
         "showHomeTeam2": false,
-        "venue": "U.S. Bank Stadium (USA)",
+        "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "02:15",
         "nature": "Semaine 9 / 18",
         "channels": [
@@ -984,7 +984,7 @@
         "team2": "Washington Commanders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "02:15",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1005,7 +1005,7 @@
         "team2": "New England Patriots",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
         "showHomeTeam2": false,
-        "venue": "FC Bayern Munich Stadium (Germany)",
+        "venue": "FC Bayern Munich Stadium (Munich - Germany)",
         "time": "15:30",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1026,7 +1026,7 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "showHomeTeam2": false,
-        "venue": "Mercedes-Benz Stadium (USA)",
+        "venue": "Mercedes-Benz Stadium (Atlanta - USA)",
         "time": "19:00",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1047,7 +1047,7 @@
         "team2": "Houston Texans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
         "showHomeTeam2": false,
-        "venue": "Huntington Bank Field (USA)",
+        "venue": "Huntington Bank Field (Cleveland - USA)",
         "time": "19:00",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1068,7 +1068,7 @@
         "team2": "Minnesota Vikings",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
         "showHomeTeam2": false,
-        "venue": "Lambeau Field (USA)",
+        "venue": "Lambeau Field (Green Bay - USA)",
         "time": "19:00",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1089,7 +1089,7 @@
         "team2": "Jacksonville Jaguars",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
         "showHomeTeam2": false,
-        "venue": "Nissan Stadium (USA)",
+        "venue": "Nissan Stadium (Nashville - USA)",
         "time": "19:00",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1110,7 +1110,7 @@
         "team2": "Miami Dolphins",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
         "showHomeTeam2": false,
-        "venue": "Lucas Oil Stadium (USA)",
+        "venue": "Lucas Oil Stadium (Indianapolis - USA)",
         "time": "19:00",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1131,7 +1131,7 @@
         "team2": "Carolina Panthers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
         "showHomeTeam2": false,
-        "venue": "Caesars Superdome (USA)",
+        "venue": "Caesars Superdome (New Orleans - USA)",
         "time": "19:00",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1152,7 +1152,7 @@
         "team2": "Buffalo Bills",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1173,7 +1173,7 @@
         "team2": "Seattle Seahawks",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
         "showHomeTeam2": false,
-        "venue": "Allegiant Stadium (USA)",
+        "venue": "Allegiant Stadium (Las Vegas - USA)",
         "time": "22:05",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1194,7 +1194,7 @@
         "team2": "Los Angeles Rams",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
         "showHomeTeam2": false,
-        "venue": "State Farm Stadium (USA)",
+        "venue": "State Farm Stadium (Glendale - USA)",
         "time": "22:05",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1215,7 +1215,7 @@
         "team2": "San Francisco 49ers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
         "showHomeTeam2": false,
-        "venue": "AT&T Stadium (USA)",
+        "venue": "AT&T Stadium (Arlington - USA)",
         "time": "22:25",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1236,7 +1236,7 @@
         "team2": "Pittsburgh Steelers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
         "showHomeTeam2": false,
-        "venue": "Paycor Stadium (USA)",
+        "venue": "Paycor Stadium (Cincinnati - USA)",
         "time": "02:20",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1257,7 +1257,7 @@
         "team2": "Los Angeles Chargers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
         "showHomeTeam2": false,
-        "venue": "M&T Bank Stadium (USA)",
+        "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "02:15",
         "nature": "Semaine 10 / 18",
         "channels": [
@@ -1278,7 +1278,7 @@
         "team2": "Indianapolis Colts",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
         "showHomeTeam2": false,
-        "venue": "Reliant Stadium (USA)",
+        "venue": "Reliant Stadium (Houston - USA)",
         "time": "02:15",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1295,7 +1295,7 @@
         "team1": "Las Vegas Grand Prix",
         "team1Extra": "(Qualifications)",
         "team1Logo": "https://flagcdn.com/w80/us.png",
-        "team2": "Las Vegas Strip Street Circuit",
+        "team2": "Las Vegas Strip Street Circuit (Las Vegas)",
         "team2Logo": "",
         "time": "05:00",
         "nature": "GP 21 / 23",
@@ -1313,7 +1313,7 @@
         "team1": "Las Vegas Grand Prix",
         "team1Extra": "(Course)",
         "team1Logo": "https://flagcdn.com/w80/us.png",
-        "team2": "Las Vegas Strip Street Circuit",
+        "team2": "Las Vegas Strip Street Circuit (Las Vegas)",
         "team2Logo": "",
         "time": "05:00",
         "nature": "GP 21 / 23",
@@ -1335,7 +1335,7 @@
         "team2": "Miami Dolphins",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
         "showHomeTeam2": false,
-        "venue": "Highmark Stadium (USA)",
+        "venue": "Highmark Stadium (Orchard Park - USA)",
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1356,7 +1356,7 @@
         "team2": "New Orleans Saints",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
         "showHomeTeam2": false,
-        "venue": "Soldier Field (USA)",
+        "venue": "Soldier Field (Chicago - USA)",
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1377,7 +1377,7 @@
         "team2": "Tennessee Titans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
         "showHomeTeam2": false,
-        "venue": "AT&T Stadium (USA)",
+        "venue": "AT&T Stadium (Arlington - USA)",
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1398,7 +1398,7 @@
         "team2": "Tampa Bay Buccaneers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
         "showHomeTeam2": false,
-        "venue": "Ford Field (USA)",
+        "venue": "Ford Field (Detroit - USA)",
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1419,7 +1419,7 @@
         "team2": "Arizona Cardinals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
         "showHomeTeam2": false,
-        "venue": "Arrowhead Stadium (USA)",
+        "venue": "Arrowhead Stadium (Kansas City - USA)",
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1440,7 +1440,7 @@
         "team2": "Jacksonville Jaguars",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1461,7 +1461,7 @@
         "team2": "Baltimore Ravens",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
         "showHomeTeam2": false,
-        "venue": "Bank of America Stadium (USA)",
+        "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1482,7 +1482,7 @@
         "team2": "New York Jets",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "22:05",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1503,7 +1503,7 @@
         "team2": "Las Vegas Raiders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
         "showHomeTeam2": false,
-        "venue": "Empower Field at Mile High (USA)",
+        "venue": "Empower Field at Mile High (Denver - USA)",
         "time": "22:25",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1524,7 +1524,7 @@
         "team2": "Pittsburgh Steelers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
         "showHomeTeam2": false,
-        "venue": "Lincoln Financial Field (USA)",
+        "venue": "Lincoln Financial Field (Philadelphia - USA)",
         "time": "22:25",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1545,7 +1545,7 @@
         "team2": "Minnesota Vikings",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
         "showHomeTeam2": false,
-        "venue": "Estadio Banorte (Mexico)",
+        "venue": "Estadio Banorte (Mexico City - Mexico)",
         "time": "02:20",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1566,7 +1566,7 @@
         "team2": "Cincinnati Bengals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
         "showHomeTeam2": false,
-        "venue": "Northwest Stadium (USA)",
+        "venue": "Northwest Stadium (Landover - USA)",
         "time": "02:15",
         "nature": "Semaine 11 / 18",
         "channels": [
@@ -1587,7 +1587,7 @@
         "team2": "Green Bay Packers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "02:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1608,7 +1608,7 @@
         "team2": "Chicago Bears",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
         "showHomeTeam2": false,
-        "venue": "Ford Field (USA)",
+        "venue": "Ford Field (Detroit - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1629,7 +1629,7 @@
         "team2": "Philadelphia Eagles",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
         "showHomeTeam2": false,
-        "venue": "AT&T Stadium (USA)",
+        "venue": "AT&T Stadium (Arlington - USA)",
         "time": "22:30",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1650,7 +1650,7 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "showHomeTeam2": false,
-        "venue": "Highmark Stadium (USA)",
+        "venue": "Highmark Stadium (Orchard Park - USA)",
         "time": "02:20",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1671,7 +1671,7 @@
         "team2": "Denver Broncos",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
         "showHomeTeam2": false,
-        "venue": "Acrisure Stadium (USA)",
+        "venue": "Acrisure Stadium (Pittsburgh - USA)",
         "time": "21:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1728,7 +1728,7 @@
         "team2": "New Orleans Saints",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
         "showHomeTeam2": false,
-        "venue": "Paycor Stadium (USA)",
+        "venue": "Paycor Stadium (Cincinnati - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1749,7 +1749,7 @@
         "team2": "Las Vegas Raiders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
         "showHomeTeam2": false,
-        "venue": "Huntington Bank Field (USA)",
+        "venue": "Huntington Bank Field (Cleveland - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1770,7 +1770,7 @@
         "team2": "New York Giants",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
         "showHomeTeam2": false,
-        "venue": "Lucas Oil Stadium (USA)",
+        "venue": "Lucas Oil Stadium (Indianapolis - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1791,7 +1791,7 @@
         "team2": "New York Jets",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
         "showHomeTeam2": false,
-        "venue": "Hard Rock Stadium (USA)",
+        "venue": "Hard Rock Stadium (Miami Gardens - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1812,7 +1812,7 @@
         "team2": "Atlanta Falcons",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
         "showHomeTeam2": false,
-        "venue": "U.S. Bank Stadium (USA)",
+        "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1833,7 +1833,7 @@
         "team2": "Baltimore Ravens",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
         "showHomeTeam2": false,
-        "venue": "Reliant Stadium (USA)",
+        "venue": "Reliant Stadium (Houston - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1854,7 +1854,7 @@
         "team2": "Tennessee Titans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
         "showHomeTeam2": false,
-        "venue": "EverBank Stadium (USA)",
+        "venue": "EverBank Stadium (Jacksonville - USA)",
         "time": "22:05",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1875,7 +1875,7 @@
         "team2": "Washington Commanders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
         "showHomeTeam2": false,
-        "venue": "State Farm Stadium (USA)",
+        "venue": "State Farm Stadium (Glendale - USA)",
         "time": "22:25",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1896,7 +1896,7 @@
         "team2": "Seattle Seahawks",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
         "showHomeTeam2": false,
-        "venue": "Levi's Stadium (USA)",
+        "venue": "Levi's Stadium (Santa Clara - USA)",
         "time": "22:25",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1917,7 +1917,7 @@
         "team2": "New England Patriots",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "02:20",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1938,7 +1938,7 @@
         "team2": "Carolina Panthers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
         "showHomeTeam2": false,
-        "venue": "Raymond James Stadium (USA)",
+        "venue": "Raymond James Stadium (Tampa - USA)",
         "time": "02:15",
         "nature": "Semaine 12 / 18",
         "channels": [
@@ -1959,7 +1959,7 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "02:15",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -1976,7 +1976,7 @@
         "team1": "Abu Dhabi Grand Prix",
         "team1Extra": "(Qualifications)",
         "team1Logo": "https://flagcdn.com/w80/ae.png",
-        "team2": "Yas Marina Circuit",
+        "team2": "Yas Marina Circuit (Abou Dabi)",
         "team2Logo": "",
         "time": "15:00",
         "nature": "GP 23 / 23",
@@ -1994,7 +1994,7 @@
         "team1": "Abu Dhabi Grand Prix",
         "team1Extra": "(Course)",
         "team1Logo": "https://flagcdn.com/w80/ae.png",
-        "team2": "Yas Marina Circuit",
+        "team2": "Yas Marina Circuit (Abou Dabi)",
         "team2Logo": "",
         "time": "14:00",
         "nature": "GP 23 / 23",
@@ -2016,7 +2016,7 @@
         "team2": "Detroit Lions",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
         "showHomeTeam2": false,
-        "venue": "Mercedes-Benz Stadium (USA)",
+        "venue": "Mercedes-Benz Stadium (Atlanta - USA)",
         "time": "19:00",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2037,7 +2037,7 @@
         "team2": "Jacksonville Jaguars",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
         "showHomeTeam2": false,
-        "venue": "Soldier Field (USA)",
+        "venue": "Soldier Field (Chicago - USA)",
         "time": "19:00",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2058,7 +2058,7 @@
         "team2": "Cincinnati Bengals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
         "showHomeTeam2": false,
-        "venue": "Huntington Bank Field (USA)",
+        "venue": "Huntington Bank Field (Cleveland - USA)",
         "time": "19:00",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2079,7 +2079,7 @@
         "team2": "Washington Commanders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
         "showHomeTeam2": false,
-        "venue": "Nissan Stadium (USA)",
+        "venue": "Nissan Stadium (Nashville - USA)",
         "time": "19:00",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2100,7 +2100,7 @@
         "team2": "Green Bay Packers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
         "showHomeTeam2": false,
-        "venue": "Caesars Superdome (USA)",
+        "venue": "Caesars Superdome (New Orleans - USA)",
         "time": "19:00",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2121,7 +2121,7 @@
         "team2": "San Francisco 49ers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2142,7 +2142,7 @@
         "team2": "Los Angeles Chargers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
         "showHomeTeam2": false,
-        "venue": "Raymond James Stadium (USA)",
+        "venue": "Raymond James Stadium (Tampa - USA)",
         "time": "19:00",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2163,7 +2163,7 @@
         "team2": "Miami Dolphins",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
         "showHomeTeam2": false,
-        "venue": "Empower Field at Mile High (USA)",
+        "venue": "Empower Field at Mile High (Denver - USA)",
         "time": "22:05",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2184,7 +2184,7 @@
         "team2": "Philadelphia Eagles",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
         "showHomeTeam2": false,
-        "venue": "State Farm Stadium (USA)",
+        "venue": "State Farm Stadium (Glendale - USA)",
         "time": "22:05",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2205,7 +2205,7 @@
         "team2": "Carolina Panthers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
         "showHomeTeam2": false,
-        "venue": "U.S. Bank Stadium (USA)",
+        "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "22:25",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2226,7 +2226,7 @@
         "team2": "Buffalo Bills",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
         "showHomeTeam2": false,
-        "venue": "Gillette Stadium (USA)",
+        "venue": "Gillette Stadium (Foxborough - USA)",
         "time": "22:25",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2247,7 +2247,7 @@
         "team2": "Houston Texans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
         "showHomeTeam2": false,
-        "venue": "Acrisure Stadium (USA)",
+        "venue": "Acrisure Stadium (Pittsburgh - USA)",
         "time": "02:20",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2268,7 +2268,7 @@
         "team2": "Dallas Cowboys",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
         "showHomeTeam2": false,
-        "venue": "Lumen Field (USA)",
+        "venue": "Lumen Field (Seattle - USA)",
         "time": "02:15",
         "nature": "Semaine 13 / 18",
         "channels": [
@@ -2289,7 +2289,7 @@
         "team2": "Minnesota Vikings",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
         "showHomeTeam2": false,
-        "venue": "Gillette Stadium (USA)",
+        "venue": "Gillette Stadium (Foxborough - USA)",
         "time": "02:15",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2310,7 +2310,7 @@
         "team2": "Atlanta Falcons",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
         "showHomeTeam2": false,
-        "venue": "Huntington Bank Field (USA)",
+        "venue": "Huntington Bank Field (Cleveland - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2331,7 +2331,7 @@
         "team2": "Tennessee Titans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
         "showHomeTeam2": false,
-        "venue": "Ford Field (USA)",
+        "venue": "Ford Field (Detroit - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2352,7 +2352,7 @@
         "team2": "Chicago Bears",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
         "showHomeTeam2": false,
-        "venue": "Hard Rock Stadium (USA)",
+        "venue": "Hard Rock Stadium (Miami Gardens - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2373,7 +2373,7 @@
         "team2": "Denver Broncos",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2394,7 +2394,7 @@
         "team2": "Indianapolis Colts",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
         "showHomeTeam2": false,
-        "venue": "Lincoln Financial Field (USA)",
+        "venue": "Lincoln Financial Field (Philadelphia - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2415,7 +2415,7 @@
         "team2": "Houston Texans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
         "showHomeTeam2": false,
-        "venue": "Northwest Stadium (USA)",
+        "venue": "Northwest Stadium (Landover - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2436,7 +2436,7 @@
         "team2": "New Orleans Saints",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
         "showHomeTeam2": false,
-        "venue": "Bank of America Stadium (USA)",
+        "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2457,7 +2457,7 @@
         "team2": "Tampa Bay Buccaneers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
         "showHomeTeam2": false,
-        "venue": "M&T Bank Stadium (USA)",
+        "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "19:00",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2478,7 +2478,7 @@
         "team2": "Los Angeles Chargers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
         "showHomeTeam2": false,
-        "venue": "Allegiant Stadium (USA)",
+        "venue": "Allegiant Stadium (Las Vegas - USA)",
         "time": "22:05",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2499,7 +2499,7 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "showHomeTeam2": false,
-        "venue": "Paycor Stadium (USA)",
+        "venue": "Paycor Stadium (Cincinnati - USA)",
         "time": "22:25",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2520,7 +2520,7 @@
         "team2": "Los Angeles Rams",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
         "showHomeTeam2": false,
-        "venue": "Levi's Stadium (USA)",
+        "venue": "Levi's Stadium (Santa Clara - USA)",
         "time": "22:25",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2541,7 +2541,7 @@
         "team2": "New York Giants",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
         "showHomeTeam2": false,
-        "venue": "Lumen Field (USA)",
+        "venue": "Lumen Field (Seattle - USA)",
         "time": "22:25",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2562,7 +2562,7 @@
         "team2": "Buffalo Bills",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
         "showHomeTeam2": false,
-        "venue": "Lambeau Field (USA)",
+        "venue": "Lambeau Field (Green Bay - USA)",
         "time": "02:20",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2583,7 +2583,7 @@
         "team2": "Pittsburgh Steelers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
         "showHomeTeam2": false,
-        "venue": "EverBank Stadium (USA)",
+        "venue": "EverBank Stadium (Jacksonville - USA)",
         "time": "02:15",
         "nature": "Semaine 14 / 18",
         "channels": [
@@ -2604,7 +2604,7 @@
         "team2": "San Francisco 49ers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "02:15",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2625,7 +2625,7 @@
         "team2": "Seattle Seahawks",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
         "showHomeTeam2": false,
-        "venue": "Lincoln Financial Field (USA)",
+        "venue": "Lincoln Financial Field (Philadelphia - USA)",
         "time": "23:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2646,7 +2646,7 @@
         "team2": "Chicago Bears",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
         "showHomeTeam2": false,
-        "venue": "Highmark Stadium (USA)",
+        "venue": "Highmark Stadium (Orchard Park - USA)",
         "time": "02:20",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2667,7 +2667,7 @@
         "team2": "Miami Dolphins",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
         "showHomeTeam2": false,
-        "venue": "Lambeau Field (USA)",
+        "venue": "Lambeau Field (Green Bay - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2688,7 +2688,7 @@
         "team2": "Indianapolis Colts",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
         "showHomeTeam2": false,
-        "venue": "Nissan Stadium (USA)",
+        "venue": "Nissan Stadium (Nashville - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2709,7 +2709,7 @@
         "team2": "Cleveland Browns",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2730,7 +2730,7 @@
         "team2": "Baltimore Ravens",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
         "showHomeTeam2": false,
-        "venue": "Acrisure Stadium (USA)",
+        "venue": "Acrisure Stadium (Pittsburgh - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2751,7 +2751,7 @@
         "team2": "New Orleans Saints",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
         "showHomeTeam2": false,
-        "venue": "Raymond James Stadium (USA)",
+        "venue": "Raymond James Stadium (Tampa - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2772,7 +2772,7 @@
         "team2": "Atlanta Falcons",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
         "showHomeTeam2": false,
-        "venue": "Northwest Stadium (USA)",
+        "venue": "Northwest Stadium (Landover - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2793,7 +2793,7 @@
         "team2": "Cincinnati Bengals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
         "showHomeTeam2": false,
-        "venue": "Bank of America Stadium (USA)",
+        "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2814,7 +2814,7 @@
         "team2": "Jacksonville Jaguars",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
         "showHomeTeam2": false,
-        "venue": "Reliant Stadium (USA)",
+        "venue": "Reliant Stadium (Houston - USA)",
         "time": "19:00",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2835,7 +2835,7 @@
         "team2": "New York Jets",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
         "showHomeTeam2": false,
-        "venue": "State Farm Stadium (USA)",
+        "venue": "State Farm Stadium (Glendale - USA)",
         "time": "22:05",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2856,7 +2856,7 @@
         "team2": "Denver Broncos",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
         "showHomeTeam2": false,
-        "venue": "Allegiant Stadium (USA)",
+        "venue": "Allegiant Stadium (Las Vegas - USA)",
         "time": "22:25",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2877,7 +2877,7 @@
         "team2": "Dallas Cowboys",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "22:25",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2898,7 +2898,7 @@
         "team2": "Detroit Lions",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
         "showHomeTeam2": false,
-        "venue": "U.S. Bank Stadium (USA)",
+        "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "02:20",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2919,7 +2919,7 @@
         "team2": "New England Patriots",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
         "showHomeTeam2": false,
-        "venue": "Arrowhead Stadium (USA)",
+        "venue": "Arrowhead Stadium (Kansas City - USA)",
         "time": "02:15",
         "nature": "Semaine 15 / 18",
         "channels": [
@@ -2940,7 +2940,7 @@
         "team2": "Houston Texans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
         "showHomeTeam2": false,
-        "venue": "Lincoln Financial Field (USA)",
+        "venue": "Lincoln Financial Field (Philadelphia - USA)",
         "time": "02:15",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -2961,7 +2961,7 @@
         "team2": "Green Bay Packers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
         "showHomeTeam2": false,
-        "venue": "Soldier Field (USA)",
+        "venue": "Soldier Field (Chicago - USA)",
         "time": "19:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -2982,7 +2982,7 @@
         "team2": "Buffalo Bills",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
         "showHomeTeam2": false,
-        "venue": "Empower Field at Mile High (USA)",
+        "venue": "Empower Field at Mile High (Denver - USA)",
         "time": "22:30",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3003,7 +3003,7 @@
         "team2": "Los Angeles Rams",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
         "showHomeTeam2": false,
-        "venue": "Lumen Field (USA)",
+        "venue": "Lumen Field (Seattle - USA)",
         "time": "02:15",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3024,7 +3024,7 @@
         "team2": "Tampa Bay Buccaneers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
         "showHomeTeam2": false,
-        "venue": "Mercedes-Benz Stadium (USA)",
+        "venue": "Mercedes-Benz Stadium (Atlanta - USA)",
         "time": "06:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3045,7 +3045,7 @@
         "team2": "Cincinnati Bengals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
         "showHomeTeam2": false,
-        "venue": "Lucas Oil Stadium (USA)",
+        "venue": "Lucas Oil Stadium (Indianapolis - USA)",
         "time": "06:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3066,7 +3066,7 @@
         "team2": "Washington Commanders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
         "showHomeTeam2": false,
-        "venue": "U.S. Bank Stadium (USA)",
+        "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "06:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3087,7 +3087,7 @@
         "team2": "Carolina Panthers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
         "showHomeTeam2": false,
-        "venue": "Acrisure Stadium (USA)",
+        "venue": "Acrisure Stadium (Pittsburgh - USA)",
         "time": "06:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3108,7 +3108,7 @@
         "team2": "Los Angeles Chargers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
         "showHomeTeam2": false,
-        "venue": "Hard Rock Stadium (USA)",
+        "venue": "Hard Rock Stadium (Miami Gardens - USA)",
         "time": "19:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3129,7 +3129,7 @@
         "team2": "Arizona Cardinals",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
         "showHomeTeam2": false,
-        "venue": "Caesars Superdome (USA)",
+        "venue": "Caesars Superdome (New Orleans - USA)",
         "time": "19:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3150,7 +3150,7 @@
         "team2": "New England Patriots",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3171,7 +3171,7 @@
         "team2": "Cleveland Browns",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "showHomeTeam2": false,
-        "venue": "M&T Bank Stadium (USA)",
+        "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "19:00",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3192,7 +3192,7 @@
         "team2": "Tennessee Titans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
         "showHomeTeam2": false,
-        "venue": "Allegiant Stadium (USA)",
+        "venue": "Allegiant Stadium (Las Vegas - USA)",
         "time": "22:05",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3213,7 +3213,7 @@
         "team2": "San Francisco 49ers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
         "showHomeTeam2": false,
-        "venue": "Arrowhead Stadium (USA)",
+        "venue": "Arrowhead Stadium (Kansas City - USA)",
         "time": "22:25",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3234,7 +3234,7 @@
         "team2": "Jacksonville Jaguars",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
         "showHomeTeam2": false,
-        "venue": "AT&T Stadium (USA)",
+        "venue": "AT&T Stadium (Arlington - USA)",
         "time": "02:20",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3255,7 +3255,7 @@
         "team2": "New York Giants",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
         "showHomeTeam2": false,
-        "venue": "Ford Field (USA)",
+        "venue": "Ford Field (Detroit - USA)",
         "time": "02:15",
         "nature": "Semaine 16 / 18",
         "channels": [
@@ -3276,7 +3276,7 @@
         "team2": "Baltimore Ravens",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
         "showHomeTeam2": false,
-        "venue": "Paycor Stadium (USA)",
+        "venue": "Paycor Stadium (Cincinnati - USA)",
         "time": "02:15",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3297,7 +3297,7 @@
         "team2": "Denver Broncos",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
         "showHomeTeam2": false,
-        "venue": "Gillette Stadium (USA)",
+        "venue": "Gillette Stadium (Foxborough - USA)",
         "time": "06:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3318,7 +3318,7 @@
         "team2": "Kansas City Chiefs",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "06:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3339,7 +3339,7 @@
         "team2": "Los Angeles Rams",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
         "showHomeTeam2": false,
-        "venue": "Raymond James Stadium (USA)",
+        "venue": "Raymond James Stadium (Tampa - USA)",
         "time": "06:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3360,7 +3360,7 @@
         "team2": "Washington Commanders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
         "showHomeTeam2": false,
-        "venue": "EverBank Stadium (USA)",
+        "venue": "EverBank Stadium (Jacksonville - USA)",
         "time": "06:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3381,7 +3381,7 @@
         "team2": "New Orleans Saints",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
         "showHomeTeam2": false,
-        "venue": "Mercedes-Benz Stadium (USA)",
+        "venue": "Mercedes-Benz Stadium (Atlanta - USA)",
         "time": "19:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3402,7 +3402,7 @@
         "team2": "Indianapolis Colts",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
         "showHomeTeam2": false,
-        "venue": "Huntington Bank Field (USA)",
+        "venue": "Huntington Bank Field (Cleveland - USA)",
         "time": "19:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3423,7 +3423,7 @@
         "team2": "New York Giants",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
         "showHomeTeam2": false,
-        "venue": "AT&T Stadium (USA)",
+        "venue": "AT&T Stadium (Arlington - USA)",
         "time": "19:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3444,7 +3444,7 @@
         "team2": "Pittsburgh Steelers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
         "showHomeTeam2": false,
-        "venue": "Nissan Stadium (USA)",
+        "venue": "Nissan Stadium (Nashville - USA)",
         "time": "19:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3465,7 +3465,7 @@
         "team2": "Buffalo Bills",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
         "showHomeTeam2": false,
-        "venue": "Hard Rock Stadium (USA)",
+        "venue": "Hard Rock Stadium (Miami Gardens - USA)",
         "time": "19:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3486,7 +3486,7 @@
         "team2": "Minnesota Vikings",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "19:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3507,7 +3507,7 @@
         "team2": "Seattle Seahawks",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
         "showHomeTeam2": false,
-        "venue": "Bank of America Stadium (USA)",
+        "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "19:00",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3528,7 +3528,7 @@
         "team2": "Las Vegas Raiders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
         "showHomeTeam2": false,
-        "venue": "State Farm Stadium (USA)",
+        "venue": "State Farm Stadium (Glendale - USA)",
         "time": "22:05",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3549,7 +3549,7 @@
         "team2": "Detroit Lions",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
         "showHomeTeam2": false,
-        "venue": "Soldier Field (USA)",
+        "venue": "Soldier Field (Chicago - USA)",
         "time": "22:25",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3570,7 +3570,7 @@
         "team2": "Philadelphia Eagles",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
         "showHomeTeam2": false,
-        "venue": "Levi's Stadium (USA)",
+        "venue": "Levi's Stadium (Santa Clara - USA)",
         "time": "02:20",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3591,7 +3591,7 @@
         "team2": "Houston Texans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
         "showHomeTeam2": false,
-        "venue": "Lambeau Field (USA)",
+        "venue": "Lambeau Field (Green Bay - USA)",
         "time": "02:15",
         "nature": "Semaine 17 / 18",
         "channels": [
@@ -3612,7 +3612,7 @@
         "team2": "New York Jets",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
         "showHomeTeam2": false,
-        "venue": "Highmark Stadium (USA)",
+        "venue": "Highmark Stadium (Orchard Park - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3633,7 +3633,7 @@
         "team2": "Cleveland Browns",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "showHomeTeam2": false,
-        "venue": "Paycor Stadium (USA)",
+        "venue": "Paycor Stadium (Cincinnati - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3654,7 +3654,7 @@
         "team2": "Los Angeles Chargers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
         "showHomeTeam2": false,
-        "venue": "Empower Field at Mile High (USA)",
+        "venue": "Empower Field at Mile High (Denver - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3675,7 +3675,7 @@
         "team2": "Detroit Lions",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
         "showHomeTeam2": false,
-        "venue": "Lambeau Field (USA)",
+        "venue": "Lambeau Field (Green Bay - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3696,7 +3696,7 @@
         "team2": "Jacksonville Jaguars",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
         "showHomeTeam2": false,
-        "venue": "Lucas Oil Stadium (USA)",
+        "venue": "Lucas Oil Stadium (Indianapolis - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3717,7 +3717,7 @@
         "team2": "Las Vegas Raiders",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
         "showHomeTeam2": false,
-        "venue": "Arrowhead Stadium (USA)",
+        "venue": "Arrowhead Stadium (Kansas City - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3738,7 +3738,7 @@
         "team2": "Seattle Seahawks",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3759,7 +3759,7 @@
         "team2": "Chicago Bears",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
         "showHomeTeam2": false,
-        "venue": "U.S. Bank Stadium (USA)",
+        "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3780,7 +3780,7 @@
         "team2": "Miami Dolphins",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
         "showHomeTeam2": false,
-        "venue": "Gillette Stadium (USA)",
+        "venue": "Gillette Stadium (Foxborough - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3801,7 +3801,7 @@
         "team2": "Tampa Bay Buccaneers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
         "showHomeTeam2": false,
-        "venue": "Caesars Superdome (USA)",
+        "venue": "Caesars Superdome (New Orleans - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3822,7 +3822,7 @@
         "team2": "Philadelphia Eagles",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
         "showHomeTeam2": false,
-        "venue": "MetLife Stadium (USA)",
+        "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3843,7 +3843,7 @@
         "team2": "San Francisco 49ers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
         "showHomeTeam2": false,
-        "venue": "State Farm Stadium (USA)",
+        "venue": "State Farm Stadium (Glendale - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3864,7 +3864,7 @@
         "team2": "Dallas Cowboys",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
         "showHomeTeam2": false,
-        "venue": "Northwest Stadium (USA)",
+        "venue": "Northwest Stadium (Landover - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3885,7 +3885,7 @@
         "team2": "Atlanta Falcons",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
         "showHomeTeam2": false,
-        "venue": "Bank of America Stadium (USA)",
+        "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3906,7 +3906,7 @@
         "team2": "Pittsburgh Steelers",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
         "showHomeTeam2": false,
-        "venue": "M&T Bank Stadium (USA)",
+        "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -3927,7 +3927,7 @@
         "team2": "Tennessee Titans",
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
         "showHomeTeam2": false,
-        "venue": "Reliant Stadium (USA)",
+        "venue": "Reliant Stadium (Houston - USA)",
         "time": "06:00",
         "nature": "Semaine 18 / 18",
         "channels": [
@@ -4200,7 +4200,7 @@
         "team2": "TBD",
         "team2Logo": "",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "00:30",
         "nature": "Play-offs (4 / 4)",
         "channels": [
