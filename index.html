@@ -90,7 +90,6 @@
     <script>
         let allEvents = [];
         let currentCategory = 'tous';
-        // Par défaut, "avenir" et "aujourdhui" sont cochés simultanément
         let activeDateRanges = new Set(['avenir', 'aujourdhui']);
 
         async function loadData() {
@@ -155,7 +154,6 @@
             const today = new Date();
             today.setHours(0, 0, 0, 0);
 
-            // Filtrage combiné (si l'événement correspond à au moins un des filtres actifs du set)
             const filtered = allEvents.filter(e => {
                 if (currentCategory !== 'tous' && e.category !== currentCategory) return false;
                 if (activeDateRanges.size === 0) return false;
@@ -233,13 +231,13 @@
                             ? `<span class="text-xs font-extrabold text-gray-400 uppercase tracking-wider text-center">TERMINÉ</span>` 
                             : `<span class="text-base font-extrabold text-white tracking-tight text-center">${match.time}</span>`);
 
-                    // Colonne de score ou classement F1
+                    // Colonne de score ou classement F1 (alignée à gauche)
                     const scoreColumnHtml = (match.isLive || match.isFinished) && match.score 
-                        ? `<div class="flex items-center justify-center px-4 py-1.5 rounded-lg bg-dark-900/80 border border-gray-800 text-xs font-bold text-white tracking-wider shrink-0 shadow-inner text-center leading-tight">${match.score}</div>` 
+                        ? `<div class="flex items-center justify-start px-4 py-1.5 rounded-lg bg-dark-900/80 border border-gray-800 text-xs font-bold text-white tracking-wider shrink-0 shadow-inner text-left leading-tight">${match.score}</div>` 
                         : '';
 
                     html += `
-                        <div class="${cardClass} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm" data-id="${match.id}" data-live="${match.isLive}">
+                        <div class="${cardClass} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all shadow-sm" data-id="${match.id}" data-live="${match.isLive}" data-finished="${match.isFinished}">
                             
                             <!-- Gauche -->
                             <div class="flex items-center space-x-4 flex-grow">
@@ -294,7 +292,21 @@
         }
 
         function scrollToNow() {
+            // 1. Chercher un match en direct en priorité
             let targetCard = document.querySelector('[data-live="true"]');
+            
+            // 2. Si aucun live, chercher le premier match non terminé (à venir) parmi les cartes affichées
+            if (!targetCard) {
+                const cards = document.querySelectorAll('.match-card');
+                for (let card of cards) {
+                    if (card.getAttribute('data-finished') !== 'true') {
+                        targetCard = card;
+                        break;
+                    }
+                }
+            }
+
+            // 3. Si vraiment aucun match à venir n'est visible, prendre la première carte
             if (!targetCard) {
                 targetCard = document.querySelector('.match-card');
             }
