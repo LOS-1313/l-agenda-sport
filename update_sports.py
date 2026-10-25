@@ -109,8 +109,6 @@ def fetch_f1_calendar():
                 
                 gp_number = i + 1
                 gp_label = f"GP {gp_number} / {total_races}"
-                
-                # Attribution dynamique des chaînes F1 (Canal+ par défaut, avec options éventuelles)
                 f1_channels = ["canal+"]
 
                 if 'Qualifying' in race:
@@ -245,11 +243,12 @@ def fetch_espn_games(sport_path, category, phases):
                                 s2 = team2.get('score', '0')
                                 score_str = f"{s1} - {s2}"
 
-                            # Attribution dynamique intelligente des diffuseurs selon la ligue et l'affiche
-                            channels = ["beinsports", "dazn"]
+                            # Attribution précise des diffuseurs officiels en France
                             if category == "nfl":
                                 channels = ["beinsports", "dazn"]
                             elif category == "nba":
+                                channels = ["beinsports", "dazn"]
+                            else:
                                 channels = ["beinsports", "dazn"]
 
                             venue = competition.get('venue')
