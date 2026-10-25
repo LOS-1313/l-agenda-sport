@@ -154,7 +154,7 @@
 
                                 <!-- 3. Équipes / Événement -->
                                 <div class="space-y-1.5 flex-grow pl-2">
-                                    <!-- Ligne 1 : Équipe 1 / Grand Prix (Gras, et extra en normal) -->
+                                    <!-- Ligne 1 : Équipe 1 / Grand Prix -->
                                     <div class="flex items-center space-x-2.5">
                                         <img src="${match.team1Logo}" alt="" class="w-6 h-6 object-contain">
                                         <div class="flex items-center space-x-1.5">
@@ -164,10 +164,10 @@
                                         ${match.showHomeTeam1 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
 
-                                    <!-- Ligne 2 : Équipe 2 / Circuit F1 (Sans image si vide, police italique uniforme) -->
+                                    <!-- Ligne 2 : Équipe 2 / Circuit F1 (Uniformisé en gras pour la NFL, italique pour la F1) -->
                                     <div class="flex items-center space-x-2.5">
                                         ${match.team2Logo ? `<img src="${match.team2Logo}" alt="" class="w-6 h-6 object-contain">` : ''}
-                                        <span class="text-gray-300 text-xs italic font-normal">${match.team2}</span>
+                                        <span class="${match.category === 'f1' ? 'text-gray-300 text-xs italic font-normal' : 'text-gray-100 font-bold text-sm tracking-tight'}">${match.team2}</span>
                                         ${match.showHomeTeam2 ? '<span class="text-[10px] bg-gray-900 text-gray-400 px-1.5 py-0.5 rounded border border-gray-800">Dom</span>' : ''}
                                     </div>
 
