@@ -10,6 +10,13 @@ def adjust_hour(time_str, hours_to_add=1):
     except:
         return time_str
 
+def get_adjusted_datetime(date_str, time_str, hours_to_add=1):
+    try:
+        dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M") + timedelta(hours=hours_to_add)
+        return dt.strftime('%Y-%m-%d'), dt.strftime('%H:%M')
+    except:
+        return date_str, time_str
+
 circuit_data = {
     "Bahrain International Circuit": {"flag": "bh", "city": "Sakhir"},
     "Jeddah Corniche Circuit": {"flag": "sa", "city": "Djeddah"},
@@ -52,7 +59,6 @@ def check_f1_status(date_str, time_str, duration_hours=2):
         return False, False
 
 def fetch_f1_results(round_num, session_type="results"):
-    # session_type peut être "results" (course), "qualifying", etc.
     url = f"https://api.jolpi.ca/ergast/f1/2026/{round_num}/{session_type}.json"
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -67,7 +73,7 @@ def fetch_f1_results(round_num, session_type="results"):
             results = races[0].get(key, [])
             
             lines = []
-            for res in results[:10]: # Top 10 pour garder une carte propre
+            for res in results[:10]:
                 pos = res.get('position', '')
                 driver = res['Driver']
                 code = driver.get('code', driver['familyName'][:3].upper())
@@ -105,8 +111,10 @@ def fetch_f1_calendar():
                 gp_label = f"GP {gp_number} / {total_races}"
                 
                 if 'Qualifying' in race:
-                    q_date = race['Qualifying']['date']
-                    q_time = adjust_hour(race['Qualifying'].get('time', '14:00:00')[:5], 1)
+                    q_date_raw = race['Qualifying']['date']
+                    q_time_raw = race['Qualifying'].get('time', '14:00:00')[:5]
+                    q_date, q_time = get_adjusted_datetime(q_date_raw, q_time_raw, 1)
+                    
                     is_live, is_finished = check_f1_status(q_date, q_time, 1)
                     score_str = fetch_f1_results(round_num, "qualifying") if is_finished or is_live else ""
                     events.append({
@@ -130,8 +138,10 @@ def fetch_f1_calendar():
                     })
 
                 if 'Sprint' in race:
-                    s_date = race['Sprint']['date']
-                    s_time = adjust_hour(race['Sprint'].get('time', '12:00:00')[:5], 1)
+                    s_date_raw = race['Sprint']['date']
+                    s_time_raw = race['Sprint'].get('time', '12:00:00')[:5]
+                    s_date, s_time = get_adjusted_datetime(s_date_raw, s_time_raw, 1)
+                    
                     is_live, is_finished = check_f1_status(s_date, s_time, 1)
                     score_str = fetch_f1_results(round_num, "results") if is_finished or is_live else ""
                     events.append({
@@ -154,8 +164,10 @@ def fetch_f1_calendar():
                         "channels": ["canal+"]
                     })
 
-                r_date = race['date']
-                r_time = adjust_hour(race.get('time', '14:00:00')[:5], 1)
+                r_date_raw = race['date']
+                r_time_raw = race.get('time', '14:00:00')[:5]
+                r_date, r_time = get_adjusted_datetime(r_date_raw, r_time_raw, 1)
+                
                 is_live, is_finished = check_f1_status(r_date, r_time, 2)
                 score_str = fetch_f1_results(round_num, "results") if is_finished or is_live else ""
                 events.append({
@@ -202,13 +214,15 @@ def fetch_espn_games(sport_path, category, phases):
                     for i, event in enumerate(data.get('events', [])):
                         competition = event['competitions'][0]
                         date_iso = competition['date']
-                        date_str = date_iso[:10]
+                        date_str_raw = date_iso[:10]
+                        raw_time = date_iso[11:16]
                         
+                        # Ajustement heure +1h et report au lendemain si entre 00:00 et 00:59
+                        date_str, time_str = get_adjusted_datetime(date_str_raw, raw_time, 1)
+
                         event_id = event.get('id', f"{category}_st{seasontype}_w{week}_{i}")
                         if event_id not in seen_ids:
                             seen_ids.add(event_id)
-                            raw_time = date_iso[11:16]
-                            time_str = adjust_hour(raw_time, 1)
                             
                             status_type = event.get('status', {}).get('type', {})
                             status_state = status_type.get('state', 'pre')
@@ -287,13 +301,15 @@ def fetch_nba_calendar():
                 for i, event in enumerate(data.get('events', [])):
                     competition = event['competitions'][0]
                     date_iso = competition['date']
-                    date_str = date_iso[:10]
+                    date_str_raw = date_iso[:10]
+                    raw_time = date_iso[11:16]
                     
+                    # Ajustement heure +1h et report au lendemain si minuit
+                    date_str, time_str = get_adjusted_datetime(date_str_raw, raw_time, 1)
+
                     event_id = event.get('id', f"nba_{date_str}_{i}")
                     if event_id not in seen_ids:
                         seen_ids.add(event_id)
-                        raw_time = date_iso[11:16]
-                        time_str = adjust_hour(raw_time, 1)
                         
                         status_type = event.get('status', {}).get('type', {})
                         status_state = status_type.get('state', 'pre')
