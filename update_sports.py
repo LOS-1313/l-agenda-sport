@@ -10,8 +10,33 @@ def adjust_hour(time_str, hours_to_add=1):
     except:
         return time_str
 
-# Correspondance des pays F1 pour les drapeaux officiels
 circuit_countries = {
+    "Bahrain International Circuit": "Bahreïn",
+    "Jeddah Corniche Circuit": "Arabie saoudite",
+    "Albert Park Grand Prix Circuit": "Australie",
+    "Baku City Circuit": "Azerbaïdjan",
+    "Miami International Autodrome": "États-Unis",
+    "Circuit de Monaco": "Monaco",
+    "Circuit Gilles Villeneuve": "Canada",
+    "Circuit de Barcelona-Catalunya": "Espagne",
+    "Red Bull Ring": "Autriche",
+    "Silverstone Circuit": "Grande-Bretagne",
+    "Hungaroring": "Hongrie",
+    "Circuit de Spa-Francorchamps": "Belgique",
+    "Circuit Zandvoort": "Pays-Bas",
+    "Monza Circuit": "Italie",
+    "Marina Bay Street Circuit": "Singapour",
+    "Circuit of the Americas": "États-Unis",
+    "Autódromo Hermanos Rodríguez": "Mexique",
+    "Autódromo José Carlos Pace": "Brésil",
+    "Las Vegas Strip Circuit": "États-Unis",
+    "Losail International Circuit": "Qatar",
+    "Yas Marina Circuit": "Émirats arabes unis",
+    "Shanghai International Circuit": "Chine",
+    "Suzuka Circuit": "Japon"
+}
+
+circuit_flags = {
     "Bahrain International Circuit": "bh",
     "Jeddah Corniche Circuit": "sa",
     "Albert Park Grand Prix Circuit": "au",
@@ -26,7 +51,6 @@ circuit_countries = {
     "Circuit de Spa-Francorchamps": "be",
     "Circuit Zandvoort": "nl",
     "Monza Circuit": "it",
-    "Baku": "az",
     "Marina Bay Street Circuit": "sg",
     "Circuit of the Americas": "us",
     "Autódromo Hermanos Rodríguez": "mx",
@@ -38,15 +62,10 @@ circuit_countries = {
     "Suzuka Circuit": "jp"
 }
 
-def get_country_flag(circuit_name):
-    code = circuit_countries.get(circuit_name, "un")
-    return f"https://flagcdn.com/w80/{code}.png"
-
 def fetch_f1_calendar():
     url = "https://api.jolpi.ca/ergast/f1/2026.json"
     events = []
     today_str = datetime.now().strftime('%Y-%m-%d')
-    nfl_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png"
     f1_logo = "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg"
     
     try:
@@ -59,7 +78,8 @@ def fetch_f1_calendar():
             for i, race in enumerate(races):
                 race_name = race['raceName']
                 circuit_name = race['Circuit']['circuitName']
-                flag_url = get_country_flag(circuit_name)
+                flag_code = circuit_flags.get(circuit_name, "un")
+                flag_url = f"https://flagcdn.com/w80/{flag_code}.png"
                 gp_number = i + 1
                 gp_label = f"GP {gp_number} / {total_races}"
                 
@@ -80,6 +100,7 @@ def fetch_f1_calendar():
                             "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
                             "time": q_time,
                             "nature": gp_label,
+                            "showHomeTeam1": False, # Pas de mention Domicile pour la F1
                             "channels": ["canal+"]
                         })
 
@@ -100,6 +121,7 @@ def fetch_f1_calendar():
                             "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
                             "time": s_time,
                             "nature": gp_label,
+                            "showHomeTeam1": False,
                             "channels": ["canal+"]
                         })
 
@@ -119,6 +141,7 @@ def fetch_f1_calendar():
                         "team2Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Circuit_Mexico.svg/1024px-Circuit_Mexico.svg.png",
                         "time": r_time,
                         "nature": gp_label,
+                        "showHomeTeam1": False,
                         "channels": ["canal+"]
                     })
     except Exception as e:
@@ -132,8 +155,8 @@ def fetch_nfl_calendar():
     nfl_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png"
     
     phases = [
-        (2, 19, 18),  # Saison régulière : 18 semaines au total
-        (3, 5, 4)     # Play-offs : 4 tours au total
+        (2, 19, 18),
+        (3, 5, 4)
     ]
     
     for seasontype, max_weeks, total_weeks in phases:
@@ -161,22 +184,44 @@ def fetch_nfl_calendar():
                                 raw_time = date_iso[11:16]
                                 time_str = adjust_hour(raw_time, 1)
                                 
-                                competitors = competition['competitors']
-                                team1 = competitors[0]['team']['displayName']
-                                team1_logo = competitors[0]['team'].get('logo', '')
-                                team2 = competitors[1]['team']['displayName']
-                                team2_logo = competitors[1]['team'].get('logo', '')
+                                venue_name = competition.get('venue', {}).get('fullName', '')
+                                venue_addr = competition.get('venue', {}).get('address', {})
+                                venue_city = venue_addr.get('city', '')
+                                venue_country = venue_addr.get('country', 'États-Unis')
                                 
+                                venue_info = ""
+                                if venue_name:
+                                    venue_info = f"{venue_name} ({venue_country})"
+
+                                competitors = competition['competitors']
+                                team1 = competitors[0]
+                                team2 = competitors[1]
+                                
+                                t1_name = team1['team']['displayName']
+                                t1_logo = team1['team'].get('logo', '')
+                                t1_home = team1.get('homeAway') == 'home'
+
+                                t2_name = team2['team']['displayName']
+                                t2_logo = team2['team'].get('logo', '')
+                                t2_home = team2.get('homeAway') == 'home'
+
+                                # Condition : afficher "Domicile" uniquement si l'une des équipes est qualifiée comme "home"
+                                show_t1_home = t1_home
+                                show_t2_home = t2_home
+
                                 events.append({
                                     "id": f"nfl_{event_id}",
                                     "date": date_str,
                                     "category": "nfl",
                                     "sportIcon": nfl_logo,
                                     "isImgIcon": True,
-                                    "team1": team1,
-                                    "team1Logo": team1_logo,
-                                    "team2": team2,
-                                    "team2Logo": team2_logo,
+                                    "team1": t1_name,
+                                    "team1Logo": t1_logo,
+                                    "showHomeTeam1": show_t1_home,
+                                    "team2": t2_name,
+                                    "team2Logo": t2_logo,
+                                    "showHomeTeam2": show_t2_home,
+                                    "venue": venue_info,
                                     "time": time_str,
                                     "nature": nature_str,
                                     "channels": ["beinsports", "dazn"]
