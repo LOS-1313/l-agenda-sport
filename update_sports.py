@@ -38,6 +38,15 @@ circuit_data = {
     "Suzuka Circuit": {"flag": "jp", "city": "Suzuka"}
 }
 
+def check_f1_live(date_str, time_str, duration_hours=2):
+    try:
+        now = datetime.now()
+        start_dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
+        end_dt = start_dt + timedelta(hours=duration_hours)
+        return start_dt <= now <= end_dt
+    except:
+        return False
+
 def fetch_f1_calendar():
     url = "https://api.jolpi.ca/ergast/f1/2026.json"
     events = []
@@ -70,6 +79,7 @@ def fetch_f1_calendar():
                     q_date = race['Qualifying']['date']
                     q_time = adjust_hour(race['Qualifying'].get('time', '14:00:00')[:5], 1)
                     if q_date >= today_str:
+                        is_live = check_f1_live(q_date, q_time, 1)
                         events.append({
                             "id": f"f1_qual_{i}",
                             "date": q_date,
@@ -83,6 +93,7 @@ def fetch_f1_calendar():
                             "team2Logo": "",
                             "time": q_time,
                             "nature": gp_label,
+                            "isLive": is_live,
                             "showHomeTeam1": False,
                             "channels": ["canal+"]
                         })
@@ -91,6 +102,7 @@ def fetch_f1_calendar():
                     s_date = race['Sprint']['date']
                     s_time = adjust_hour(race['Sprint'].get('time', '12:00:00')[:5], 1)
                     if s_date >= today_str:
+                        is_live = check_f1_live(s_date, s_time, 1)
                         events.append({
                             "id": f"f1_sprint_{i}",
                             "date": s_date,
@@ -104,6 +116,7 @@ def fetch_f1_calendar():
                             "team2Logo": "",
                             "time": s_time,
                             "nature": gp_label,
+                            "isLive": is_live,
                             "showHomeTeam1": False,
                             "channels": ["canal+"]
                         })
@@ -111,6 +124,7 @@ def fetch_f1_calendar():
                 r_date = race['date']
                 r_time = adjust_hour(race.get('time', '14:00:00')[:5], 1)
                 if r_date >= today_str:
+                    is_live = check_f1_live(r_date, r_time, 2)
                     events.append({
                         "id": f"f1_race_{i}",
                         "date": r_date,
@@ -124,6 +138,7 @@ def fetch_f1_calendar():
                         "team2Logo": "",
                         "time": r_time,
                         "nature": gp_label,
+                        "isLive": is_live,
                         "showHomeTeam1": False,
                         "channels": ["canal+"]
                     })
@@ -167,17 +182,17 @@ def fetch_nfl_calendar():
                                 raw_time = date_iso[11:16]
                                 time_str = adjust_hour(raw_time, 1)
                                 
+                                # Vérification du statut Live depuis l'API ESPN
+                                status_state = event.get('status', {}).get('type', {}).get('state', 'pre')
+                                is_live = (status_state == 'in')
+
                                 venue = competition.get('venue')
                                 if venue and venue.get('fullName'):
                                     venue_name = venue.get('fullName')
                                     addr = venue.get('address', {})
                                     venue_city = addr.get('city', '')
                                     venue_country = addr.get('country', 'États-Unis')
-                                    
-                                    if venue_city:
-                                        venue_info = f"{venue_name} ({venue_city} - {venue_country})"
-                                    else:
-                                        venue_info = f"{venue_name} ({venue_country})"
+                                    venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
                                 else:
                                     venue_info = "TBD"
 
@@ -205,6 +220,7 @@ def fetch_nfl_calendar():
                                     "venue": venue_info,
                                     "time": time_str,
                                     "nature": nature_str,
+                                    "isLive": is_live,
                                     "channels": ["beinsports", "dazn"]
                                 })
             except Exception as e:
@@ -218,7 +234,6 @@ def fetch_nba_calendar():
     today_str = today_dt.strftime('%Y-%m-%d')
     nba_logo = "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
     
-    # Balayage mensuel (YYYYMM) de la saison NBA active d'octobre 2026 à juin 2027
     year = today_dt.year
     months = []
     for i in range(9):
@@ -245,17 +260,17 @@ def fetch_nba_calendar():
                             raw_time = date_iso[11:16]
                             time_str = adjust_hour(raw_time, 1)
                             
+                            # Vérification du statut Live depuis l'API ESPN
+                            status_state = event.get('status', {}).get('type', {}).get('state', 'pre')
+                            is_live = (status_state == 'in')
+
                             venue = competition.get('venue')
                             if venue and venue.get('fullName'):
                                 venue_name = venue.get('fullName')
                                 addr = venue.get('address', {})
                                 venue_city = addr.get('city', '')
                                 venue_country = addr.get('country', 'États-Unis')
-                                
-                                if venue_city:
-                                    venue_info = f"{venue_name} ({venue_city} - {venue_country})"
-                                else:
-                                    venue_info = f"{venue_name} ({venue_country})"
+                                venue_info = f"{venue_name} ({venue_city} - {venue_country})" if venue_city else f"{venue_name} ({venue_country})"
                             else:
                                 venue_info = "TBD"
 
@@ -286,6 +301,7 @@ def fetch_nba_calendar():
                                 "venue": venue_info,
                                 "time": time_str,
                                 "nature": nature_str,
+                                "isLive": is_live,
                                 "channels": ["beinsports", "dazn"]
                             })
         except Exception as e:
