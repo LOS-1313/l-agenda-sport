@@ -560,7 +560,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -602,7 +602,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -644,7 +644,7 @@
         "nature": "GP 13 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. RUS<br>3. VER<br>4. NOR<br>5. PIA<br>6. HAM<br>7. GAS<br>8. LIN<br>9. COL<br>10. TSU",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -734,7 +734,7 @@
         "nature": "GP 14 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. VER<br>3. NOR<br>4. LEC<br>5. RUS<br>6. LAW<br>7. COL<br>8. PIA<br>9. LIN<br>10. HUL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -1520,7 +1520,7 @@
         "nature": "GP 15 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. RUS<br>2. VER<br>3. HAD<br>4. LEC<br>5. ANT<br>6. HAM<br>7. LIN<br>8. OCO<br>9. BEA<br>10. SAI",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -1970,7 +1970,7 @@
         "nature": "GP 16 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. ANT<br>3. HAM<br>4. LEC<br>5. HAD<br>6. PIA<br>7. LAW<br>8. ALO<br>9. NOR<br>10. LIN",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -2951,7 +2951,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -3185,7 +3185,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -5628,9 +5628,9 @@
         "venue": "Mercedes-Benz Stadium (Atlanta - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "19 - 14",
+        "isLive": false,
+        "isFinished": true,
+        "score": "29 - 20",
         "channels": [
             "beinsports",
             "dazn"
@@ -5652,9 +5652,9 @@
         "venue": "Nissan Stadium (Nashville - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "14 - 17",
+        "isLive": false,
+        "isFinished": true,
+        "score": "24 - 27",
         "channels": [
             "beinsports",
             "dazn"
@@ -5676,9 +5676,9 @@
         "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "6 - 10",
+        "isLive": false,
+        "isFinished": true,
+        "score": "16 - 10",
         "channels": [
             "beinsports",
             "dazn"
@@ -5700,9 +5700,9 @@
         "venue": "MetLife Stadium (East Rutherford - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "14 - 21",
+        "isLive": false,
+        "isFinished": true,
+        "score": "25 - 28",
         "channels": [
             "beinsports",
             "dazn"
@@ -5724,9 +5724,9 @@
         "venue": "Bank of America Stadium (Charlotte - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "6 - 36",
+        "isLive": false,
+        "isFinished": true,
+        "score": "13 - 43",
         "channels": [
             "beinsports",
             "dazn"
@@ -5748,9 +5748,9 @@
         "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "13 - 14",
+        "isLive": false,
+        "isFinished": true,
+        "score": "13 - 35",
         "channels": [
             "beinsports",
             "dazn"
@@ -5772,9 +5772,9 @@
         "venue": "Reliant Stadium (Houston - USA)",
         "time": "18:00",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "14 - 14",
+        "isLive": false,
+        "isFinished": true,
+        "score": "21 - 27",
         "channels": [
             "beinsports",
             "dazn"
@@ -5794,7 +5794,7 @@
         "time": "21:00",
         "nature": "GP 18 / 23",
         "isLive": false,
-        "isFinished": false,
+        "isFinished": true,
         "score": "",
         "showHomeTeam1": false,
         "channels": [
@@ -5818,8 +5818,8 @@
         "time": "21:05",
         "nature": "Semaine 7 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "16 - 30",
         "channels": [
             "beinsports",
             "dazn"
@@ -5842,8 +5842,8 @@
         "time": "21:25",
         "nature": "Semaine 7 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "20 - 17",
         "channels": [
             "beinsports",
             "dazn"
@@ -5866,8 +5866,8 @@
         "time": "21:25",
         "nature": "Semaine 7 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "21 - 35",
         "channels": [
             "beinsports",
             "dazn"
@@ -5890,8 +5890,8 @@
         "time": "22:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "123 - 132",
         "channels": [
             "beinsports",
             "dazn"
@@ -5914,8 +5914,8 @@
         "time": "23:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "109 - 136",
         "channels": [
             "beinsports",
             "dazn"
@@ -5938,8 +5938,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "102 - 111",
         "channels": [
             "beinsports",
             "dazn"
@@ -5962,8 +5962,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "117 - 94",
         "channels": [
             "beinsports",
             "dazn"
@@ -5986,8 +5986,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "108 - 101",
         "channels": [
             "beinsports",
             "dazn"
@@ -6010,8 +6010,8 @@
         "time": "00:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "93 - 106",
         "channels": [
             "beinsports",
             "dazn"
@@ -6033,9 +6033,9 @@
         "venue": "Lumen Field (Seattle - USA)",
         "time": "01:20",
         "nature": "Semaine 7 / 18",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "13 - 3",
         "channels": [
             "beinsports",
             "dazn"
@@ -6057,9 +6057,9 @@
         "venue": "Golden 1 Center (Sacramento - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "69 - 80",
         "channels": [
             "beinsports",
             "dazn"
