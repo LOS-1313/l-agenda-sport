@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -497,7 +497,7 @@
         "nature": "GP 10 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. PIA<br>6. HAD<br>7. NOR<br>8. BOR<br>9. LIN<br>10. COL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -539,7 +539,7 @@
         "nature": "GP 11 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. VER<br>3. ANT<br>4. LEC<br>5. HAM<br>6. HAD<br>7. RUS<br>8. LAW<br>9. HUL<br>10. LIN",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -6033,9 +6033,9 @@
         "venue": "Lumen Field (Seattle - USA)",
         "time": "01:20",
         "nature": "Semaine 7 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "13 - 3",
+        "isLive": false,
+        "isFinished": true,
+        "score": "20 - 3",
         "channels": [
             "beinsports",
             "dazn"
@@ -6057,9 +6057,9 @@
         "venue": "Golden 1 Center (Sacramento - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "69 - 80",
+        "isLive": false,
+        "isFinished": true,
+        "score": "112 - 123",
         "channels": [
             "beinsports",
             "dazn"
@@ -6082,8 +6082,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "110 - 103",
         "channels": [
             "beinsports",
             "dazn"
@@ -6106,8 +6106,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "127 - 125",
         "channels": [
             "beinsports",
             "dazn"
@@ -6130,8 +6130,8 @@
         "time": "00:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "134 - 99",
         "channels": [
             "beinsports",
             "dazn"
@@ -6154,8 +6154,8 @@
         "time": "00:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "109 - 113",
         "channels": [
             "beinsports",
             "dazn"
@@ -6177,9 +6177,9 @@
         "venue": "Fiserv Forum (Milwaukee - États-Unis)",
         "time": "01:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "110 - 102",
         "channels": [
             "beinsports",
             "dazn"
@@ -6202,8 +6202,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "125 - 114",
         "channels": [
             "beinsports",
             "dazn"
@@ -6225,9 +6225,9 @@
         "venue": "Lincoln Financial Field (Philadelphia - USA)",
         "time": "01:15",
         "nature": "Semaine 7 / 18",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "21 - 28",
         "channels": [
             "beinsports",
             "dazn"
@@ -6249,9 +6249,9 @@
         "venue": "Toyota Center (Houston) (Houston - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "98 - 93",
         "channels": [
             "beinsports",
             "dazn"
@@ -6273,9 +6273,9 @@
         "venue": "Delta Center (Salt Lake City - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "54 - 58",
         "channels": [
             "beinsports",
             "dazn"
@@ -6297,9 +6297,9 @@
         "venue": "Ball Arena (Denver - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "24 - 18",
         "channels": [
             "beinsports",
             "dazn"
@@ -6703,7 +6703,7 @@
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
         "showHomeTeam2": false,
         "venue": "State Farm Arena (Atlanta - États-Unis)",
-        "time": "00:00",
+        "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
         "isFinished": false,
@@ -9078,30 +9078,6 @@
         ]
     },
     {
-        "id": "nfl_401873047",
-        "date": "2026-11-08",
-        "category": "nfl",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png",
-        "isImgIcon": true,
-        "team1": "San Francisco 49ers",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
-        "showHomeTeam1": true,
-        "team2": "Las Vegas Raiders",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
-        "showHomeTeam2": false,
-        "venue": "Levi's Stadium (Santa Clara - USA)",
-        "time": "22:05",
-        "nature": "Semaine 9 / 18",
-        "isLive": false,
-        "isFinished": false,
-        "score": "",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
         "id": "nfl_401873049",
         "date": "2026-11-08",
         "category": "nfl",
@@ -9115,6 +9091,30 @@
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
         "showHomeTeam2": false,
         "venue": "Gillette Stadium (Foxborough - USA)",
+        "time": "22:25",
+        "nature": "Semaine 9 / 18",
+        "isLive": false,
+        "isFinished": false,
+        "score": "",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873047",
+        "date": "2026-11-08",
+        "category": "nfl",
+        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png",
+        "isImgIcon": true,
+        "team1": "San Francisco 49ers",
+        "team1Extra": "",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "showHomeTeam1": true,
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+        "showHomeTeam2": false,
+        "venue": "Levi's Stadium (Santa Clara - USA)",
         "time": "22:25",
         "nature": "Semaine 9 / 18",
         "isLive": false,
