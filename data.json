@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -497,7 +497,7 @@
         "nature": "GP 10 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. PIA<br>6. HAD<br>7. NOR<br>8. BOR<br>9. LIN<br>10. COL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -539,7 +539,7 @@
         "nature": "GP 11 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. VER<br>3. ANT<br>4. LEC<br>5. HAM<br>6. HAD<br>7. RUS<br>8. LAW<br>9. HUL<br>10. LIN",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -560,7 +560,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -602,7 +602,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -644,7 +644,7 @@
         "nature": "GP 13 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. RUS<br>3. VER<br>4. NOR<br>5. PIA<br>6. HAM<br>7. GAS<br>8. LIN<br>9. COL<br>10. TSU",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -734,7 +734,7 @@
         "nature": "GP 14 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. VER<br>3. NOR<br>4. LEC<br>5. RUS<br>6. LAW<br>7. COL<br>8. PIA<br>9. LIN<br>10. HUL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -1520,7 +1520,7 @@
         "nature": "GP 15 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. RUS<br>2. VER<br>3. HAD<br>4. LEC<br>5. ANT<br>6. HAM<br>7. LIN<br>8. OCO<br>9. BEA<br>10. SAI",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -1970,7 +1970,7 @@
         "nature": "GP 16 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. ANT<br>3. HAM<br>4. LEC<br>5. HAD<br>6. PIA<br>7. LAW<br>8. ALO<br>9. NOR<br>10. LIN",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -2951,7 +2951,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -3185,7 +3185,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -5795,7 +5795,7 @@
         "nature": "GP 18 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. NOR<br>6. HAD<br>7. PIA<br>8. RUS<br>9. LAW<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -6345,9 +6345,9 @@
         "venue": "Madison Square Garden (New York - États-Unis)",
         "time": "01:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "104 - 91",
+        "isLive": false,
+        "isFinished": true,
+        "score": "111 - 97",
         "channels": [
             "beinsports",
             "dazn"
@@ -6394,8 +6394,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "129 - 136",
         "channels": [
             "beinsports",
             "dazn"
@@ -6418,8 +6418,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "117 - 129",
         "channels": [
             "beinsports",
             "dazn"
@@ -6442,8 +6442,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "121 - 111",
         "channels": [
             "beinsports",
             "dazn"
@@ -6466,8 +6466,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "97 - 89",
         "channels": [
             "beinsports",
             "dazn"
@@ -6490,8 +6490,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "109 - 114",
         "channels": [
             "beinsports",
             "dazn"
@@ -6514,8 +6514,8 @@
         "time": "00:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "129 - 99",
         "channels": [
             "beinsports",
             "dazn"
@@ -6538,8 +6538,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "127 - 133",
         "channels": [
             "beinsports",
             "dazn"
@@ -6562,8 +6562,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "100 - 132",
         "channels": [
             "beinsports",
             "dazn"
@@ -6586,8 +6586,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "114 - 119",
         "channels": [
             "beinsports",
             "dazn"
@@ -6610,8 +6610,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "91 - 104",
         "channels": [
             "beinsports",
             "dazn"
@@ -6633,9 +6633,9 @@
         "venue": "Delta Center (Salt Lake City - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "78 - 74",
         "channels": [
             "beinsports",
             "dazn"
@@ -6657,9 +6657,9 @@
         "venue": "American Airlines Center (Dallas - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "63 - 59",
         "channels": [
             "beinsports",
             "dazn"
@@ -6681,9 +6681,9 @@
         "venue": "Intuit Dome (Inglewood - États-Unis)",
         "time": "03:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "2 - 3",
         "channels": [
             "beinsports",
             "dazn"
