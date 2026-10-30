@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -497,7 +497,7 @@
         "nature": "GP 10 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. PIA<br>6. HAD<br>7. NOR<br>8. BOR<br>9. LIN<br>10. COL",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -6633,9 +6633,9 @@
         "venue": "Delta Center (Salt Lake City - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "78 - 74",
+        "isLive": false,
+        "isFinished": true,
+        "score": "111 - 117",
         "channels": [
             "beinsports",
             "dazn"
@@ -6657,9 +6657,9 @@
         "venue": "American Airlines Center (Dallas - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "63 - 59",
+        "isLive": false,
+        "isFinished": true,
+        "score": "120 - 96",
         "channels": [
             "beinsports",
             "dazn"
@@ -6681,9 +6681,9 @@
         "venue": "Intuit Dome (Inglewood - États-Unis)",
         "time": "03:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "2 - 3",
+        "isLive": false,
+        "isFinished": true,
+        "score": "87 - 103",
         "channels": [
             "beinsports",
             "dazn"
@@ -6706,8 +6706,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "114 - 111",
         "channels": [
             "beinsports",
             "dazn"
@@ -6730,8 +6730,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "132 - 120",
         "channels": [
             "beinsports",
             "dazn"
@@ -6753,9 +6753,9 @@
         "venue": "Lambeau Field (Green Bay - USA)",
         "time": "01:15",
         "nature": "Semaine 8 / 18",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "27 - 13",
         "channels": [
             "beinsports",
             "dazn"
@@ -6777,9 +6777,9 @@
         "venue": "Moda Center (Portland - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "32 - 28",
         "channels": [
             "beinsports",
             "dazn"
