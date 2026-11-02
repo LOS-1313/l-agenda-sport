@@ -3511,8 +3511,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "36 - 10",
         "channels": [
             "beinsports",
             "dazn"
@@ -3535,8 +3535,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "43 - 36",
         "channels": [
             "beinsports",
             "dazn"
@@ -3559,8 +3559,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "30 - 33",
         "channels": [
             "beinsports",
             "dazn"
@@ -3583,8 +3583,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "19 - 15",
         "channels": [
             "beinsports",
             "dazn"
@@ -3607,8 +3607,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "33 - 38",
         "channels": [
             "beinsports",
             "dazn"
@@ -3631,8 +3631,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "27 - 6",
         "channels": [
             "beinsports",
             "dazn"
@@ -3655,8 +3655,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "16 - 0",
         "channels": [
             "beinsports",
             "dazn"
@@ -3679,8 +3679,8 @@
         "time": "19:00",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "42 - 7",
         "channels": [
             "beinsports",
             "dazn"
@@ -3700,7 +3700,7 @@
         "time": "21:00",
         "nature": "GP 19 / 23",
         "isLive": false,
-        "isFinished": false,
+        "isFinished": true,
         "score": "",
         "showHomeTeam1": false,
         "channels": [
@@ -3724,8 +3724,8 @@
         "time": "21:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "97 - 108",
         "channels": [
             "beinsports",
             "dazn"
@@ -3748,8 +3748,8 @@
         "time": "22:05",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "24 - 9",
         "channels": [
             "beinsports",
             "dazn"
@@ -3772,8 +3772,8 @@
         "time": "22:25",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "28 - 24",
         "channels": [
             "beinsports",
             "dazn"
@@ -3796,8 +3796,8 @@
         "time": "22:25",
         "nature": "Semaine 8 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "19 - 24",
         "channels": [
             "beinsports",
             "dazn"
@@ -3820,8 +3820,8 @@
         "time": "23:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "90 - 98",
         "channels": [
             "beinsports",
             "dazn"
@@ -3843,9 +3843,9 @@
         "venue": "Northwest Stadium (Landover - USA)",
         "time": "02:20",
         "nature": "Semaine 8 / 18",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "10 - 10",
         "channels": [
             "beinsports",
             "dazn"
@@ -3867,9 +3867,9 @@
         "venue": "Chase Center (San Francisco - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "63 - 57",
         "channels": [
             "beinsports",
             "dazn"
@@ -3891,9 +3891,9 @@
         "venue": "crypto.com Arena (Los Angeles - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "44 - 36",
         "channels": [
             "beinsports",
             "dazn"
