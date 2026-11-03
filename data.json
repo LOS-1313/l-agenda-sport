@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -3843,9 +3843,9 @@
         "venue": "Northwest Stadium (Landover - USA)",
         "time": "02:20",
         "nature": "Semaine 8 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "10 - 10",
+        "isLive": false,
+        "isFinished": true,
+        "score": "27 - 10",
         "channels": [
             "beinsports",
             "dazn"
@@ -3867,9 +3867,9 @@
         "venue": "Chase Center (San Francisco - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "63 - 57",
+        "isLive": false,
+        "isFinished": true,
+        "score": "124 - 112",
         "channels": [
             "beinsports",
             "dazn"
@@ -3891,9 +3891,9 @@
         "venue": "crypto.com Arena (Los Angeles - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "44 - 36",
+        "isLive": false,
+        "isFinished": true,
+        "score": "131 - 125",
         "channels": [
             "beinsports",
             "dazn"
@@ -3916,8 +3916,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "112 - 117",
         "channels": [
             "beinsports",
             "dazn"
@@ -3939,9 +3939,9 @@
         "venue": "Spectrum Center (Charlotte - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "83 - 112",
         "channels": [
             "beinsports",
             "dazn"
@@ -3963,9 +3963,9 @@
         "venue": "Gainbridge Fieldhouse (Indianapolis - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "102 - 104",
         "channels": [
             "beinsports",
             "dazn"
@@ -3987,9 +3987,9 @@
         "venue": "Madison Square Garden (New York - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "91 - 81",
         "channels": [
             "beinsports",
             "dazn"
@@ -4011,9 +4011,9 @@
         "venue": "Kia Center (Orlando - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "88 - 97",
         "channels": [
             "beinsports",
             "dazn"
@@ -4035,9 +4035,9 @@
         "venue": "Xfinity Mobile Arena (Philadelphia - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "116 - 101",
         "channels": [
             "beinsports",
             "dazn"
@@ -4059,9 +4059,9 @@
         "venue": "American Airlines Center (Dallas - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "70 - 74",
         "channels": [
             "beinsports",
             "dazn"
@@ -4083,9 +4083,9 @@
         "venue": "FedExForum (Memphis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "95 - 95",
         "channels": [
             "beinsports",
             "dazn"
@@ -4107,9 +4107,9 @@
         "venue": "Target Center (Minneapolis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "80 - 76",
         "channels": [
             "beinsports",
             "dazn"
@@ -4131,9 +4131,9 @@
         "venue": "Lumen Field (Seattle - USA)",
         "time": "02:15",
         "nature": "Semaine 8 / 18",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "9 - 13",
         "channels": [
             "beinsports",
             "dazn"
@@ -4155,9 +4155,9 @@
         "venue": "Toyota Center (Houston) (Houston - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "57 - 50",
         "channels": [
             "beinsports",
             "dazn"
@@ -4179,9 +4179,9 @@
         "venue": "Frost Bank Center (San Antonio - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "59 - 49",
         "channels": [
             "beinsports",
             "dazn"
@@ -4203,9 +4203,9 @@
         "venue": "Ball Arena (Denver - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "36 - 32",
         "channels": [
             "beinsports",
             "dazn"
