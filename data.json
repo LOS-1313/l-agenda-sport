@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -497,7 +497,7 @@
         "nature": "GP 10 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. PIA<br>6. HAD<br>7. NOR<br>8. BOR<br>9. LIN<br>10. COL",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -539,7 +539,7 @@
         "nature": "GP 11 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. NOR<br>2. VER<br>3. ANT<br>4. LEC<br>5. HAM<br>6. HAD<br>7. RUS<br>8. LAW<br>9. HUL<br>10. LIN",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -560,7 +560,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -4299,9 +4299,9 @@
         "venue": "Little Caesars Arena (Detroit - États-Unis)",
         "time": "01:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "106 - 111",
         "channels": [
             "beinsports",
             "dazn"
@@ -4324,8 +4324,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "105 - 120",
         "channels": [
             "beinsports",
             "dazn"
@@ -4347,9 +4347,9 @@
         "venue": "TD Garden (Boston - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "109 - 102",
         "channels": [
             "beinsports",
             "dazn"
@@ -4371,9 +4371,9 @@
         "venue": "Barclays Center (Brooklyn - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "93 - 87",
         "channels": [
             "beinsports",
             "dazn"
@@ -4395,9 +4395,9 @@
         "venue": "Madison Square Garden (New York - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "129 - 96",
         "channels": [
             "beinsports",
             "dazn"
@@ -4419,9 +4419,9 @@
         "venue": "FedExForum (Memphis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "82 - 80",
         "channels": [
             "beinsports",
             "dazn"
@@ -4443,9 +4443,9 @@
         "venue": "Smoothie King Center (New Orleans - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "65 - 69",
         "channels": [
             "beinsports",
             "dazn"
@@ -4467,9 +4467,9 @@
         "venue": "Paycom Center (Oklahoma City - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "91 - 77",
         "channels": [
             "beinsports",
             "dazn"
@@ -4491,9 +4491,9 @@
         "venue": "Toyota Center (Houston) (Houston - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "57 - 57",
         "channels": [
             "beinsports",
             "dazn"
@@ -4515,9 +4515,9 @@
         "venue": "Ball Arena (Denver - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "49 - 57",
         "channels": [
             "beinsports",
             "dazn"
@@ -4539,9 +4539,9 @@
         "venue": "Mortgage Matchup Center (Phoenix - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "43 - 49",
         "channels": [
             "beinsports",
             "dazn"
@@ -4563,9 +4563,9 @@
         "venue": "Frost Bank Center (San Antonio - États-Unis)",
         "time": "03:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "7 - 3",
         "channels": [
             "beinsports",
             "dazn"
