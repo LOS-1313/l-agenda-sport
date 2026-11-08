@@ -1946,7 +1946,7 @@
         "nature": "GP 16 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. VER<br>2. ANT<br>3. HAM<br>4. LEC<br>5. HAD<br>6. PIA<br>7. LAW<br>8. ALO<br>9. NOR<br>10. LIN",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -2351,7 +2351,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -2393,7 +2393,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -4755,9 +4755,9 @@
         "venue": "Rocket Arena (Cleveland - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "96 - 76",
+        "isLive": false,
+        "isFinished": true,
+        "score": "119 - 95",
         "channels": [
             "beinsports",
             "dazn"
@@ -4779,9 +4779,9 @@
         "venue": "American Airlines Center (Dallas - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "87 - 73",
+        "isLive": false,
+        "isFinished": true,
+        "score": "112 - 100",
         "channels": [
             "beinsports",
             "dazn"
@@ -4803,9 +4803,9 @@
         "venue": "FedExForum (Memphis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "70 - 95",
+        "isLive": false,
+        "isFinished": true,
+        "score": "97 - 128",
         "channels": [
             "beinsports",
             "dazn"
@@ -4827,9 +4827,9 @@
         "venue": "Fiserv Forum (Milwaukee - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "77 - 73",
+        "isLive": false,
+        "isFinished": true,
+        "score": "107 - 121",
         "channels": [
             "beinsports",
             "dazn"
@@ -4851,9 +4851,9 @@
         "venue": "Smoothie King Center (New Orleans - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "73 - 66",
+        "isLive": false,
+        "isFinished": true,
+        "score": "109 - 115",
         "channels": [
             "beinsports",
             "dazn"
@@ -4876,8 +4876,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "124 - 118",
         "channels": [
             "beinsports",
             "dazn"
@@ -4900,8 +4900,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "109 - 124",
         "channels": [
             "beinsports",
             "dazn"
@@ -4921,7 +4921,7 @@
         "time": "19:00",
         "nature": "GP 20 / 23",
         "isLive": false,
-        "isFinished": false,
+        "isFinished": true,
         "score": "",
         "showHomeTeam1": false,
         "channels": [
@@ -4945,8 +4945,8 @@
         "time": "23:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "102 - 114",
         "channels": [
             "beinsports",
             "dazn"
@@ -4968,9 +4968,9 @@
         "venue": "State Farm Arena (Atlanta - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "106 - 109",
         "channels": [
             "beinsports",
             "dazn"
@@ -4992,9 +4992,9 @@
         "venue": "Rocket Arena (Cleveland - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "70 - 88",
         "channels": [
             "beinsports",
             "dazn"
@@ -5016,9 +5016,9 @@
         "venue": "Paycom Center (Oklahoma City - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "87 - 59",
         "channels": [
             "beinsports",
             "dazn"
@@ -5040,9 +5040,9 @@
         "venue": "Chase Center (San Francisco - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "57 - 41",
         "channels": [
             "beinsports",
             "dazn"
@@ -5064,9 +5064,9 @@
         "venue": "Mortgage Matchup Center (Phoenix - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "44 - 27",
         "channels": [
             "beinsports",
             "dazn"
@@ -7446,30 +7446,6 @@
         ]
     },
     {
-        "id": "nba_401910005",
-        "date": "2026-11-18",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Los Angeles Lakers",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-        "showHomeTeam1": true,
-        "team2": "Charlotte Hornets",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
-        "showHomeTeam2": false,
-        "venue": "crypto.com Arena (Los Angeles - États-Unis)",
-        "time": "04:00",
-        "nature": "Saison Régulière",
-        "isLive": false,
-        "isFinished": false,
-        "score": "",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
         "id": "nba_401910006",
         "date": "2026-11-18",
         "category": "nba",
@@ -7483,6 +7459,30 @@
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "showHomeTeam2": false,
         "venue": "Intuit Dome (Inglewood - États-Unis)",
+        "time": "04:30",
+        "nature": "Saison Régulière",
+        "isLive": false,
+        "isFinished": false,
+        "score": "",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nba_401910005",
+        "date": "2026-11-18",
+        "category": "nba",
+        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
+        "isImgIcon": true,
+        "team1": "Los Angeles Lakers",
+        "team1Extra": "",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "showHomeTeam1": true,
+        "team2": "Charlotte Hornets",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+        "showHomeTeam2": false,
+        "venue": "crypto.com Arena (Los Angeles - États-Unis)",
         "time": "05:00",
         "nature": "Saison Régulière",
         "isLive": false,
