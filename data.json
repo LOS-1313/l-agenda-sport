@@ -5685,9 +5685,9 @@
         "venue": "Scotiabank Arena (Toronto - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "97 - 113",
+        "isLive": false,
+        "isFinished": true,
+        "score": "102 - 118",
         "channels": [
             "beinsports",
             "dazn"
@@ -5709,9 +5709,9 @@
         "venue": "American Airlines Center (Dallas - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "84 - 85",
+        "isLive": false,
+        "isFinished": true,
+        "score": "125 - 122",
         "channels": [
             "beinsports",
             "dazn"
@@ -5733,9 +5733,9 @@
         "venue": "U.S. Bank Stadium (Minneapolis - USA)",
         "time": "02:15",
         "nature": "Semaine 9 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "3 - 10",
+        "isLive": false,
+        "isFinished": true,
+        "score": "6 - 23",
         "channels": [
             "beinsports",
             "dazn"
@@ -5757,9 +5757,9 @@
         "venue": "Toyota Center (Houston) (Houston - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "54 - 40",
+        "isLive": false,
+        "isFinished": true,
+        "score": "110 - 100",
         "channels": [
             "beinsports",
             "dazn"
@@ -5781,9 +5781,9 @@
         "venue": "Mortgage Matchup Center (Phoenix - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "27 - 43",
+        "isLive": false,
+        "isFinished": true,
+        "score": "96 - 122",
         "channels": [
             "beinsports",
             "dazn"
@@ -5806,8 +5806,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "138 - 87",
         "channels": [
             "beinsports",
             "dazn"
@@ -5829,9 +5829,9 @@
         "venue": "Madison Square Garden (New York - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "109 - 85",
         "channels": [
             "beinsports",
             "dazn"
@@ -5853,9 +5853,9 @@
         "venue": "Xfinity Mobile Arena (Philadelphia - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "76 - 76",
         "channels": [
             "beinsports",
             "dazn"
@@ -5877,9 +5877,9 @@
         "venue": "Mortgage Matchup Center (Phoenix - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "39 - 29",
         "channels": [
             "beinsports",
             "dazn"
@@ -5901,9 +5901,9 @@
         "venue": "Delta Center (Salt Lake City - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "25 - 29",
         "channels": [
             "beinsports",
             "dazn"
