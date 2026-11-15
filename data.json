@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -6381,9 +6381,9 @@
         "venue": "Kaseya Center (Miami - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "80 - 76",
+        "isLive": false,
+        "isFinished": true,
+        "score": "133 - 121",
         "channels": [
             "beinsports",
             "dazn"
@@ -6405,9 +6405,9 @@
         "venue": "United Center (Chicago - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "83 - 83",
+        "isLive": false,
+        "isFinished": true,
+        "score": "125 - 117",
         "channels": [
             "beinsports",
             "dazn"
@@ -6429,9 +6429,9 @@
         "venue": "Smoothie King Center (New Orleans - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "79 - 85",
+        "isLive": false,
+        "isFinished": true,
+        "score": "111 - 142",
         "channels": [
             "beinsports",
             "dazn"
@@ -6453,9 +6453,9 @@
         "venue": "Toyota Center (Houston) (Houston - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "63 - 53",
+        "isLive": false,
+        "isFinished": true,
+        "score": "125 - 118",
         "channels": [
             "beinsports",
             "dazn"
@@ -6477,9 +6477,9 @@
         "venue": "Frost Bank Center (San Antonio - États-Unis)",
         "time": "03:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "5 - 0",
+        "isLive": false,
+        "isFinished": true,
+        "score": "123 - 85",
         "channels": [
             "beinsports",
             "dazn"
@@ -6502,8 +6502,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "107 - 120",
         "channels": [
             "beinsports",
             "dazn"
@@ -6526,8 +6526,8 @@
         "time": "04:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "113 - 112",
         "channels": [
             "beinsports",
             "dazn"
@@ -6550,8 +6550,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "108 - 116",
         "channels": [
             "beinsports",
             "dazn"
@@ -6573,9 +6573,9 @@
         "venue": "Rocket Arena (Cleveland - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "116 - 100",
         "channels": [
             "beinsports",
             "dazn"
@@ -6597,9 +6597,9 @@
         "venue": "Kaseya Center (Miami - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "79 - 74",
         "channels": [
             "beinsports",
             "dazn"
@@ -6621,9 +6621,9 @@
         "venue": "FedExForum (Memphis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "93 - 77",
         "channels": [
             "beinsports",
             "dazn"
@@ -6645,9 +6645,9 @@
         "venue": "Target Center (Minneapolis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "77 - 86",
         "channels": [
             "beinsports",
             "dazn"
@@ -7686,30 +7686,6 @@
         ]
     },
     {
-        "id": "nba_401910015",
-        "date": "2026-11-19",
-        "category": "nba",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
-        "isImgIcon": true,
-        "team1": "Denver Nuggets",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
-        "showHomeTeam1": true,
-        "team2": "Boston Celtics",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
-        "showHomeTeam2": false,
-        "venue": "Ball Arena (Denver - États-Unis)",
-        "time": "03:00",
-        "nature": "Saison Régulière",
-        "isLive": false,
-        "isFinished": false,
-        "score": "",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
         "id": "nba_401910016",
         "date": "2026-11-19",
         "category": "nba",
@@ -7723,6 +7699,30 @@
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
         "showHomeTeam2": false,
         "venue": "American Airlines Center (Dallas - États-Unis)",
+        "time": "02:00",
+        "nature": "Saison Régulière",
+        "isLive": false,
+        "isFinished": false,
+        "score": "",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nba_401910015",
+        "date": "2026-11-19",
+        "category": "nba",
+        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png",
+        "isImgIcon": true,
+        "team1": "Denver Nuggets",
+        "team1Extra": "",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "showHomeTeam1": true,
+        "team2": "Boston Celtics",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "showHomeTeam2": false,
+        "venue": "Ball Arena (Denver - États-Unis)",
         "time": "03:30",
         "nature": "Saison Régulière",
         "isLive": false,
