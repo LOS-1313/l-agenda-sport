@@ -7101,9 +7101,9 @@
         "venue": "Fiserv Forum (Milwaukee - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "84 - 89",
+        "isLive": false,
+        "isFinished": true,
+        "score": "106 - 113",
         "channels": [
             "beinsports",
             "dazn"
@@ -7125,9 +7125,9 @@
         "venue": "Paycor Stadium (Cincinnati - USA)",
         "time": "02:20",
         "nature": "Semaine 10 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "24 - 3",
+        "isLive": false,
+        "isFinished": true,
+        "score": "38 - 18",
         "channels": [
             "beinsports",
             "dazn"
@@ -7149,9 +7149,9 @@
         "venue": "Golden 1 Center (Sacramento - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "41 - 42",
+        "isLive": false,
+        "isFinished": true,
+        "score": "103 - 125",
         "channels": [
             "beinsports",
             "dazn"
@@ -7174,8 +7174,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "105 - 115",
         "channels": [
             "beinsports",
             "dazn"
@@ -7198,8 +7198,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "126 - 115",
         "channels": [
             "beinsports",
             "dazn"
@@ -7222,8 +7222,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "120 - 136",
         "channels": [
             "beinsports",
             "dazn"
@@ -7245,9 +7245,9 @@
         "venue": "Barclays Center (Brooklyn - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "108 - 116",
         "channels": [
             "beinsports",
             "dazn"
@@ -7269,9 +7269,9 @@
         "venue": "Kaseya Center (Miami - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "128 - 106",
         "channels": [
             "beinsports",
             "dazn"
@@ -7293,9 +7293,9 @@
         "venue": "Target Center (Minneapolis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "77 - 65",
         "channels": [
             "beinsports",
             "dazn"
@@ -7317,9 +7317,9 @@
         "venue": "Smoothie King Center (New Orleans - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "89 - 60",
         "channels": [
             "beinsports",
             "dazn"
@@ -7341,9 +7341,9 @@
         "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "02:15",
         "nature": "Semaine 10 / 18",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "10 - 17",
         "channels": [
             "beinsports",
             "dazn"
@@ -7365,9 +7365,9 @@
         "venue": "Ball Arena (Denver - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "35 - 38",
         "channels": [
             "beinsports",
             "dazn"
