@@ -7245,9 +7245,9 @@
         "venue": "Barclays Center (Brooklyn - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "108 - 116",
+        "isLive": false,
+        "isFinished": true,
+        "score": "123 - 135",
         "channels": [
             "beinsports",
             "dazn"
@@ -7269,9 +7269,9 @@
         "venue": "Kaseya Center (Miami - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "128 - 106",
+        "isLive": false,
+        "isFinished": true,
+        "score": "128 - 110",
         "channels": [
             "beinsports",
             "dazn"
@@ -7293,9 +7293,9 @@
         "venue": "Target Center (Minneapolis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "77 - 65",
+        "isLive": false,
+        "isFinished": true,
+        "score": "106 - 98",
         "channels": [
             "beinsports",
             "dazn"
@@ -7317,9 +7317,9 @@
         "venue": "Smoothie King Center (New Orleans - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "89 - 60",
+        "isLive": false,
+        "isFinished": true,
+        "score": "115 - 94",
         "channels": [
             "beinsports",
             "dazn"
@@ -7341,9 +7341,9 @@
         "venue": "M&T Bank Stadium (Baltimore - USA)",
         "time": "02:15",
         "nature": "Semaine 10 / 18",
-        "isLive": true,
-        "isFinished": false,
-        "score": "10 - 17",
+        "isLive": false,
+        "isFinished": true,
+        "score": "20 - 23",
         "channels": [
             "beinsports",
             "dazn"
@@ -7365,9 +7365,9 @@
         "venue": "Ball Arena (Denver - États-Unis)",
         "time": "03:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "35 - 38",
+        "isLive": false,
+        "isFinished": true,
+        "score": "105 - 117",
         "channels": [
             "beinsports",
             "dazn"
@@ -7389,9 +7389,9 @@
         "venue": "Scotiabank Arena (Toronto - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "102 - 105",
         "channels": [
             "beinsports",
             "dazn"
@@ -7413,9 +7413,9 @@
         "venue": "Target Center (Minneapolis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "63 - 67",
         "channels": [
             "beinsports",
             "dazn"
@@ -7437,9 +7437,9 @@
         "venue": "Frost Bank Center (San Antonio - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "68 - 73",
         "channels": [
             "beinsports",
             "dazn"
@@ -9858,30 +9858,6 @@
         ]
     },
     {
-        "id": "nfl_401873086",
-        "date": "2026-11-29",
-        "category": "nfl",
-        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png",
-        "isImgIcon": true,
-        "team1": "Cleveland Browns",
-        "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
-        "showHomeTeam1": true,
-        "team2": "Las Vegas Raiders",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
-        "showHomeTeam2": false,
-        "venue": "Huntington Bank Field (Cleveland - USA)",
-        "time": "19:00",
-        "nature": "Semaine 12 / 18",
-        "isLive": false,
-        "isFinished": false,
-        "score": "",
-        "channels": [
-            "beinsports",
-            "dazn"
-        ]
-    },
-    {
         "id": "nfl_401873088",
         "date": "2026-11-29",
         "category": "nfl",
@@ -9943,6 +9919,30 @@
         "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
         "showHomeTeam2": false,
         "venue": "U.S. Bank Stadium (Minneapolis - USA)",
+        "time": "19:00",
+        "nature": "Semaine 12 / 18",
+        "isLive": false,
+        "isFinished": false,
+        "score": "",
+        "channels": [
+            "beinsports",
+            "dazn"
+        ]
+    },
+    {
+        "id": "nfl_401873090",
+        "date": "2026-11-29",
+        "category": "nfl",
+        "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png",
+        "isImgIcon": true,
+        "team1": "Jacksonville Jaguars",
+        "team1Extra": "",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "showHomeTeam1": true,
+        "team2": "Tennessee Titans",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "showHomeTeam2": false,
+        "venue": "EverBank Stadium (Jacksonville - USA)",
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "isLive": false,
@@ -10026,19 +10026,19 @@
         ]
     },
     {
-        "id": "nfl_401873090",
+        "id": "nfl_401873093",
         "date": "2026-11-29",
         "category": "nfl",
         "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png",
         "isImgIcon": true,
-        "team1": "Jacksonville Jaguars",
+        "team1": "Los Angeles Chargers",
         "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
         "showHomeTeam1": true,
-        "team2": "Tennessee Titans",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+        "team2": "New England Patriots",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
         "showHomeTeam2": false,
-        "venue": "EverBank Stadium (Jacksonville - USA)",
+        "venue": "SoFi Stadium (Inglewood - USA)",
         "time": "22:05",
         "nature": "Semaine 12 / 18",
         "isLive": false,
@@ -10242,19 +10242,19 @@
         ]
     },
     {
-        "id": "nfl_401873093",
+        "id": "nfl_401873086",
         "date": "2026-11-30",
         "category": "nfl",
         "sportIcon": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png",
         "isImgIcon": true,
-        "team1": "Los Angeles Chargers",
+        "team1": "Cleveland Browns",
         "team1Extra": "",
-        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+        "team1Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "showHomeTeam1": true,
-        "team2": "New England Patriots",
-        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+        "team2": "Las Vegas Raiders",
+        "team2Logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
         "showHomeTeam2": false,
-        "venue": "SoFi Stadium (Inglewood - USA)",
+        "venue": "Huntington Bank Field (Cleveland - USA)",
         "time": "02:20",
         "nature": "Semaine 12 / 18",
         "isLive": false,
