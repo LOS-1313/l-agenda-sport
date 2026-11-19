@@ -560,7 +560,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -602,7 +602,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -644,7 +644,7 @@
         "nature": "GP 13 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. RUS<br>3. VER<br>4. NOR<br>5. PIA<br>6. HAM<br>7. GAS<br>8. LIN<br>9. COL<br>10. TSU",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -734,7 +734,7 @@
         "nature": "GP 14 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. VER<br>3. NOR<br>4. LEC<br>5. RUS<br>6. LAW<br>7. COL<br>8. PIA<br>9. LIN<br>10. HUL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -1946,7 +1946,7 @@
         "nature": "GP 16 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. ANT<br>3. HAM<br>4. LEC<br>5. HAD<br>6. PIA<br>7. LAW<br>8. ALO<br>9. NOR<br>10. LIN",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -2351,7 +2351,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -2393,7 +2393,7 @@
         "nature": "GP 17 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. LEC<br>3. ANT<br>4. NOR<br>5. PIA<br>6. HAM<br>7. LAW<br>8. HUL<br>9. RUS<br>10. HAD",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -3323,7 +3323,7 @@
         "nature": "GP 18 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. NOR<br>6. HAD<br>7. PIA<br>8. RUS<br>9. LAW<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -3701,7 +3701,7 @@
         "nature": "GP 19 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. VER<br>2. HAM<br>3. ANT<br>4. LEC<br>5. NOR<br>6. RUS<br>7. LAW<br>8. BOR<br>9. HAD<br>10. HIR",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -5135,7 +5135,7 @@
         "nature": "GP 20 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. NOR<br>2. VER<br>3. HAD<br>4. RUS<br>5. ANT<br>6. PIA<br>7. LAW<br>8. LEC<br>9. HAM<br>10. HUL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -7389,9 +7389,9 @@
         "venue": "Scotiabank Arena (Toronto - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "102 - 105",
+        "isLive": false,
+        "isFinished": true,
+        "score": "102 - 111",
         "channels": [
             "beinsports",
             "dazn"
@@ -7413,9 +7413,9 @@
         "venue": "Target Center (Minneapolis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "63 - 67",
+        "isLive": false,
+        "isFinished": true,
+        "score": "106 - 105",
         "channels": [
             "beinsports",
             "dazn"
@@ -7437,9 +7437,9 @@
         "venue": "Frost Bank Center (San Antonio - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "68 - 73",
+        "isLive": false,
+        "isFinished": true,
+        "score": "93 - 105",
         "channels": [
             "beinsports",
             "dazn"
@@ -7462,8 +7462,8 @@
         "time": "04:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "107 - 132",
         "channels": [
             "beinsports",
             "dazn"
@@ -7486,8 +7486,8 @@
         "time": "05:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "118 - 114",
         "channels": [
             "beinsports",
             "dazn"
@@ -7510,8 +7510,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "121 - 124",
         "channels": [
             "beinsports",
             "dazn"
@@ -7534,8 +7534,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "104 - 119",
         "channels": [
             "beinsports",
             "dazn"
@@ -7557,9 +7557,9 @@
         "venue": "Kaseya Center (Miami - États-Unis)",
         "time": "01:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "135 - 118",
         "channels": [
             "beinsports",
             "dazn"
@@ -7582,8 +7582,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "116 - 121",
         "channels": [
             "beinsports",
             "dazn"
@@ -7606,8 +7606,8 @@
         "time": "01:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "107 - 137",
         "channels": [
             "beinsports",
             "dazn"
@@ -7629,9 +7629,9 @@
         "venue": "Scotiabank Arena (Toronto - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "94 - 100",
         "channels": [
             "beinsports",
             "dazn"
@@ -7653,9 +7653,9 @@
         "venue": "Smoothie King Center (New Orleans - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "78 - 87",
         "channels": [
             "beinsports",
             "dazn"
@@ -7677,9 +7677,9 @@
         "venue": "Paycom Center (Oklahoma City - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "86 - 92",
         "channels": [
             "beinsports",
             "dazn"
@@ -7701,9 +7701,9 @@
         "venue": "American Airlines Center (Dallas - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "93 - 64",
         "channels": [
             "beinsports",
             "dazn"
@@ -7725,9 +7725,9 @@
         "venue": "Ball Arena (Denver - États-Unis)",
         "time": "03:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "2 - 8",
         "channels": [
             "beinsports",
             "dazn"
