@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -497,7 +497,7 @@
         "nature": "GP 10 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. PIA<br>6. HAD<br>7. NOR<br>8. BOR<br>9. LIN<br>10. COL",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -539,7 +539,7 @@
         "nature": "GP 11 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. NOR<br>2. VER<br>3. ANT<br>4. LEC<br>5. HAM<br>6. HAD<br>7. RUS<br>8. LAW<br>9. HUL<br>10. LIN",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -560,7 +560,7 @@
         "nature": "GP 12 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "",
+        "score": "1. NOR<br>2. ANT<br>3. RUS<br>4. HAM<br>5. LEC<br>6. PIA<br>7. LAW<br>8. HUL<br>9. ALO<br>10. GAS",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -8178,9 +8178,9 @@
         "venue": "Madison Square Garden (New York - États-Unis)",
         "time": "01:30",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "94 - 94",
+        "isLive": false,
+        "isFinished": true,
+        "score": "97 - 96",
         "channels": [
             "beinsports",
             "dazn"
@@ -8202,9 +8202,9 @@
         "venue": "American Airlines Center (Dallas - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "75 - 69",
+        "isLive": false,
+        "isFinished": true,
+        "score": "110 - 100",
         "channels": [
             "beinsports",
             "dazn"
@@ -8226,9 +8226,9 @@
         "venue": "Target Center (Minneapolis - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "89 - 66",
+        "isLive": false,
+        "isFinished": true,
+        "score": "104 - 95",
         "channels": [
             "beinsports",
             "dazn"
@@ -8250,9 +8250,9 @@
         "venue": "Frost Bank Center (San Antonio - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "82 - 60",
+        "isLive": false,
+        "isFinished": true,
+        "score": "114 - 91",
         "channels": [
             "beinsports",
             "dazn"
@@ -8275,8 +8275,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "97 - 96",
         "channels": [
             "beinsports",
             "dazn"
@@ -8296,7 +8296,7 @@
         "time": "05:00",
         "nature": "GP 21 / 23",
         "isLive": false,
-        "isFinished": false,
+        "isFinished": true,
         "score": "",
         "showHomeTeam1": false,
         "channels": [
@@ -8320,8 +8320,8 @@
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "26 - 9",
         "channels": [
             "beinsports",
             "dazn"
@@ -8344,8 +8344,8 @@
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "21 - 13",
         "channels": [
             "beinsports",
             "dazn"
@@ -8368,8 +8368,8 @@
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "51 - 30",
         "channels": [
             "beinsports",
             "dazn"
@@ -8392,8 +8392,8 @@
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "31 - 21",
         "channels": [
             "beinsports",
             "dazn"
@@ -8416,8 +8416,8 @@
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "34 - 7",
         "channels": [
             "beinsports",
             "dazn"
@@ -8440,8 +8440,8 @@
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "19 - 16",
         "channels": [
             "beinsports",
             "dazn"
@@ -8464,8 +8464,8 @@
         "time": "19:00",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "35 - 33",
         "channels": [
             "beinsports",
             "dazn"
@@ -8488,8 +8488,8 @@
         "time": "21:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "107 - 97",
         "channels": [
             "beinsports",
             "dazn"
@@ -8512,8 +8512,8 @@
         "time": "22:05",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "24 - 27",
         "channels": [
             "beinsports",
             "dazn"
@@ -8536,8 +8536,8 @@
         "time": "22:25",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "38 - 24",
         "channels": [
             "beinsports",
             "dazn"
@@ -8560,8 +8560,8 @@
         "time": "22:25",
         "nature": "Semaine 11 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "23 - 18",
         "channels": [
             "beinsports",
             "dazn"
@@ -8584,8 +8584,8 @@
         "time": "00:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "123 - 113",
         "channels": [
             "beinsports",
             "dazn"
@@ -8608,8 +8608,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "116 - 96",
         "channels": [
             "beinsports",
             "dazn"
@@ -8632,8 +8632,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "145 - 151",
         "channels": [
             "beinsports",
             "dazn"
@@ -8656,8 +8656,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "114 - 116",
         "channels": [
             "beinsports",
             "dazn"
@@ -8679,9 +8679,9 @@
         "venue": "Madison Square Garden (New York - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "78 - 74",
         "channels": [
             "beinsports",
             "dazn"
@@ -8703,9 +8703,9 @@
         "venue": "Estadio Banorte (Mexico City - Mexico)",
         "time": "02:20",
         "nature": "Semaine 11 / 18",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "28 - 10",
         "channels": [
             "beinsports",
             "dazn"
@@ -8727,9 +8727,9 @@
         "venue": "Chase Center (San Francisco - États-Unis)",
         "time": "02:30",
         "nature": "Saison Régulière",
-        "isLive": false,
+        "isLive": true,
         "isFinished": false,
-        "score": "",
+        "score": "44 - 48",
         "channels": [
             "beinsports",
             "dazn"
