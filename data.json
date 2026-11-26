@@ -413,7 +413,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -455,7 +455,7 @@
         "nature": "GP 9 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. LEC<br>2. RUS<br>3. HAM<br>4. NOR<br>5. HAD<br>6. LAW<br>7. LIN<br>8. BOR<br>9. COL<br>10. GAS",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -497,7 +497,7 @@
         "nature": "GP 10 / 23",
         "isLive": false,
         "isFinished": true,
-        "score": "1. ANT<br>2. LEC<br>3. VER<br>4. HAM<br>5. PIA<br>6. HAD<br>7. NOR<br>8. BOR<br>9. LIN<br>10. COL",
+        "score": "",
         "showHomeTeam1": false,
         "channels": [
             "canal+"
@@ -9039,9 +9039,9 @@
         "venue": "Capital One Arena (Washington - États-Unis)",
         "time": "02:00",
         "nature": "Saison Régulière",
-        "isLive": true,
-        "isFinished": false,
-        "score": "87 - 104",
+        "isLive": false,
+        "isFinished": true,
+        "score": "116 - 131",
         "channels": [
             "beinsports",
             "dazn"
@@ -9064,8 +9064,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "101 - 120",
         "channels": [
             "beinsports",
             "dazn"
@@ -9088,8 +9088,8 @@
         "time": "23:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "111 - 104",
         "channels": [
             "beinsports",
             "dazn"
@@ -9112,8 +9112,8 @@
         "time": "01:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "105 - 107",
         "channels": [
             "beinsports",
             "dazn"
@@ -9136,8 +9136,8 @@
         "time": "01:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "121 - 102",
         "channels": [
             "beinsports",
             "dazn"
@@ -9160,8 +9160,8 @@
         "time": "01:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "106 - 113",
         "channels": [
             "beinsports",
             "dazn"
@@ -9184,8 +9184,8 @@
         "time": "02:00",
         "nature": "Semaine 12 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "26 - 13",
         "channels": [
             "beinsports",
             "dazn"
@@ -9208,8 +9208,8 @@
         "time": "02:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "115 - 97",
         "channels": [
             "beinsports",
             "dazn"
@@ -9232,8 +9232,8 @@
         "time": "02:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "97 - 104",
         "channels": [
             "beinsports",
             "dazn"
@@ -9256,8 +9256,8 @@
         "time": "02:30",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "116 - 104",
         "channels": [
             "beinsports",
             "dazn"
@@ -9280,8 +9280,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "129 - 110",
         "channels": [
             "beinsports",
             "dazn"
@@ -9304,8 +9304,8 @@
         "time": "04:00",
         "nature": "Saison Régulière",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "116 - 111",
         "channels": [
             "beinsports",
             "dazn"
