@@ -9328,8 +9328,8 @@
         "time": "19:00",
         "nature": "Semaine 12 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "35 - 39",
         "channels": [
             "beinsports",
             "dazn"
@@ -9352,8 +9352,8 @@
         "time": "22:30",
         "nature": "Semaine 12 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "38 - 39",
         "channels": [
             "beinsports",
             "dazn"
@@ -9376,8 +9376,8 @@
         "time": "02:20",
         "nature": "Semaine 12 / 18",
         "isLive": false,
-        "isFinished": false,
-        "score": "",
+        "isFinished": true,
+        "score": "13 - 10",
         "channels": [
             "beinsports",
             "dazn"
